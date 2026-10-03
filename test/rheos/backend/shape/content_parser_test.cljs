@@ -1,6 +1,41 @@
 (ns rheos.backend.shape.content-parser-test
   (:require [cljs.test :refer [deftest is testing]]
+            ["marked" :refer [lexer]]
+            [rheos.backend.shape.comment-fixtures :as fixtures]
             [rheos.backend.shape.content-parser :as parser]))
+
+(defn- heading-texts [markdown]
+  (->> (js->clj (lexer (:content (parser/parse-frontmatter markdown))) :keywordize-keys true)
+       (filter #(= "heading" (:type %)))
+       (mapv :text)))
+
+(deftest real-comments-render-and-roundtrip
+  (testing "observed final paragraphs remain prose between comment separators"
+    (let [[foresight shx] (mapv :content fixtures/comments)
+          sections [{:type "body" :content "# Intentional title\n\nOriginal body."}
+                    {:type "comment" :content foresight}
+                    {:type "body" :content "A later body section."}
+                    {:type "comment" :content shx}]
+          serialized (parser/serialize-sections sections)]
+      (is (= ["Intentional title"] (heading-texts serialized)))
+      (is (= sections (parser/parse-sections serialized)))
+      (is (= serialized (parser/serialize-sections (parser/parse-sections serialized)))))))
+
+(deftest appended-comments-render-and-preserve-existing-sections
+  (let [[foresight shx] (mapv :content fixtures/comments)
+        base "---\nuuid: \"fixture\"\nstatus: \"in_progress\"\n---\n\n# Intentional title\n\nOriginal body."
+        legacy (str base "\n\n---\n" foresight "\n---")]
+    (doseq [[raw expected] [[base [{:type "body" :content "# Intentional title\n\nOriginal body."}
+                                 {:type "comment" :content shx}]]
+                            [legacy [{:type "body" :content "# Intentional title\n\nOriginal body."}
+                                     {:type "comment" :content (str foresight "\n\n" shx)}]]]]
+      (testing "new and existing comment blocks use the same rendering boundary"
+        (let [result (parser/append-comment raw shx)
+              parsed (parser/parse-task-content result)]
+          (is (= ["Intentional title"] (heading-texts result)))
+          (is (= (:frontmatter (parser/parse-task-content raw)) (:frontmatter parsed)))
+          (is (= expected (:sections parsed)))
+          (is (= result (parser/serialize-task-content parsed))))))))
 
 (deftest test-parse-frontmatter
   (testing "parses quoted string values"
