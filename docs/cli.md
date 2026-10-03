@@ -196,6 +196,16 @@ log:
 rheos comment my-card --text "Reviewer wants the fold split; scope unchanged"
 ```
 
+Comment separators are separated from prose by blank lines, so the final
+paragraph renders as text rather than a Markdown setext heading. An existing
+card written by an older formatter is normalized the next time a legitimate
+`comment` operation appends an update: its existing body/comment content and
+section types are preserved, and the engine generates the new write ID and
+appends the usual comment event. Use that operation to record the formatter
+repair when updating affected cards; do not hand-edit engine-owned sections or
+rewrite historical ledger entries. Empty frontmatter updates are a no-op and
+are not a formatting repair operation.
+
 Rewriting the body of a card that is already in flight silently replaces scope
 that other people and agents are working from, with no record of what changed.
 Comments are append-only and ledger-recorded, so they are the honest place for
