@@ -3,8 +3,12 @@
             ["node:os" :as os]
             ["node:path" :as path]
             [cljs.test :refer [deftest testing is]]
+            [clojure.string :as str]
+            ["marked" :refer [lexer]]
             [rheos.backend.domain.events :as events]
+            [rheos.backend.infra.ledger :as ledger]
             [rheos.backend.infra.task-edit :as task-edit]
+            [rheos.backend.shape.comment-fixtures :as fixtures]
             [rheos.backend.shape.content-parser :as content-parser]
             [rheos.backend.infra.watcher :as watcher]))
 
@@ -20,6 +24,39 @@
                  "priority: \"P3\"\n"
                  "---\n\n# " title "\n\nBody")]
     (.writeFile fsp file-path raw "utf8")))
+
+(deftest ^:async real-comment-append-preserves-ledger-history
+  (testing "the canonical append path normalizes old rendering without rewriting events"
+    (let [dir (tmp-dir)
+          _ (await (.mkdir fsp dir #js {:recursive true}))
+          _ (await (write-task! dir "comments" "Intentional title"))
+          project {:id "test" :title "Test" :tasks-dir dir :meta {}}
+          task {:uuid "comments" :source-path (path/join dir "comments.md")}
+          event-path (path/join dir ".events" "ledger.edn")
+          [foresight shx] (mapv :content fixtures/comments)]
+      (try
+        (await (task-edit/append-comment! {:project project :task task :text foresight :source "test"}))
+        (let [history (await (.readFile fsp event-path "utf8"))
+              result (await (task-edit/append-comment! {:project project :task task :text shx :source "test"}))
+              raw (await (.readFile fsp (:source-path task) "utf8"))
+              parsed (content-parser/parse-task-content raw)
+              after (await (.readFile fsp event-path "utf8"))
+              records (await (events/query-events (ledger/get-ledger dir) {:type "comment"}))
+              headings (->> (js->clj (lexer (:content (content-parser/parse-frontmatter raw))) :keywordize-keys true)
+                            (filter #(= "heading" (:type %)))
+                            (mapv :text))]
+          (is (:ok result))
+          (is (= ["Intentional title"] headings))
+          (is (= [{:type "body" :content "# Intentional title\n\nBody"}
+                  {:type "comment" :content (str foresight "\n\n" shx)}]
+                 (:sections parsed)))
+          (is (str/starts-with? after history) "every historical event byte is preserved")
+          (is (= 1 (count (str/split-lines (subs after (count history))))) "only one new event is appended")
+          (is (= [foresight shx] (mapv #(get-in % [:payload :text]) records)))
+          (is (= (get-in parsed [:frontmatter :write-id])
+                 (get-in (last records) [:payload :write-id])) "the engine supplies the new write identity"))
+        (finally
+          (await (.rm fsp dir #js {:recursive true :force true})))))))
 
 (deftest ^:async update-frontmatter-emits-events
   (testing "Updating frontmatter writes the file and records events"

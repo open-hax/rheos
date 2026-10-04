@@ -76,11 +76,15 @@
                     frontmatter)]
     (str "---\n" (str/join "\n" lines) "\n---")))
 
-(defn serialize-sections [sections]
+(defn serialize-sections
+  "Serialize sections with blank lines around comment delimiters."
+  [sections]
   (str/join "\n\n"
     (mapv (fn [section]
             (if (= (:type section) "comment")
-              (str "---\n" (:content section) "\n---")
+              ;; A separator directly under prose becomes a Markdown setext
+              ;; heading. Keep blank lines at this shared serialization boundary.
+              (str "---\n\n" (:content section) "\n\n---")
               (:content section)))
           sections)))
 
