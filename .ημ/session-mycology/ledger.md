@@ -36,3 +36,13 @@
   spore: none
   receipt-refs: rheos/caller/final-functional-selection-694,694a2602709d130b2a60045a25537f1b4476ec1f
   note: Parent-selected merged Eta694/Muse0b/skills7fd; actual immutable workflow_call interface unchanged. Existing caller fixtures15/15 and standard actionlint passed locally. Hosted new-head caller qualification remains pending; no activation or native approval claimed. Retain all old79 claims, board/runtime/history bytes and existing diagnostics.
+
+- ts: 2026-10-04T08:55:38.487526Z
+  session: codex/rheos2-explicit-review-delegation
+  task: Narrow review secret authority and document shared serializer formatting
+  p-efficiency: 0.93
+  p-friction: 0.08
+  p-skill-candidate: 0.16
+  spore: none
+  receipt-refs: rheos/pr2/explicit-review-delegation-and-serializer-docs; 2026-10-04T08:55:38.487526Z
+  note: A working same-org inherited-secret path can still delegate excess authority. Preserve exact caller selections and gates while restricting references to declared reviewer inputs. Document all actual shared serializer users, and prove a docstring-only source delta rather than creating mirror runtime tests. Old-head review evidence remains historical after publication; successor native qualification belongs to parent. No board or identity activation.

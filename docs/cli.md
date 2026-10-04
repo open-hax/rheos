@@ -206,6 +206,10 @@ repair when updating affected cards; do not hand-edit engine-owned sections or
 rewrite historical ledger entries. Empty frontmatter updates are a no-op and
 are not a formatting repair operation.
 
+Other operations that use the shared serializer, including status and frontmatter
+writes, can also normalize legacy delimiter spacing. This formatting preserves
+the parsed section content and does not change the operation's event type.
+
 Rewriting the body of a card that is already in flight silently replaces scope
 that other people and agents are working from, with no record of what changed.
 Comments are append-only and ledger-recorded, so they are the honest place for

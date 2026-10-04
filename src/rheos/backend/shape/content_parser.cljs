@@ -76,7 +76,9 @@
                     frontmatter)]
     (str "---\n" (str/join "\n" lines) "\n---")))
 
-(defn serialize-sections [sections]
+(defn serialize-sections
+  "Serialize sections with blank lines around comment delimiters."
+  [sections]
   (str/join "\n\n"
     (mapv (fn [section]
             (if (= (:type section) "comment")
