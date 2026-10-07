@@ -1,0 +1,252 @@
+{
+  "at": "2026-10-07T18:47:55.135995+00:00",
+  "verdict": "Dependency setup complete; no compile/test/build qualification",
+  "node_version": "v22.20.0",
+  "pnpm_version": "10.15.0",
+  "runs": {
+    "chat-source-fetch": {
+      "sha256": "520dd4f5237e70eebebf60b76d8456c8996a5b39bf8ec83748cbfad0edc6c5be",
+      "elapsed_s": 1.3301203470036853,
+      "observed": [
+        {
+          "pid": 2223963,
+          "state": "S",
+          "pgid": 2223963,
+          "starttime_ticks": 6632964,
+          "exe": "/usr/bin/git",
+          "cwd": "/tmp/rheos-design-source-fwlg0t2z/chat-ui"
+        },
+        {
+          "pid": 2223981,
+          "state": "S",
+          "pgid": 2223963,
+          "starttime_ticks": 6632967,
+          "exe": "/usr/lib/git-core/git",
+          "cwd": "/tmp/rheos-design-source-fwlg0t2z/chat-ui"
+        },
+        {
+          "pid": 2223982,
+          "state": "S",
+          "pgid": 2223963,
+          "starttime_ticks": 6632968,
+          "exe": "/usr/lib/git-core/git-remote-http",
+          "cwd": "/tmp/rheos-design-source-fwlg0t2z/chat-ui"
+        }
+      ]
+    },
+    "bootstrap-verification": {
+      "sha256": "8111ff79290aa9c5c61b41bee20cff8fd3eb5c537477b0f643878eb0b3b26e23",
+      "elapsed_s": 0.8656675150123192,
+      "observed": [
+        {
+          "pid": 2224219,
+          "state": "Z",
+          "pgid": 2224219,
+          "starttime_ticks": 6633151,
+          "exe": null,
+          "exe_error": "FileNotFoundError(2, 'No such file or directory')",
+          "cwd": null,
+          "cwd_error": "FileNotFoundError(2, 'No such file or directory')"
+        }
+      ]
+    },
+    "node-version": {
+      "sha256": "ca9c25eeb13a58b1b012294230e19735c5ffff3d6a7327e091fded3520e39368",
+      "elapsed_s": 0.5287299920018995,
+      "observed": [
+        {
+          "pid": 2224265,
+          "state": "Z",
+          "pgid": 2224265,
+          "starttime_ticks": 6633240,
+          "exe": null,
+          "exe_error": "FileNotFoundError(2, 'No such file or directory')",
+          "cwd": null,
+          "cwd_error": "FileNotFoundError(2, 'No such file or directory')"
+        }
+      ]
+    },
+    "pnpm-version": {
+      "sha256": "105360c5759b6730a83d918d8abd6e1e191af11bd3c5482fdfdcfd3cb1868338",
+      "elapsed_s": 1.4043386859993916,
+      "observed": [
+        {
+          "pid": 2224325,
+          "state": "R",
+          "pgid": 2224325,
+          "starttime_ticks": 6633293,
+          "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+          "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+        }
+      ]
+    },
+    "install": {
+      "sha256": "91b8e08b0bd820adf0ec31545b54ca336e24a32a2ba0b3a94971462070c9c207",
+      "elapsed_s": 9.35891199800244,
+      "observed": [
+        {
+          "pid": 2224475,
+          "state": "R",
+          "pgid": 2224475,
+          "starttime_ticks": 6633434,
+          "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+          "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+        },
+        {
+          "pid": 2224587,
+          "state": "S",
+          "pgid": 2224475,
+          "starttime_ticks": 6633612,
+          "exe": "/usr/bin/git",
+          "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+        },
+        {
+          "pid": 2224588,
+          "state": "S",
+          "pgid": 2224475,
+          "starttime_ticks": 6633619,
+          "exe": "/usr/lib/git-core/git",
+          "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+        },
+        {
+          "pid": 2224589,
+          "state": "R",
+          "pgid": 2224475,
+          "starttime_ticks": 6633620,
+          "exe": "/usr/lib/git-core/git-remote-http",
+          "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+        }
+      ]
+    }
+  },
+  "source_manifests_sha256": "d875080975649cb4dde34c46eb1ee472f879ddbb81c3225f8c2c80f1a562063e",
+  "all_source_file_sets_and_bytes_verified_again": true,
+  "protected_files_unchanged": 94,
+  "recorded_pids_freshly_absent": [
+    2223963,
+    2223981,
+    2223982,
+    2224219,
+    2224265,
+    2224325,
+    2224475,
+    2224587,
+    2224588,
+    2224589
+  ],
+  "owned_java_observed": [],
+  "launcher_pins": {
+    "node_modules/.bin/helix": {
+      "sha256": "7cbbbc0dc2a24c8c1014fb66afa42f445ed5195c9f5cb154a6ea19c07aaeb610",
+      "bytes": 1446
+    },
+    "node_modules/.bin/marked": {
+      "sha256": "71d8abc6de579e426b9b625b4f1d8851df0ab0334d97ddc380cfc8e643186adb",
+      "bytes": 1476
+    },
+    "node_modules/.bin/shadow-cljs": {
+      "sha256": "bb068eadc059c0c9ab2e1d1c3150d7f0ef2acbfc8f0ad0be69fbb302ee8e0f52",
+      "bytes": 1538
+    },
+    "node_modules/.bin/vite": {
+      "sha256": "a4e15f5d415692c5ae0f6ea98cb60822a0e08ba916a766389cd79895731aedc0",
+      "bytes": 1436
+    }
+  },
+  "old_checkout_absolute_launcher_reference_found": false,
+  "installed_direct_packages": {
+    "@fastify/cors": {
+      "version": "11.3.0",
+      "package_json_sha256": "8ed5dc353071fb44186d94894a5d92aaaa443a18f42a67f75883e619c6e9d539",
+      "resolved_path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/node_modules/.pnpm/@fastify+cors@11.3.0/node_modules/@fastify/cors/package.json"
+    },
+    "@fastify/static": {
+      "version": "8.3.0",
+      "package_json_sha256": "afbec018c5d2954220c8b9b65f42299e6fdaa6934a32226b8eb4d344526f813c",
+      "resolved_path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/node_modules/.pnpm/@fastify+static@8.3.0/node_modules/@fastify/static/package.json"
+    },
+    "@modelcontextprotocol/sdk": {
+      "version": "1.32.1",
+      "package_json_sha256": "0216319ea53177f7ed419d660b2f52ccc7e3327e57f9ee2ef03225ff543aeae4",
+      "resolved_path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/node_modules/.pnpm/@modelcontextprotocol+sdk@1.32.1_zod@4.6.5/node_modules/@modelcontextprotocol/sdk/package.json"
+    },
+    "@open-hax/protocols": {
+      "version": "0.1.0",
+      "package_json_sha256": "11617ab04663f5ed42b57db76af44e04c8ed06fff16cefd8bf6dbb3b42be1d65",
+      "resolved_path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/node_modules/.pnpm/@open-hax+protocols@https+++codeload.github.com+open-hax+eta-mu+tar.gz+0ed56aa74a53a1d1_e1bed539b7a7cf4450a1c7cf3a76be9c/node_modules/@open-hax/protocols/package.json"
+    },
+    "@open-hax/uxx-helix": {
+      "version": "0.1.0",
+      "package_json_sha256": "8810b1a991fd7a8432966707517e7dc2b23cba0e1684df3bc8b5b7af0c7cd4ed",
+      "resolved_path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/node_modules/.pnpm/@open-hax+uxx-helix@0.1.0/node_modules/@open-hax/uxx-helix/package.json"
+    },
+    "@vitejs/plugin-react": {
+      "version": "6.1.2",
+      "package_json_sha256": "b40248af3bd75adf396d903d042c09ca4f585dcdd9460d51eeeeb83c01a48643",
+      "resolved_path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/node_modules/.pnpm/@vitejs+plugin-react@6.1.2_vite@8.3.3/node_modules/@vitejs/plugin-react/package.json"
+    },
+    "chokidar": {
+      "version": "4.0.3",
+      "package_json_sha256": "4764fed21a281c69d98e06b4c3e7c22a8936069ed2d320330d9831d8a8bddd5a",
+      "resolved_path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/node_modules/.pnpm/chokidar@4.0.3/node_modules/chokidar/package.json"
+    },
+    "dompurify": {
+      "version": "3.4.16",
+      "package_json_sha256": "a4a555e42e07bab175db53902b6c3caa6510b3319b0af56d2d3c46c1cbefae06",
+      "resolved_path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/node_modules/.pnpm/dompurify@3.4.16/node_modules/dompurify/package.json"
+    },
+    "fastify": {
+      "version": "5.12.5",
+      "package_json_sha256": "e3757c52e771fe055fd9c19731057f5dc6c10f1d4944da8093fc957a21bbd9aa",
+      "resolved_path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/node_modules/.pnpm/fastify@5.12.5/node_modules/fastify/package.json"
+    },
+    "helix": {
+      "version": "0.3.1",
+      "package_json_sha256": "7ff9780c727f4bffcd16982fa641e000a9c4b6a48a9e2058aeda0b003b1f8a1b",
+      "resolved_path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/node_modules/.pnpm/helix@0.3.1/node_modules/helix/package.json"
+    },
+    "marked": {
+      "version": "18.1.0",
+      "package_json_sha256": "26747b3d020e4c4acbf325e4c1638d697c375e155a91f86bbbb2dceeb24d5863",
+      "resolved_path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/node_modules/.pnpm/marked@18.1.0/node_modules/marked/package.json"
+    },
+    "process": {
+      "version": "0.11.10",
+      "package_json_sha256": "8501b4909630e60c9e9f68c4ca8ccb1964688500e61c60408a26d5480a9dd3d4",
+      "resolved_path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/node_modules/.pnpm/process@0.11.10/node_modules/process/package.json"
+    },
+    "react": {
+      "version": "19.3.0",
+      "package_json_sha256": "6e003e4e9ed25afa7fdd55613f8aa877cefa9b359d9c13f81ee704030248e24e",
+      "resolved_path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/node_modules/.pnpm/react@19.3.0/node_modules/react/package.json"
+    },
+    "react-dom": {
+      "version": "19.3.0",
+      "package_json_sha256": "136d4af63de473392ea79d6a21932b0ed9eb37fe518ce70f4621250f3d79e9bb",
+      "resolved_path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/node_modules/.pnpm/react-dom@19.3.0_react@19.3.0/node_modules/react-dom/package.json"
+    },
+    "scheduler": {
+      "version": "0.23.2",
+      "package_json_sha256": "0893643a24576d727174e639586b8833a53f2a7b4a2199a719b9cfcebe9bae88",
+      "resolved_path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/node_modules/.pnpm/scheduler@0.23.2/node_modules/scheduler/package.json"
+    },
+    "shadow-cljs": {
+      "version": "3.5.5",
+      "package_json_sha256": "c2d08fd31f32b0936ba8651ef650b0fefeab2c199193a9574c9ffa08213d7930",
+      "resolved_path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/node_modules/.pnpm/shadow-cljs@3.5.5/node_modules/shadow-cljs/package.json"
+    },
+    "ws": {
+      "version": "8.22.0",
+      "package_json_sha256": "c1ef91ca04eb4754c011c5f0e7638b5078ff71104fada400c44ac761cf93e0b1",
+      "resolved_path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/node_modules/.pnpm/ws@8.22.0/node_modules/ws/package.json"
+    }
+  },
+  "root_lockfile_created": false,
+  "warning": "pnpm reported deprecated transitive glob@11.1.0; complete stdout/stderr preserved.",
+  "limits": [
+    "Lifecycle scripts explicitly disabled by command and environment. No JVM, classpath, compiler, build, test, server or native command was invoked by the setup wrapper.",
+    "Observed process census may miss short-lived children; absence is checked for all recorded identities, not claimed as exhaustive historical observation.",
+    "Install used the declared no-lockfile workflow and semver dependency ranges; resolved direct package versions are recorded here. Sources separately remain exact Git pins.",
+    "Only this one install attempt ran; no automatic retry or global package installation occurred."
+  ]
+}

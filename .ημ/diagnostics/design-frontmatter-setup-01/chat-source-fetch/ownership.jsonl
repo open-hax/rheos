@@ -1,0 +1,5 @@
+{"at": "2026-10-07T18:47:09.615314+00:00", "elapsed_s": 0.03445379200275056, "event": "spawn", "pid": 2223963, "expected_pgid": 2223963}
+{"at": "2026-10-07T18:47:09.682897+00:00", "elapsed_s": 0.10203137200733181, "event": "identity", "identity": {"pid": 2223963, "state": "S", "pgid": 2223963, "starttime_ticks": 6632964, "exe": "/usr/bin/git", "cwd": "/tmp/rheos-design-source-fwlg0t2z/chat-ui"}}
+{"at": "2026-10-07T18:47:09.691387+00:00", "elapsed_s": 0.1105237070005387, "event": "identity", "identity": {"pid": 2223981, "state": "S", "pgid": 2223963, "starttime_ticks": 6632967, "exe": "/usr/lib/git-core/git", "cwd": "/tmp/rheos-design-source-fwlg0t2z/chat-ui"}}
+{"at": "2026-10-07T18:47:09.699385+00:00", "elapsed_s": 0.11851984199893195, "event": "identity", "identity": {"pid": 2223982, "state": "S", "pgid": 2223963, "starttime_ticks": 6632968, "exe": "/usr/lib/git-core/git-remote-http", "cwd": "/tmp/rheos-design-source-fwlg0t2z/chat-ui"}}
+{"at": "2026-10-07T18:47:10.875622+00:00", "elapsed_s": 1.2947592999989865, "event": "primary-reaped", "pid": 2223963, "exit_code": 0}

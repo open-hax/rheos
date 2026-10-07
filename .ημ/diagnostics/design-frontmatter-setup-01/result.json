@@ -1,0 +1,299 @@
+{
+  "at": "2026-10-07T18:47:09.540662+00:00",
+  "sources": [
+    {
+      "commit": "0ed56aa74a53a1d1e9c2e55ce95451817a7f3a90",
+      "tree": "packages/protocols/src",
+      "tree_object": "ec09d428b29619124bd69274f0e87e47241e347f",
+      "target": "deps/protocols/src",
+      "files": [
+        {
+          "path": "open_hax/openplanner_protocols.cljs",
+          "bytes": 7930,
+          "git_blob": "7904bd13ffaa758f6b28160fcb7fc22339b17695",
+          "mode": "100644",
+          "sha256": "37dfe9ad7066cf7312d82f130bd9b41b311324b61418c0c8949a2f24ddef8f86"
+        },
+        {
+          "path": "open_hax/records/edn/event_admission.cljs",
+          "bytes": 7032,
+          "git_blob": "3eb7b90148d964c85106ae85bc093181c569ed67",
+          "mode": "100644",
+          "sha256": "f7c7ae3b377144f414b82af10297cefaa87752eee924928a85a1557be58465b8"
+        },
+        {
+          "path": "open_hax/records/mongo/document_storage.cljs",
+          "bytes": 1494,
+          "git_blob": "ea9dae7328ffae9b2fc64b5b852e12da29329b7f",
+          "mode": "100644",
+          "sha256": "26a05c541f3998bfd726e86889b00942332c13aa014c05411a800ffa011ae15f"
+        },
+        {
+          "path": "open_hax/records/mongo/event_admission.cljs",
+          "bytes": 3292,
+          "git_blob": "6e7796534a5967b1d02f2b4498cd2cd8023446cb",
+          "mode": "100644",
+          "sha256": "2749868b2508f4ad75e87c375524fcc51bbfb3c35f2a24094404948aa6a04d07"
+        },
+        {
+          "path": "open_hax/records/mongo/graph_operations.cljs",
+          "bytes": 1892,
+          "git_blob": "ce2d103691f5f1fa4f63a33e87339112516aa270",
+          "mode": "100644",
+          "sha256": "8197095f21dffd44be900ac582faf5bd44983a74cb1108f0e34a63870fc3ae64"
+        },
+        {
+          "path": "open_hax/records/mongo/label_management.cljs",
+          "bytes": 1410,
+          "git_blob": "39911f0304c1ad32429ac64e4a350233635d46f7",
+          "mode": "100644",
+          "sha256": "3d4b634ff114a1a633a27c83b6deb2506130a215a8dba049d11dea6ca5a68cc4"
+        },
+        {
+          "path": "open_hax/records/mongo/realtime_subscription.cljs",
+          "bytes": 1160,
+          "git_blob": "7a23984d4c76acc72cda02ddd9f83c83c2fa19b2",
+          "mode": "100644",
+          "sha256": "9a477c53c0e041474da3a1cdf9eb6a5fa0cf3bd9d34eb8b58fb49c62986f12ca"
+        },
+        {
+          "path": "open_hax/records/mongo/session_management.cljs",
+          "bytes": 1904,
+          "git_blob": "ac8cf11739ca171e87d317f0eca0448227495b14",
+          "mode": "100644",
+          "sha256": "0c8bc73ba41f616716a39416fb7f3cc1e205c5966e41550af344e4742ab7f685"
+        },
+        {
+          "path": "open_hax/records/mongo/translation_management.cljs",
+          "bytes": 1464,
+          "git_blob": "1568585a4c793d3969486221965ef077b0e195c8",
+          "mode": "100644",
+          "sha256": "4628b8006db7e589a0a1f6a033cfb50aac9c87ce8b392e52ac3caaa27d383ca1"
+        },
+        {
+          "path": "open_hax/records/mongo/user_management.cljs",
+          "bytes": 2137,
+          "git_blob": "543e2c9830ded339eea2af3ce7bbd77b9e9655b1",
+          "mode": "100644",
+          "sha256": "515bb65a5d0a0e5124c55090f19d8c62691be8258bf930991b5a5055af86c656"
+        },
+        {
+          "path": "open_hax/records/rest/document_storage.cljs",
+          "bytes": 745,
+          "git_blob": "5ab40ae92e7a81f503caa2e6a23f9bdb2240450b",
+          "mode": "100644",
+          "sha256": "561635a01df9c86dfa7e1527a84e5d2a938afc631b164c17dc80de5b1efc7507"
+        },
+        {
+          "path": "open_hax/records/rest/event_admission.cljs",
+          "bytes": 852,
+          "git_blob": "61f84425f7ae279bdb3ac69b927d6bcea420b6d3",
+          "mode": "100644",
+          "sha256": "5de4778eeac30bbec1b59d23da79981c6a0e202a648436d9f5788e321249da81"
+        },
+        {
+          "path": "open_hax/records/rest/graph_operations.cljs",
+          "bytes": 1006,
+          "git_blob": "97cdeabf96e0c9e91284361528c07c37eb88f273",
+          "mode": "100644",
+          "sha256": "1b3184c262606ef7095b4d23b247a283ece25dc3d20a4193c5b2a99a6aeb6a8f"
+        },
+        {
+          "path": "open_hax/records/rest/http.cljs",
+          "bytes": 1930,
+          "git_blob": "cb50caca738cffaaaabb31f3a826424a5a9a4463",
+          "mode": "100644",
+          "sha256": "e3e0b14037376ba0f298d8ad95fc4089b7ea143c395a64e11c9a66f7b34ba96e"
+        },
+        {
+          "path": "open_hax/records/rest/label_management.cljs",
+          "bytes": 869,
+          "git_blob": "1b36b9d235d8856a38b840a4caed9b55d2868a40",
+          "mode": "100644",
+          "sha256": "5b56e407df67f63441f0662fd0665ca0a38827e4bbe95991711106b2f5ab7a81"
+        },
+        {
+          "path": "open_hax/records/rest/session_management.cljs",
+          "bytes": 718,
+          "git_blob": "7a96032d05a8e46b8bb0dedc23267001c6a2d773",
+          "mode": "100644",
+          "sha256": "d1bcf33afcda23ff92be8f048ab08aefa0d3432873139cf6a02dc967c8fe2717"
+        },
+        {
+          "path": "open_hax/records/rest/translation_management.cljs",
+          "bytes": 680,
+          "git_blob": "d937b7d95c8683ea686364b69f163d0197fba2cb",
+          "mode": "100644",
+          "sha256": "95aa5cfe7936faf7a87f9913b3fc90013f80ae448664660892968bbb4b4d7153"
+        },
+        {
+          "path": "open_hax/records/rest/user_management.cljs",
+          "bytes": 681,
+          "git_blob": "c630681dbd94da641841daf7f3f0f6b0a855e00c",
+          "mode": "100644",
+          "sha256": "f2765b71f0d2c73f4924ddfc4c72b29fea39ea9c484b1c5909bc15fb11e338c9"
+        },
+        {
+          "path": "open_hax/records/socket_io/event_admission.cljs",
+          "bytes": 2019,
+          "git_blob": "b22e8272d35e3145824fa98d965db98ff90b4d90",
+          "mode": "100644",
+          "sha256": "02b1ebdba0157048e2a2ba8cbfaa7d134574b0ebd7a537f1052915fc87cc579d"
+        },
+        {
+          "path": "open_hax/records/socket_io/session_management.cljs",
+          "bytes": 843,
+          "git_blob": "ecb0b480cf9c6c29c949d4a2b77eb58a62b6cb65",
+          "mode": "100644",
+          "sha256": "113e313497d9da6fd1c7401061b9227b658281c7ea16063b09caa9fbad262aba"
+        },
+        {
+          "path": "open_hax/records/socket_io/user_management.cljs",
+          "bytes": 741,
+          "git_blob": "3c9ece7ac050fe1ce1695abe5031c94031f790f0",
+          "mode": "100644",
+          "sha256": "16045ad7287a430d0fd4d2a6b35ebf4c44e9cc81480d44d1665bc58b83eaf270"
+        }
+      ],
+      "count": 21,
+      "bytes": 40799,
+      "copied_from": "verified Git blobs, not ambient cache"
+    },
+    {
+      "commit": "86385532b4f8606946555d0ada8e3fb22f35b4c3",
+      "tree": "src",
+      "tree_object": "98cc3884d44b6fe1586015a85a87bf2ef4edf3db",
+      "target": "deps/chat-ui/src",
+      "files": [
+        {
+          "path": "eta_mu/chat_ui/composer.cljs",
+          "bytes": 2144,
+          "git_blob": "510a983ce525b41427ab9c83dcede5544f4d2d97",
+          "mode": "100644",
+          "sha256": "0d6af07b721e9d2b279cf93e59e796dc603b1b0533300f1e0a6f2a7c4ac46154"
+        },
+        {
+          "path": "eta_mu/chat_ui/core.cljs",
+          "bytes": 5530,
+          "git_blob": "7f23108ce7cd923154dc518a40f9b1a884171425",
+          "mode": "100644",
+          "sha256": "cef66752d91f109d00f42b35b7aa301ca8efb7f4b8d5fade7430dc299d2caf23"
+        },
+        {
+          "path": "eta_mu/chat_ui/knoxx_session.cljs",
+          "bytes": 5396,
+          "git_blob": "3f7854898d6dc0daf19a4ce7783b9a139c6ecc63",
+          "mode": "100644",
+          "sha256": "5e06f82b71da9394557c6dbd8b863561bccc8f234d2821c2610c9c2f8e61c6a5"
+        },
+        {
+          "path": "eta_mu/chat_ui/message.cljs",
+          "bytes": 1370,
+          "git_blob": "5b653be2fbc343e65f34e9d0757eaf8c6f473dff",
+          "mode": "100644",
+          "sha256": "04f815bb30f3bf37a9eb51a3d96087475edaf381aa475069ea29d4a8ddb7cb55"
+        },
+        {
+          "path": "eta_mu/chat_ui/mock_session.cljs",
+          "bytes": 2103,
+          "git_blob": "f68464a5985975946e95d8edaf5f9bc4fd226828",
+          "mode": "100644",
+          "sha256": "114e0e5549f52f70f02bac5dec36b3e99eb6b240f5de744e5917b3f1ba9f75fa"
+        },
+        {
+          "path": "eta_mu/chat_ui/opencode_session.cljs",
+          "bytes": 3888,
+          "git_blob": "eacf12ef6378f465424da82b45bfd98fc564d023",
+          "mode": "100644",
+          "sha256": "cc7e4a6b4d01467bf94e9619d610464359a661f4fb3807ee5a6787d8a906d6bc"
+        },
+        {
+          "path": "eta_mu/chat_ui/panel.cljs",
+          "bytes": 2014,
+          "git_blob": "8f6756543c2cbb2df42abbca17b57a69f65bbf8a",
+          "mode": "100644",
+          "sha256": "32c8e7826fde30a0daf337952c181d5ce6a5492e6e4348b3d17dab8929154624"
+        },
+        {
+          "path": "eta_mu/chat_ui/protocol.cljs",
+          "bytes": 2699,
+          "git_blob": "ef20a69fe7f7c3efd3bbae78e42eceded8254289",
+          "mode": "100644",
+          "sha256": "14921334f7fa3af97b74c50bd98592faf3902a2941b4bf15fc05a1adc1ae368f"
+        },
+        {
+          "path": "eta_mu/chat_ui/sol_session.cljs",
+          "bytes": 4650,
+          "git_blob": "51f633506fc9558dd91b9693163e1bcbe5367fe4",
+          "mode": "100644",
+          "sha256": "3686790f4ec40b4c19416ed3250d38aa473fbd8de68cdf9f7d6a0322cfff346e"
+        },
+        {
+          "path": "eta_mu/chat_ui/stream.cljs",
+          "bytes": 1832,
+          "git_blob": "a539db58521f69d2d3dc707bcc5cc0d42f342250",
+          "mode": "100644",
+          "sha256": "6a9deb5458b4d1521afb5402d4b660ebcb1ff4bf8b47536563cae26c5233dbb5"
+        }
+      ],
+      "count": 10,
+      "bytes": 31626,
+      "copied_from": "verified Git blobs, not ambient cache"
+    }
+  ],
+  "error": null,
+  "install": {
+    "at": "2026-10-07T18:47:23.637681+00:00",
+    "status": "complete",
+    "error": null,
+    "elapsed_s": 9.35891199800244,
+    "exit_code": 0,
+    "primary_reaped": true,
+    "observed_identities": [
+      {
+        "pid": 2224475,
+        "state": "R",
+        "pgid": 2224475,
+        "starttime_ticks": 6633434,
+        "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+        "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+      },
+      {
+        "pid": 2224587,
+        "state": "S",
+        "pgid": 2224475,
+        "starttime_ticks": 6633612,
+        "exe": "/usr/bin/git",
+        "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+      },
+      {
+        "pid": 2224588,
+        "state": "S",
+        "pgid": 2224475,
+        "starttime_ticks": 6633619,
+        "exe": "/usr/lib/git-core/git",
+        "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+      },
+      {
+        "pid": 2224589,
+        "state": "R",
+        "pgid": 2224475,
+        "starttime_ticks": 6633620,
+        "exe": "/usr/lib/git-core/git-remote-http",
+        "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+      }
+    ],
+    "remaining_group": [],
+    "remaining_observed": [],
+    "membership_unknown": [],
+    "cleanup_errors": [],
+    "total_deadline_exceeded": false,
+    "limit": "Polling can miss brief children. Stat controls membership. OS/I/O stalls cannot be forcibly time-bounded."
+  },
+  "ended_at": "2026-10-07T18:47:23.659322+00:00",
+  "protected_changed": [],
+  "sources_postverified": true,
+  "no_jvm_gate_invoked": true,
+  "qualification": "Dependency preparation only, not compile/test/build qualification; lifecycle scripts explicitly disabled.",
+  "status": "complete"
+}

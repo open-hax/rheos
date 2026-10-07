@@ -1,0 +1,59 @@
+{
+  "name": "explicit-node-test",
+  "exit_code": 1,
+  "error": null,
+  "elapsed_s": 2.0035512510075932,
+  "primary_identity": {
+    "pid": 2322170,
+    "state": "R",
+    "pgid": 2322170,
+    "starttime_ticks": 6740145,
+    "metadata_errors": {},
+    "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+    "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+  },
+  "primary_reaped": true,
+  "observed_identities": [
+    {
+      "pid": 2322170,
+      "state": "R",
+      "pgid": 2322170,
+      "starttime_ticks": 6740145,
+      "metadata_errors": {},
+      "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+    },
+    {
+      "pid": 2322170,
+      "state": "S",
+      "pgid": 2322170,
+      "starttime_ticks": 6740145,
+      "metadata_errors": {},
+      "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+    },
+    {
+      "pid": 2322170,
+      "state": "R",
+      "pgid": 2322170,
+      "starttime_ticks": 6740145,
+      "metadata_errors": {},
+      "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+    }
+  ],
+  "remaining_group": [],
+  "remaining_observed": [],
+  "membership_unknown": [],
+  "cleanup_errors": [],
+  "cleanup_signals": [],
+  "within_total_deadline": true,
+  "artifacts": {
+    "stdout.log": "72b9b177c1d205efd0a9accfdc2526a806ee9ed61d30e512e6742df9e9750456",
+    "stderr.log": "2f66e8bff890ad6350bd8eeb9dc6347f9a99756e86e8665e9a80a0077263f71b",
+    "command.json": "2a404f3ba4f9e730fbc5828dc01f5aece011f248eb6611ab7aef5608427d13df",
+    "ownership.jsonl": "bdc540df27528c2500e4ba4211718566f9d9b387e23ab313cff105134166c957",
+    "primary-identity.json": "39a9a54b664d6c8f057c8f8bf740c440c0e312744c9c76cee59563c95c85b761"
+  },
+  "closed": true
+}

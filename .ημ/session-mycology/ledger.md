@@ -46,3 +46,12 @@
   spore: none
   receipt-refs: rheos/pr2/explicit-review-delegation-and-serializer-docs; 2026-10-04T08:55:38.487526Z
   note: A working same-org inherited-secret path can still delegate excess authority. Preserve exact caller selections and gates while restricting references to declared reviewer inputs. Document all actual shared serializer users, and prove a docstring-only source delta rather than creating mirror runtime tests. Old-head review evidence remains historical after publication; successor native qualification belongs to parent. No board or identity activation.
+- ts: 2026-10-07T19:08:07.823436551Z
+  session: /home/err/spaces/foresight/.worktrees/rheos-design-frontmatter
+  task: Qualify shared Rheos design metadata RED through real adapters
+  p-efficiency: 0.86
+  p-friction: 0.15
+  p-skill-candidate: 0.0
+  spore: none
+  receipt-refs: design-frontmatter-red-checkpoint/RESULT.md,f639dafa
+  note: Cold dependency compile completed; compile autorun did not propagate failing assertions, so separate Node execution preserved actual exit1. Existing scripts and immutable source pins covered preparation; no spore.
