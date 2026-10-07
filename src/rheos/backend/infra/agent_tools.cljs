@@ -309,7 +309,7 @@
                    :required ["uuid" "text"]}
     :handler tool-kanban-add-comment}
    {:name "kanban_update_frontmatter"
-    :description "Update a card's descriptive frontmatter (title, priority, labels, points, category, description, estimate, assignee). Ledger-recorded, one event per changed key. `status` is refused — it is FSM-governed, use kanban_update_status."
+    :description "Update a card's descriptive frontmatter (title, priority, labels, points, category, description, estimate, assignee, design). Ledger-recorded, one event per changed key. `status` is refused — it is FSM-governed, use kanban_update_status."
     :input-schema {:type "object"
                    :properties {:uuid {:type "string"} :project {:type "string"}
                                 :updates {:type "object" :description "key -> value map of frontmatter fields to set"}}

@@ -151,7 +151,7 @@ card and record a ledger event.
 | ✎ `frontmatter <uuid> --set k=v` | Update descriptive frontmatter; `--set` repeats |
 
 `frontmatter` writes only the closed mutable set: `title`, `priority`, `labels`,
-`points`, `category`, `description`, `estimate`, `assignee`. `status` is refused
+`points`, `category`, `description`, `estimate`, `assignee`, `design`. `status` is refused
 and redirected to `move`, so the FSM stays the only status authority. Identity
 and provenance keys (`uuid`, `created_at`, `write-id`, `source-path`) are never
 writable.

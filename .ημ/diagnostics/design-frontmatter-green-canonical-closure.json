@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-07T19:38:05.217886+00:00",
+  "argv": [
+    "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+    "/home/err/spaces/review-repair/rheos-comment-rendering/dist/cli.cjs",
+    "comment",
+    "rheos-design-frontmatter-key",
+    "--text",
+    "Local shared Rheos GREEN is qualified: green-01 completed all7gates in102.476824754s, callerfixture/lint/LSP, actualcompileautorun166tests1361assertions0F0E, explicitNode same0F0E, server/cli/github-sync/app releases all0compilerwarnings, actualCIcompleted-output guard passed. Root closure faf2a602c52d2d9f9c71e7fcfb3724ca694ba8a7c0953a3180feee91cefd7c8a verifies224protectedpins,50rawexecutionfiles,all18recordedPIDsabsent/reaped andcleanownedgroups. Only design mutable-key law moved .cljc plus3existingdiscoverylists andone ^js HTTPtesthint; assertionsunchanged. Raw pnpm missing NPM_TOKEN substitution advisory andsource-map-support advisory preserved; neither is a compiler or lint diagnostic. No retry. All localruntime lanes nowclosed,retainedprimaryuntouched. Publication andhostedreview next; no operationalCLIactivation,PR48admission,merge,parentcompletion or Gate claim.",
+    "--config",
+    "openhax.kanban.edn"
+  ],
+  "exit": 0,
+  "stdout": "{\n  \"ok\": true,\n  \"uuid\": \"rheos-design-frontmatter-key\",\n  \"comment\": \"Local shared Rheos GREEN is qualified: green-01 completed all7gates in102.476824754s, callerfixture/lint/LSP, actualcompileautorun166tests1361assertions0F0E, explicitNode same0F0E, server/cli/github-sync/app releases all0compilerwarnings, actualCIcompleted-output guard passed. Root closure faf2a602c52d2d9f9c71e7fcfb3724ca694ba8a7c0953a3180feee91cefd7c8a verifies224protectedpins,50rawexecutionfiles,all18recordedPIDsabsent/reaped andcleanownedgroups. Only design mutable-key law moved .cljc plus3existingdiscoverylists andone ^js HTTPtesthint; assertionsunchanged. Raw pnpm missing NPM_TOKEN substitution advisory andsource-map-support advisory preserved; neither is a compiler or lint diagnostic. No retry. All localruntime lanes nowclosed,retainedprimaryuntouched. Publication andhostedreview next; no operationalCLIactivation,PR48admission,merge,parentcompletion or Gate claim.\"\n}\n",
+  "stderr": ""
+}

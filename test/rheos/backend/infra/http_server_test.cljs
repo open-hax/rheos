@@ -16,7 +16,7 @@
       (finally
         (await (.close app))))))
 
-(defn- ^:async patch! [{:keys [task project]} app body]
+(defn- ^:async patch! [{:keys [task project]} ^js app body]
   (let [response (await (.inject app
                                 #js {:method "PATCH"
                                      :url (str "/api/task/" (:uuid task)

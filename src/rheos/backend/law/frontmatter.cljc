@@ -19,7 +19,7 @@
 (def mutable-keys
   "Closed set of frontmatter keys a client may write. Anything outside this set is
    rejected by [[disallowed-keys]]."
-  #{:title :priority :labels :points :category :description :estimate :assignee})
+  #{:title :priority :labels :points :category :description :estimate :assignee :design})
 
 (def status-key
   "The FSM-governed key. Routed to its own endpoint, never accepted here."

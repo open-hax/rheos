@@ -1,0 +1,1294 @@
+{
+  "schema": "rheos-green-publication/v1",
+  "RED_commit": "171c4f22ebb25db4af40ee3e51f6d4a32e373467",
+  "base": "ef3c4abf1ea75199486f693e9470df3fec88dd49",
+  "scope": "Every newly fixed diagnostic original in the two GREEN directories and three root preparation/release/closure records. Live canonical/provenance companions excluded and published directly.",
+  "archive": {
+    "path": ".ημ/diagnostics/design-frontmatter-green-publication/AUXILIARY.jsonl",
+    "bytes": 455566,
+    "sha256": "b6e4d2505d3629b6408723115c86da1bb06c8b6cd0ce0170ecf5f8a04fef334f",
+    "encoding": "UTF-8 JSONL; exact original UTF-8 text, no normalization"
+  },
+  "packed": [
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-root-preparation01.json",
+      "bytes": 1098,
+      "sha256": "40476fe5a4869a05c56a533414ebbf7dde7ee0461e91dd12838c163f89ad7be1",
+      "record": 1,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-root-release01.json",
+      "bytes": 4207,
+      "sha256": "d3d4faa801bfd2a53ec180aa990a147e312ef72c572ecb2f10ef97eb6a41b5de",
+      "record": 2,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/COPY-DIFF.patch",
+      "bytes": 11267,
+      "sha256": "40a0ae68f0603f1a667d98fbd34e9ca570b4d71c792f675ddb686e4325f2ae79",
+      "record": 3,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/GUARD-REPAIR.json",
+      "bytes": 5967,
+      "sha256": "75a5acf2a4665b247043b83e36617073a74204ec42049596c93aea2534e04a52",
+      "record": 4,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/PLAN.md",
+      "bytes": 8640,
+      "sha256": "d568a63c610d555466dfe8028ec6ce06cd80593b1d4b532caf0435216872d485",
+      "record": 5,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/PREPARATION-FILES.txt",
+      "bytes": 2487,
+      "sha256": "5bb01cdb3053e7cf0b96c7454cc1ec734d4b783e343ac3ba880d65934147de90",
+      "record": 6,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/PROVENANCE.json",
+      "bytes": 4113,
+      "sha256": "1ff364562b12553c88fe775c5fc526d8459915c069e39a336c6801d19172c38a",
+      "record": 7,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/SHA256SUMS",
+      "bytes": 6040,
+      "sha256": "146c4a58c801a57d9a4278023008f98277baae43c2a54483355d54b322fa22e0",
+      "record": 8,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/STATIC-CHECKS.json",
+      "bytes": 2482,
+      "sha256": "c87d7868483599ea3482a7da49ccaa9a2133f3acc665d968288b30cf0a915544",
+      "record": 9,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/commands.json",
+      "bytes": 1832,
+      "sha256": "68662a4ed01e199b1a5acc90972cb90e96384ce7c1f32db033cbab3c83e644e7",
+      "record": 10,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/completed-outputs.raw-shell-block.txt",
+      "bytes": 1558,
+      "sha256": "d36257e96bf260648ac6f32e25c6c5c6e823df7fd39f8705a9979a7c785b1135",
+      "record": 11,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/completed-outputs.sh",
+      "bytes": 1552,
+      "sha256": "fbeb9dd0b94affd7555d5517ae82435fce860ef35a039e42b58c5d65c3e2508b",
+      "record": 12,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/compiler-warning-rejected/dist/cli.cjs",
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "record": 13,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/compiler-warning-rejected/dist/github-sync.cjs",
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "record": 14,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/compiler-warning-rejected/dist/server.js",
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "record": 15,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/compiler-warning-rejected/dist/test.cjs",
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "record": 16,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/compiler-warning-rejected/dist/web/js/main.js",
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "record": 17,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/compiler-warning-rejected/result.json",
+      "bytes": 2160,
+      "sha256": "80102af53f63aa257578ebc252c9aac5fea3ed22eca6d64810258ffad7c2f393",
+      "record": 18,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/compiler-warning-rejected/rheos-build.log",
+      "bytes": 271,
+      "sha256": "afea369fe8405bebd5659cf93ca15a2c231f328dd6056de404da64d6458985bd",
+      "record": 19,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/compiler-warning-rejected/rheos-test.log",
+      "bytes": 153,
+      "sha256": "3ecdef6f648cacb4d153bdc3867e1290c047bb23ce5c9836834fec70de7c2daf",
+      "record": 20,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/compiler-warning-rejected/stderr.log",
+      "bytes": 1010,
+      "sha256": "4bd8ab587c2dc3ac4d02503a9e7c08519264e87dfe6acfa81bb9048e067f3929",
+      "record": 21,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/compiler-warning-rejected/stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "record": 22,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/correct-pass/dist/cli.cjs",
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "record": 23,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/correct-pass/dist/github-sync.cjs",
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "record": 24,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/correct-pass/dist/server.js",
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "record": 25,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/correct-pass/dist/test.cjs",
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "record": 26,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/correct-pass/dist/web/js/main.js",
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "record": 27,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/correct-pass/result.json",
+      "bytes": 1192,
+      "sha256": "3ce0c48db7563ec97587a56caba9871f68db919550a0ad712689c7bad4e07b80",
+      "record": 28,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/correct-pass/rheos-build.log",
+      "bytes": 271,
+      "sha256": "afea369fe8405bebd5659cf93ca15a2c231f328dd6056de404da64d6458985bd",
+      "record": 29,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/correct-pass/rheos-test.log",
+      "bytes": 128,
+      "sha256": "5de9fef8ad123ee32d7839371441c94faf1c15985923f2bae9f136630908ce90",
+      "record": 30,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/correct-pass/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "record": 31,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/correct-pass/stdout.log",
+      "bytes": 89,
+      "sha256": "75070af49e648713871b47c585bb49bda6b08d77af7497fbb2f506ce9d0ab595",
+      "record": 32,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/missing-artifact-rejected/dist/cli.cjs",
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "record": 33,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/missing-artifact-rejected/dist/github-sync.cjs",
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "record": 34,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/missing-artifact-rejected/dist/server.js",
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "record": 35,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/missing-artifact-rejected/dist/test.cjs",
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "record": 36,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/missing-artifact-rejected/result.json",
+      "bytes": 1219,
+      "sha256": "2a18b4b6bd79f23386aa67cf14805ce2592ed6dbee7b80eada5f3968982ddcba",
+      "record": 37,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/missing-artifact-rejected/rheos-build.log",
+      "bytes": 271,
+      "sha256": "afea369fe8405bebd5659cf93ca15a2c231f328dd6056de404da64d6458985bd",
+      "record": 38,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/missing-artifact-rejected/rheos-test.log",
+      "bytes": 128,
+      "sha256": "5de9fef8ad123ee32d7839371441c94faf1c15985923f2bae9f136630908ce90",
+      "record": 39,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/missing-artifact-rejected/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "record": 40,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/missing-artifact-rejected/stdout.log",
+      "bytes": 89,
+      "sha256": "75070af49e648713871b47c585bb49bda6b08d77af7497fbb2f506ce9d0ab595",
+      "record": 41,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/raw-heredoc-rejected/dist/cli.cjs",
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "record": 42,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/raw-heredoc-rejected/dist/github-sync.cjs",
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "record": 43,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/raw-heredoc-rejected/dist/server.js",
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "record": 44,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/raw-heredoc-rejected/dist/test.cjs",
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "record": 45,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/raw-heredoc-rejected/dist/web/js/main.js",
+      "bytes": 13,
+      "sha256": "db64e55296d3cb3c38619dae7b7cce54bb74a83956423be38443258ebb0724da",
+      "record": 46,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/raw-heredoc-rejected/result.json",
+      "bytes": 1355,
+      "sha256": "632c516a290ba93a31da9a20fb2fcac513f3a27f0b302143f1f331d61feb6a7a",
+      "record": 47,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/raw-heredoc-rejected/rheos-build.log",
+      "bytes": 271,
+      "sha256": "afea369fe8405bebd5659cf93ca15a2c231f328dd6056de404da64d6458985bd",
+      "record": 48,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/raw-heredoc-rejected/rheos-test.log",
+      "bytes": 128,
+      "sha256": "5de9fef8ad123ee32d7839371441c94faf1c15985923f2bae9f136630908ce90",
+      "record": 49,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/raw-heredoc-rejected/stderr.log",
+      "bytes": 209,
+      "sha256": "e0092e54871b3dea6f98b5392a55614b132cc9dfa8ce0258d2e0bf4c92215d03",
+      "record": 50,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/raw-heredoc-rejected/stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "record": 51,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/preparation-hashes.json",
+      "bytes": 6324,
+      "sha256": "8e31d3ac572a82eecfd893029e06cc35973db1c5b1d36a6af707b915cf324936",
+      "record": 52,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/prior-freeze-SHA256SUMS.txt",
+      "bytes": 998,
+      "sha256": "7149eaddc162961b229e28f83665d94a99140b162ca37a58c26707335ac9d852",
+      "record": 53,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/build/command.json",
+      "bytes": 546,
+      "sha256": "cfbb8e25ba63e4277438f0a630596ee67971a76d3ab5a4c2d9b46f45bebf6452",
+      "record": 54,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/build/execution.json",
+      "bytes": 2987,
+      "sha256": "e121df976cf3204877f9c991fa845d8982e916a60b2b814e9cd1d70ac84c8e51",
+      "record": 55,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/build/ownership.jsonl",
+      "bytes": 2501,
+      "sha256": "cd9b6dcdd459fb8d99c4bcf3d35031bd10bd20cc89131bb2319f74a05292546f",
+      "record": 56,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/build/primary-identity.json",
+      "bytes": 302,
+      "sha256": "56caa605da1a0d8c1dfd61ee6cc9dc89c485c3041cd5323db86bee2e326706a8",
+      "record": 57,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/build/stderr.log",
+      "bytes": 173,
+      "sha256": "d839b3467165284364fa8f545bf785360b6c6ec031527d4af466c2d445d43f74",
+      "record": 58,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/build/stdout.log",
+      "bytes": 380,
+      "sha256": "0d690165c7022ee3aac0505674d2002a07757193d590ab051d0a626ca75345aa",
+      "record": 59,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/caller-fixture/command.json",
+      "bytes": 415,
+      "sha256": "21d9416087966defa43ad62b61845ddf9a8aef409ed0fc24400faff1d842f7f0",
+      "record": 60,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/caller-fixture/execution.json",
+      "bytes": 3956,
+      "sha256": "a138247995061232d54f8193306144d4e79975d919c1021f345e292cc00523c7",
+      "record": 61,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/caller-fixture/ownership.jsonl",
+      "bytes": 3772,
+      "sha256": "9560234cf983c0f42905017a787f9fc8eda5b99d55c2f0e29620a06a4d761f5a",
+      "record": 62,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/caller-fixture/primary-identity.json",
+      "bytes": 302,
+      "sha256": "228e609559297e8737b60cb33be7dd6b317deacffe7e5309bd55fe8476bacee1",
+      "record": 63,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/caller-fixture/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "record": 64,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/caller-fixture/stdout.log",
+      "bytes": 2308,
+      "sha256": "4c8fe3948238de58a3c1abda1ef286e8079504875cc10f1f4c048da137fa15f5",
+      "record": 65,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/compile/command.json",
+      "bytes": 503,
+      "sha256": "a62b7972e9b432a801cdc1697e139c822475e38c173dddc63b42dd4c77851300",
+      "record": 66,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/compile/execution.json",
+      "bytes": 2417,
+      "sha256": "19a2aa1cb62ab53dcb2c42cf50926320f894fcfd3418689c64324acb6e231c3c",
+      "record": 67,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/compile/ownership.jsonl",
+      "bytes": 1818,
+      "sha256": "d15cd69779e693aec1b328c554f10fd29c09d09e57bb127a563a8d8c2259bc0a",
+      "record": 68,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/compile/primary-identity.json",
+      "bytes": 302,
+      "sha256": "48e82f6a2b9825e6553fa9a90cb5747effbeb5f7ed332c6fc762cdecb5abe691",
+      "record": 69,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/compile/stderr.log",
+      "bytes": 1384,
+      "sha256": "19a56815cb531e9dfdb5da4ef0e816cff89a3d5519d03335a3591b02c82f5b02",
+      "record": 70,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/compile/stdout.log",
+      "bytes": 3120,
+      "sha256": "1eac8f1c72389511dc40eb2d7ae69ac32a6a1c5fa3e93fe7be166188b4d05ac9",
+      "record": 71,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/completed-artifacts.json",
+      "bytes": 658,
+      "sha256": "2cf6fb9af822472920603f0161a500c23472e5be413e20271290ebf3599bf422",
+      "record": 72,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/completed-outputs/command.json",
+      "bytes": 518,
+      "sha256": "0cc1046bbc5ee0dc9f6780d5874cd7d04c3e233237c0d9f87ec00db8b1c594cd",
+      "record": 73,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/completed-outputs/execution.json",
+      "bytes": 1597,
+      "sha256": "d2cb371dd138b9dd766123e83715611b414cceb3a98ae42bce555fb65f97f052",
+      "record": 74,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/completed-outputs/ownership.jsonl",
+      "bytes": 992,
+      "sha256": "b04061b04ccec7ca2dde2e57b147e5c95fe4785a9b0ad1dd699744ad05f452ba",
+      "record": 75,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/completed-outputs/primary-identity.json",
+      "bytes": 265,
+      "sha256": "bd7a970cda3dec44042fabd9c1833c2dba951880f166bcfcb4e4baa4754bcf9f",
+      "record": 76,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/completed-outputs/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "record": 77,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/completed-outputs/stdout.log",
+      "bytes": 89,
+      "sha256": "75070af49e648713871b47c585bb49bda6b08d77af7497fbb2f506ce9d0ab595",
+      "record": 78,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/environment-contract.json",
+      "bytes": 888,
+      "sha256": "da1e2adbb26ba94f55aa6c66299e045656250c0255f9eaf666e403889da5a9bc",
+      "record": 79,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/execution.json",
+      "bytes": 21809,
+      "sha256": "7ef04e15c6bb16944b673d1c9bd30af685c0188f31da8d43cdc107114faf6653",
+      "record": 80,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/explicit-node-test/command.json",
+      "bytes": 430,
+      "sha256": "1802a4878437d17ea77b1c9470a30a11831847338f7e7196306891fa88f9e075",
+      "record": 81,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/explicit-node-test/execution.json",
+      "bytes": 2349,
+      "sha256": "354cf6bd5c7f909dfa6fde0b162e27eb73b5edd27d3b1e9144f4682b7db50746",
+      "record": 82,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/explicit-node-test/ownership.jsonl",
+      "bytes": 1774,
+      "sha256": "d92153d78b2b466c6b01c6b5727878f26647c3c4ded40460f09a311b7e5bccfa",
+      "record": 83,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/explicit-node-test/primary-identity.json",
+      "bytes": 302,
+      "sha256": "0b34241b32ac9c1145c3b0c5fbaa4558627a3a097b41bd536fb13234b3938e20",
+      "record": 84,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/explicit-node-test/stderr.log",
+      "bytes": 1211,
+      "sha256": "d06f957388613239fcad863fd92dd4ee09d138348aa5707333157eed4540a29b",
+      "record": 85,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/explicit-node-test/stdout.log",
+      "bytes": 2933,
+      "sha256": "ef50d633711ac22ba64176275f5ff56d92199aef3e200efd6982649ff393be96",
+      "record": 86,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/generated-test-bundle.json",
+      "bytes": 715,
+      "sha256": "94cbd6fa84d801fcbba4c10e5137958f92c7ba6c51429135cf45050429ecd55d",
+      "record": 87,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/lint/command.json",
+      "bytes": 442,
+      "sha256": "ad6eba323ea31d4ec9ff112c68d10c2da5e63dd06abcda61746645d07b286c71",
+      "record": 88,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/lint/execution.json",
+      "bytes": 2167,
+      "sha256": "54aedabd26d150b241c3e22aae3aa9a73155cdc38521f1faddfda066781a4a99",
+      "record": 89,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/lint/ownership.jsonl",
+      "bytes": 1650,
+      "sha256": "057716352baa28ea1258f7de3282102f5675683eace8d8d7b2b0f30d3d3e95d2",
+      "record": 90,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/lint/primary-identity.json",
+      "bytes": 302,
+      "sha256": "601f980699ac78c5dd6db1cd6d8e2a12cf3118b0c2a815a87b3108f464f3812d",
+      "record": 91,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/lint/stderr.log",
+      "bytes": 97,
+      "sha256": "b1a73e8d61369efcbb995662dafac3cc34fddd603cedc2618c34c048491cf8e2",
+      "record": 92,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/lint/stdout.log",
+      "bytes": 1517,
+      "sha256": "c652f1d0b9b186b22c1eef54aa0ac91045323a6b2fddbe393ee064a87181a4d5",
+      "record": 93,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/lsp-diagnostics/command.json",
+      "bytes": 817,
+      "sha256": "a5388af94c1ddadf7c9d190ae66a66ea3480724bcd1863aa30614872555adc68",
+      "record": 94,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/lsp-diagnostics/execution.json",
+      "bytes": 1811,
+      "sha256": "47afdd3a5f6b6cca4c020a22d7401abd33a3a4b5b7178ea207373adc17708862",
+      "record": 95,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/lsp-diagnostics/ownership.jsonl",
+      "bytes": 1113,
+      "sha256": "ae76116e848d4d8b063fcf0d6f73c499d5a721df01f9d98e2cb9e42bc665cec7",
+      "record": 96,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/lsp-diagnostics/primary-identity.json",
+      "bytes": 278,
+      "sha256": "9b6e6d76f36cc8d18ba203f05e65d8933e57151a5cd7b8f774319fa4361c210a",
+      "record": 97,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/lsp-diagnostics/stderr.log",
+      "bytes": 40953,
+      "sha256": "b24e72f64d90090486d498b9d0221cdd9c366c65cffb0866676188ffdaf3a456",
+      "record": 98,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/lsp-diagnostics/stdout.log",
+      "bytes": 12171,
+      "sha256": "f2ce699c25e60af73674bcf73524f80b503835fbc95d8df4df37657f07ef3622",
+      "record": 99,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/rheos-build.log",
+      "bytes": 553,
+      "sha256": "a36337a05f09021baf91c9eb65911d7b661f17df06ef982ec28360e595506387",
+      "record": 100,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/rheos-test.log",
+      "bytes": 8648,
+      "sha256": "cc21af370e2596983587db11ece9c052f046315182373e950598416406a2992a",
+      "record": 101,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/test-summaries.json",
+      "bytes": 251,
+      "sha256": "8f2fb2c56c80df3200aad7afa4b49c852f86f7aae8fb2b8c8a8fc5ca04feca3e",
+      "record": 102,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/warm-prior-reference.json",
+      "bytes": 296,
+      "sha256": "c9bf07eaf0226d62c3d9a8f0982f9665743dc8e3b4fb52180c5ba49f0c48d918",
+      "record": 103,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/source-pins.json",
+      "bytes": 49563,
+      "sha256": "85d318de85657188adaa0a3d2ef7750442abd942ff5a153e79640f060102bce6",
+      "record": 104,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/supervisor.py",
+      "bytes": 19801,
+      "sha256": "51ebbd58825eedf29e8f6bf5460a04ca14577fd2c3d006ed200a52e1ca497e42",
+      "record": 105,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/warm-before.json",
+      "bytes": 141683,
+      "sha256": "a99070af9175868956c11e75a1b1356f72767ec131d093f12e45e3b89babf6f5",
+      "record": 106,
+      "representation": "AUXILIARY.jsonl"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green/compiler-hint-repair.json",
+      "bytes": 505,
+      "sha256": "46be8d1e0340030faa50aa2295cfd4eb145dbb068f1d1f8e42e377e10fe86b8b",
+      "record": 107,
+      "representation": "AUXILIARY.jsonl"
+    }
+  ],
+  "direct": [
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-root-closure01.json",
+      "bytes": 9996,
+      "sha256": "faf2a602c52d2d9f9c71e7fcfb3724ca694ba8a7c0953a3180feee91cefd7c8a"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green/SOURCE-PROOF.json",
+      "bytes": 2109,
+      "sha256": "c5eae16c4dfd858b744aa0dc357d2684fb5ccc7c9fd10f2aaca449dfc362dc29"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green/independent-source-review.json",
+      "bytes": 10358,
+      "sha256": "1dcef66534e4f989f271944789e2cfef352ed8ae620810f825649fd53822d1f2"
+    }
+  ],
+  "binary_reference_only": [
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/warm-prior.tar.gz",
+      "bytes": 7430065,
+      "sha256": "0666ef9b0d37a97c8e58f909e422f3bee0710752942a6bb9f6e6235888c8f1dc",
+      "reason": "Generated warm cache backup, not product source; retained locally with complete 480-file manifest in archive."
+    }
+  ],
+  "excluded_live_direct_companions": [
+    ".ημ/receipts.edn",
+    ".ημ/session-mycology/ledger.md",
+    ".ημ/diagnostics/design-frontmatter-green-canonical-closure.json"
+  ],
+  "RED_history_at_commit": [
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-checkpoint/RESULT.md",
+      "bytes": 709,
+      "sha256": "8fd023dd7ca7a053f6e53db993086a04c54b80af7ccaf6e55bb0572c4b3c67cf"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-checkpoint/canonical-comment.json",
+      "bytes": 1401,
+      "sha256": "559f716ef95818d53416c88bbb0136b8e992a5865e7eac4124e49b6a2013d8aa"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-independent-review.json",
+      "bytes": 9883,
+      "sha256": "28644a3dfd5410ed4b102745f45f82163bfca30a6850195500070f250f817977"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-release01.json",
+      "bytes": 2064,
+      "sha256": "03af9ad819c1b3b59e078d18e271675a94ec601adb84b116ba3d14293e4c3c4c"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/CLOSURE.json",
+      "bytes": 1148,
+      "sha256": "f639dafa8bc2ac87e56e9e2ddba30513100b421a1dda91ab92b9433b33ed7bad"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/PLAN.md",
+      "bytes": 6718,
+      "sha256": "2078e36f45839df569fb2e8ab83adbe505310df5d7a9f7dbe48d8fc7145e4d6e"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/PREPARATION-FILES.txt",
+      "bytes": 131,
+      "sha256": "6230360493b570f0f4970e558ece159f967cf587720cfc19c22715f69fc9ab6f"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/PROVENANCE.json",
+      "bytes": 3775,
+      "sha256": "da4ee0a9f0f36fecf705a076990065ce4061ed22a7020886209f0a4a3ffc167f"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/SHA256SUMS",
+      "bytes": 582,
+      "sha256": "4573f88af7590dfebfd15d6f909a7d61ef885a896cbac0ac5431748843b11fdc"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/STATIC-CHECKS.json",
+      "bytes": 3155,
+      "sha256": "31675ebb58325c25487a73f92bc0b6697ca80eeee93df355362d37b9a29f4851"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/preparation-hashes.json",
+      "bytes": 442,
+      "sha256": "d5994609949da5c1cf2f21d8ca1e7bc59f0093c53b21267c7582bc45bd7ff2a1"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/compile/command.json",
+      "bytes": 505,
+      "sha256": "fbaa2464ad1baf20f1ade8bac0e2ee8307ae1f5964d524dad02f5573522389d3"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/compile/execution.json",
+      "bytes": 3174,
+      "sha256": "cfb209c907776d46c87eb9a872d0c35d4dad41950d1ff31d350d2f9db4aed907"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/compile/ownership.jsonl",
+      "bytes": 2602,
+      "sha256": "77a464dce2c5c01ec01cb11ea7c5e2dc315435067cad8574563b3b67c3f9ad93"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/compile/primary-identity.json",
+      "bytes": 302,
+      "sha256": "12add7ca6f2d6f9074ecc0b620a0db62c0fa65f985e925fb6b399dbe8b642dad"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/compile/stderr.log",
+      "bytes": 1874,
+      "sha256": "014f795e0cc82005a825e15a43aeb0c26aec25f0ca594258b9e8d8bc694b4224"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/compile/stdout.log",
+      "bytes": 19845,
+      "sha256": "053bcb1ee69366b88a3ac459d2b88e351d236f671e9bbb4f5dfdacfc459c032e"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/environment-contract.json",
+      "bytes": 627,
+      "sha256": "8ad7a5c141806dfd8f3a6b6551611033462a71759cc3920300f463545cd0137a"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/execution.json",
+      "bytes": 6798,
+      "sha256": "8c79c6019d65dc33b49d402efd4a610050bb4d4a107ee76cb9794aac70305bda"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/explicit-node-test/command.json",
+      "bytes": 431,
+      "sha256": "2a404f3ba4f9e730fbc5828dc01f5aece011f248eb6611ab7aef5608427d13df"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/explicit-node-test/execution.json",
+      "bytes": 1958,
+      "sha256": "bc8bcca388b59f97a3d87bfa3675502fe2d13eb9ea3992237917b618803303eb"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/explicit-node-test/ownership.jsonl",
+      "bytes": 1370,
+      "sha256": "bdc540df27528c2500e4ba4211718566f9d9b387e23ab313cff105134166c957"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/explicit-node-test/primary-identity.json",
+      "bytes": 302,
+      "sha256": "39a9a54b664d6c8f057c8f8bf740c440c0e312744c9c76cee59563c95c85b761"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/explicit-node-test/stderr.log",
+      "bytes": 1443,
+      "sha256": "2f66e8bff890ad6350bd8eeb9dc6347f9a99756e86e8665e9a80a0077263f71b"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/explicit-node-test/stdout.log",
+      "bytes": 18375,
+      "sha256": "72b9b177c1d205efd0a9accfdc2526a806ee9ed61d30e512e6742df9e9750456"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/generated-test-bundle.json",
+      "bytes": 128,
+      "sha256": "fb37de31657cfbe5e3d316f049d96768347e289dcffbf13e366d1c08e25c3db8"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/test-summaries.json",
+      "bytes": 253,
+      "sha256": "8dbbbed4eda907de8b3b0ad23cd03a1fd88969502b569e5ed62d3d84a91ecc57"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/source-pins.json",
+      "bytes": 41476,
+      "sha256": "e21c135c588d19dd08051d7b64c26cc758d58a4f4deb56c7cb3b0a408eaebc88"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red-runner-01/supervisor.py",
+      "bytes": 17698,
+      "sha256": "2eca5d96c621fd63c5246f63a6776bae9af79b12e3b2d538b525c6c464191280"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-red/preparation.json",
+      "bytes": 23872,
+      "sha256": "33321bf95347bd522712ec8c016d0c5aa872c50e517a0da3328e89dab2e8b59c"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/CLOSURE.json",
+      "bytes": 11202,
+      "sha256": "c06593d0d68f2bdb41e9b2e600d59f1242c34df2f880703c1ab20daa0ff4b0b0"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/SHA256SUMS",
+      "bytes": 3348,
+      "sha256": "d239267ee7934e1012d3c925c5d79e123cea444ba3490416a0d410be429ad44b"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/before.json",
+      "bytes": 10846,
+      "sha256": "ab64128970ac7d1636280568f98106b4e7860f20c36185a5b5c03bb7f16726f9"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/bootstrap-verification/command.json",
+      "bytes": 349,
+      "sha256": "667bc521551c2281c034ff14f28878b33e7b18cf02a32d78488a0819879be9c2"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/bootstrap-verification/ownership.jsonl",
+      "bytes": 616,
+      "sha256": "cfe4c5b60c95d8c7aea66a4572a7c76f53231dfb9db31ac705954ccd06806108"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/bootstrap-verification/primary-identity.json",
+      "bytes": 204,
+      "sha256": "5446a855ad5371d0dd3b7071895718182b6d20289ee81d986127764286f362c1"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/bootstrap-verification/result.json",
+      "bytes": 752,
+      "sha256": "8111ff79290aa9c5c61b41bee20cff8fd3eb5c537477b0f643878eb0b3b26e23"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/bootstrap-verification/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/bootstrap-verification/stdout.log",
+      "bytes": 89,
+      "sha256": "2e14163510151c9f8e2498b06e699cd584fca35c59e4201a8478c78ad02bacfb"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/chat-source-fetch/command.json",
+      "bytes": 455,
+      "sha256": "f52f3e6ea13c628bef516f5d562f29be57a58f71b1c2cb75d3c068e8efae2377"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/chat-source-fetch/ownership.jsonl",
+      "bytes": 1087,
+      "sha256": "0cdfd169313d5e53a2f8f587751070e935f55b94413cd6eba2334444a0020111"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/chat-source-fetch/primary-identity.json",
+      "bytes": 204,
+      "sha256": "6c2b3b9b97838e00a3d4ba2ad629dabe8612e4c7364c4268730674d2729aab07"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/chat-source-fetch/result.json",
+      "bytes": 1083,
+      "sha256": "520dd4f5237e70eebebf60b76d8456c8996a5b39bf8ec83748cbfad0edc6c5be"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/chat-source-fetch/stderr.log",
+      "bytes": 117,
+      "sha256": "32524a0409e7c620ed9e6b387b9590228082d68862e55247b280c5a29ad3a62c"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/chat-source-fetch/stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/environment-contract.json",
+      "bytes": 493,
+      "sha256": "a22d51dacdb3adae860f3b084bbae1844a7833cab3e8bcfbc59bf1481f71ddd3"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/install/command.json",
+      "bytes": 413,
+      "sha256": "393526720c94a42bdce4ba2936fbfce73db8fafcc6eedcebd17516a0899d0ee0"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/install/ownership.jsonl",
+      "bytes": 1468,
+      "sha256": "e05f35854dd811b13b60774b7f3ebb71babf2f5d30b052f9268f50e7ab0285ea"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/install/primary-identity.json",
+      "bytes": 204,
+      "sha256": "c2530bed5863e5ec239722da81ed5470d57b561365eab63d024500e04a30745b"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/install/result.json",
+      "bytes": 1401,
+      "sha256": "91b8e08b0bd820adf0ec31545b54ca336e24a32a2ba0b3a94971462070c9c207"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/install/stderr.log",
+      "bytes": 97,
+      "sha256": "b1a73e8d61369efcbb995662dafac3cc34fddd603cedc2618c34c048491cf8e2"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/install/stdout.log",
+      "bytes": 1108,
+      "sha256": "be72de867c6cf9252f9b2754cf52acc1bcdab71ee09e4e95d601ee91037e4b33"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/node-version/command.json",
+      "bytes": 275,
+      "sha256": "27af7781191ba0b3d0b1ba3a684e5feeacdf68c16ffe786901fac88c44546efa"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/node-version/ownership.jsonl",
+      "bytes": 617,
+      "sha256": "6cc8c0e5adf898653ea0ce564f06c9249c08d5fd458ee76e9b409d09da8944df"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/node-version/primary-identity.json",
+      "bytes": 204,
+      "sha256": "d0958adee6021475027de1db55638181d9d5c9513d4e371d709a74bfb982360c"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/node-version/result.json",
+      "bytes": 752,
+      "sha256": "ca9c25eeb13a58b1b012294230e19735c5ffff3d6a7327e091fded3520e39368"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/node-version/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/node-version/stdout.log",
+      "bytes": 9,
+      "sha256": "1506cdf8613ebb6c1198a9587c5e1b708b3e779b139a0b59f937efa199e2ecae"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/pnpm-version/command.json",
+      "bytes": 360,
+      "sha256": "09e427251acccfab043858ac2e80c810e97fd7c850874ecf6d7efcb6b950d608"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/pnpm-version/ownership.jsonl",
+      "bytes": 593,
+      "sha256": "d0df31d4829145129463db69df24eb541e8c054c1d9e1062a2b34e2eb5303f2a"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/pnpm-version/primary-identity.json",
+      "bytes": 204,
+      "sha256": "aaea5a7f9da88ed6f37c66362c9d48ead0a20f8ad790c8bc0227d861892d6346"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/pnpm-version/result.json",
+      "bytes": 716,
+      "sha256": "105360c5759b6730a83d918d8abd6e1e191af11bd3c5482fdfdcfd3cb1868338"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/pnpm-version/stderr.log",
+      "bytes": 97,
+      "sha256": "b1a73e8d61369efcbb995662dafac3cc34fddd603cedc2618c34c048491cf8e2"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/pnpm-version/stdout.log",
+      "bytes": 8,
+      "sha256": "9870c4dadae90a6a834e61f250fb36fd9dfe1f8353a9ea3a7a75a4176aca3b3e"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/result.json",
+      "bytes": 11471,
+      "sha256": "2bb3c267e74cb9f93aa636e958be6bc913d0c2582da82413a6da8c0ca9a817f2"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/setup.py",
+      "bytes": 12450,
+      "sha256": "678b89ec3b8bfe6ce78c3c3363c3d66cb7b755c136722f190227fbf4199bb55d"
+    },
+    {
+      "path": ".ημ/diagnostics/design-frontmatter-setup-01/source-dependencies.json",
+      "bytes": 9691,
+      "sha256": "d875080975649cb4dde34c46eb1ee472f879ddbb81c3225f8c2c80f1a562063e"
+    },
+    {
+      "path": ".ημ/receipts.edn",
+      "bytes": 25402,
+      "sha256": "6300353fcdefc192f27aba09e5fd89d83d48a742f7d2e0ef1c9d413b967bdcc1"
+    },
+    {
+      "path": ".ημ/session-mycology/ledger.md",
+      "bytes": 3965,
+      "sha256": "4a7c503853fcbb5364d472bfd975bc8bcf6294a84ab4459cbf2ae0f8c514aa73"
+    },
+    {
+      "path": "test/rheos/backend/infra/agent_tools_test.cljs",
+      "bytes": 12395,
+      "sha256": "b86b421de2ab59c0a1e30eda283a7f1dad910cdd74e0d888e1aecc507143e385"
+    },
+    {
+      "path": "test/rheos/backend/infra/frontmatter_fixture.cljs",
+      "bytes": 4856,
+      "sha256": "3a3d4b4382e46fba2be8be32582996afc6b8c303a6d9b3a3b403b91a2e8abec7"
+    },
+    {
+      "path": "test/rheos/backend/infra/http_server_test.cljs",
+      "bytes": 4097,
+      "sha256": "dc16f919c32a4b9519e81872a38c6cef198e32912529de9a84cdc7b5e90384bd"
+    },
+    {
+      "path": "test/rheos/backend/law/frontmatter_test.cljc",
+      "bytes": 1820,
+      "sha256": "ad49f258c7c3f3433cc952305ba9b09c40120f8a977c4ee8e32c47d3ccaddd82"
+    }
+  ],
+  "RED_path_command": [
+    "git",
+    "-c",
+    "core.quotePath=false",
+    "diff",
+    "--no-renames",
+    "--name-only",
+    "-z",
+    "ef3c4ab",
+    "171c4f22ebb25db4af40ee3e51f6d4a32e373467"
+  ],
+  "prospective_staging_paths": [
+    ".ημ/diagnostics/design-frontmatter-green-canonical-closure.json",
+    ".ημ/diagnostics/design-frontmatter-green-publication/AUXILIARY-MAP.json",
+    ".ημ/diagnostics/design-frontmatter-green-publication/AUXILIARY.jsonl",
+    ".ημ/diagnostics/design-frontmatter-green-publication/CACHE-REFERENCE.json",
+    ".ημ/diagnostics/design-frontmatter-green-publication/PACKAGING.md",
+    ".ημ/diagnostics/design-frontmatter-green-publication/RESULT.md",
+    ".ημ/diagnostics/design-frontmatter-green-publication/ROUNDTRIP.json",
+    ".ημ/diagnostics/design-frontmatter-green-publication/SHA256SUMS",
+    ".ημ/diagnostics/design-frontmatter-green-publication/STAGING.txt",
+    ".ημ/diagnostics/design-frontmatter-green-publication/package.py",
+    ".ημ/diagnostics/design-frontmatter-green-root-closure01.json",
+    ".ημ/diagnostics/design-frontmatter-green/SOURCE-PROOF.json",
+    ".ημ/diagnostics/design-frontmatter-green/independent-source-review.json",
+    ".ημ/receipts.edn",
+    ".ημ/session-mycology/ledger.md",
+    "docs/cli.md",
+    "src/rheos/backend/infra/agent_tools.cljs",
+    "src/rheos/backend/infra/cli.cljs",
+    "src/rheos/backend/law/frontmatter.cljc",
+    "src/rheos/backend/law/frontmatter.cljs",
+    "test/rheos/backend/infra/http_server_test.cljs"
+  ],
+  "cumulative_changed_paths_no_renames": [
+    ".ημ/diagnostics/design-frontmatter-green-canonical-closure.json",
+    ".ημ/diagnostics/design-frontmatter-green-publication/AUXILIARY-MAP.json",
+    ".ημ/diagnostics/design-frontmatter-green-publication/AUXILIARY.jsonl",
+    ".ημ/diagnostics/design-frontmatter-green-publication/CACHE-REFERENCE.json",
+    ".ημ/diagnostics/design-frontmatter-green-publication/PACKAGING.md",
+    ".ημ/diagnostics/design-frontmatter-green-publication/RESULT.md",
+    ".ημ/diagnostics/design-frontmatter-green-publication/ROUNDTRIP.json",
+    ".ημ/diagnostics/design-frontmatter-green-publication/SHA256SUMS",
+    ".ημ/diagnostics/design-frontmatter-green-publication/STAGING.txt",
+    ".ημ/diagnostics/design-frontmatter-green-publication/package.py",
+    ".ημ/diagnostics/design-frontmatter-green-root-closure01.json",
+    ".ημ/diagnostics/design-frontmatter-green/SOURCE-PROOF.json",
+    ".ημ/diagnostics/design-frontmatter-green/independent-source-review.json",
+    ".ημ/diagnostics/design-frontmatter-red-checkpoint/RESULT.md",
+    ".ημ/diagnostics/design-frontmatter-red-checkpoint/canonical-comment.json",
+    ".ημ/diagnostics/design-frontmatter-red-independent-review.json",
+    ".ημ/diagnostics/design-frontmatter-red-release01.json",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/CLOSURE.json",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/PLAN.md",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/PREPARATION-FILES.txt",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/PROVENANCE.json",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/SHA256SUMS",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/STATIC-CHECKS.json",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/preparation-hashes.json",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/compile/command.json",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/compile/execution.json",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/compile/ownership.jsonl",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/compile/primary-identity.json",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/compile/stderr.log",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/compile/stdout.log",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/environment-contract.json",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/execution.json",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/explicit-node-test/command.json",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/explicit-node-test/execution.json",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/explicit-node-test/ownership.jsonl",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/explicit-node-test/primary-identity.json",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/explicit-node-test/stderr.log",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/explicit-node-test/stdout.log",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/generated-test-bundle.json",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/test-summaries.json",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/source-pins.json",
+    ".ημ/diagnostics/design-frontmatter-red-runner-01/supervisor.py",
+    ".ημ/diagnostics/design-frontmatter-red/preparation.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/CLOSURE.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/SHA256SUMS",
+    ".ημ/diagnostics/design-frontmatter-setup-01/before.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/bootstrap-verification/command.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/bootstrap-verification/ownership.jsonl",
+    ".ημ/diagnostics/design-frontmatter-setup-01/bootstrap-verification/primary-identity.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/bootstrap-verification/result.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/bootstrap-verification/stderr.log",
+    ".ημ/diagnostics/design-frontmatter-setup-01/bootstrap-verification/stdout.log",
+    ".ημ/diagnostics/design-frontmatter-setup-01/chat-source-fetch/command.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/chat-source-fetch/ownership.jsonl",
+    ".ημ/diagnostics/design-frontmatter-setup-01/chat-source-fetch/primary-identity.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/chat-source-fetch/result.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/chat-source-fetch/stderr.log",
+    ".ημ/diagnostics/design-frontmatter-setup-01/chat-source-fetch/stdout.log",
+    ".ημ/diagnostics/design-frontmatter-setup-01/environment-contract.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/install/command.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/install/ownership.jsonl",
+    ".ημ/diagnostics/design-frontmatter-setup-01/install/primary-identity.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/install/result.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/install/stderr.log",
+    ".ημ/diagnostics/design-frontmatter-setup-01/install/stdout.log",
+    ".ημ/diagnostics/design-frontmatter-setup-01/node-version/command.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/node-version/ownership.jsonl",
+    ".ημ/diagnostics/design-frontmatter-setup-01/node-version/primary-identity.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/node-version/result.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/node-version/stderr.log",
+    ".ημ/diagnostics/design-frontmatter-setup-01/node-version/stdout.log",
+    ".ημ/diagnostics/design-frontmatter-setup-01/pnpm-version/command.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/pnpm-version/ownership.jsonl",
+    ".ημ/diagnostics/design-frontmatter-setup-01/pnpm-version/primary-identity.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/pnpm-version/result.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/pnpm-version/stderr.log",
+    ".ημ/diagnostics/design-frontmatter-setup-01/pnpm-version/stdout.log",
+    ".ημ/diagnostics/design-frontmatter-setup-01/result.json",
+    ".ημ/diagnostics/design-frontmatter-setup-01/setup.py",
+    ".ημ/diagnostics/design-frontmatter-setup-01/source-dependencies.json",
+    ".ημ/receipts.edn",
+    ".ημ/session-mycology/ledger.md",
+    "docs/cli.md",
+    "src/rheos/backend/infra/agent_tools.cljs",
+    "src/rheos/backend/infra/cli.cljs",
+    "src/rheos/backend/law/frontmatter.cljc",
+    "src/rheos/backend/law/frontmatter.cljs",
+    "test/rheos/backend/infra/agent_tools_test.cljs",
+    "test/rheos/backend/infra/frontmatter_fixture.cljs",
+    "test/rheos/backend/infra/http_server_test.cljs",
+    "test/rheos/backend/law/frontmatter_test.cljc"
+  ],
+  "path_count_limit": "Union of exact RED diff paths and explicit current publication paths; final staged/native hosted diff remains root-owned.",
+  "original_count": 111,
+  "original_bytes": 7868618,
+  "packed_count": 107,
+  "packed_original_bytes": 416090,
+  "packed_empty_files": 6,
+  "no_raw_original_deleted_or_modified": true
+}

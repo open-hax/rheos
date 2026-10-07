@@ -1,0 +1,35 @@
+{
+  "raw_execution_verified": 50,
+  "source_pins": 224,
+  "source_matching_now": 222,
+  "root_provenance_append_exceptions": [
+    {
+      "path": ".ημ/receipts.edn",
+      "pinned_RED_bytes": 25402,
+      "pinned_RED_sha256": "6300353fcdefc192f27aba09e5fd89d83d48a742f7d2e0ef1c9d413b967bdcc1",
+      "prefix_preserved": true,
+      "reason": "Root-authorized post-run append; excluded from immutable raw package."
+    },
+    {
+      "path": ".ημ/session-mycology/ledger.md",
+      "pinned_RED_bytes": 3965,
+      "pinned_RED_sha256": "4a7c503853fcbb5364d472bfd975bc8bcf6294a84ab4459cbf2ae0f8c514aa73",
+      "prefix_preserved": true,
+      "reason": "Root-authorized post-run append; excluded from immutable raw package."
+    }
+  ],
+  "preparation_verified": 53,
+  "manifest_rows_verified": 54,
+  "cache_members_verified": 480,
+  "cache_expanded_bytes": 50315678,
+  "unchanged_committed_diagnostic_paths": 67,
+  "packed_records": 107,
+  "packed_original_bytes": 416090,
+  "encoded_bytes": 455566,
+  "empty_files": 6,
+  "all_path_byte_count_hash_and_exact_text_roundtrips": true,
+  "all_original_paths_unique_and_exhaustively_classified": true,
+  "archive_sha256": "b6e4d2505d3629b6408723115c86da1bb06c8b6cd0ce0170ecf5f8a04fef334f",
+  "process_limit": "18 PID absences are audited from root closure; packaging performs no live process probe.",
+  "offline_check_history": "An initial strict all-224-current-hash assertion exposed the two expected root-authorized post-run ledger appends. Follow-up verified each pinned RED prefix exactly; no product/source pin changed. This is packaging validation history, not a test/build failure."
+}
