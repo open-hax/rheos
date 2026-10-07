@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "git",
+    "-c",
+    "core.hooksPath=/dev/null",
+    "-C",
+    "/tmp/rheos-design-source-fwlg0t2z/chat-ui",
+    "fetch",
+    "--no-tags",
+    "--depth=1",
+    "https://github.com/open-hax/chat-ui.git",
+    "86385532b4f8606946555d0ada8e3fb22f35b4c3"
+  ],
+  "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter",
+  "at": "2026-10-07T18:47:09.580893+00:00",
+  "work_s": 80,
+  "total_s": 90,
+  "lifecycle_scripts": false
+}

@@ -1,0 +1,392 @@
+
+Testing rheos.backend.domain.board-test
+
+Testing rheos.backend.domain.compose-test
+
+Testing rheos.backend.domain.events-test
+
+Testing rheos.backend.domain.task-create-test
+
+Testing rheos.backend.domain.transition-test
+
+Testing rheos.backend.infra.agent-tools-test
+{
+  "ok": true,
+  "uuid": "t1",
+  "from": "breakdown",
+  "to": "ready"
+}
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/agent_tools_test.cljs:162:11)
+the actual registered tool must accept descriptive metadata
+expected: (nil? error)
+  actual: (not (nil? {:kind :usage, :keys ["design"]}))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/agent_tools_test.cljs:163:11)
+expected: (true? (:ok result))
+  actual: (not (true? nil))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/agent_tools_test.cljs:164:11)
+expected: (= value (get-in result [:frontmatter key]))
+  actual: (not (= "docs/designs/not-created-yet.md" nil))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/agent_tools_test.cljs:165:11)
+expected: (= value (get-in readback [:frontmatter key]))
+  actual: (not (= "docs/designs/not-created-yet.md" nil))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:64:9)
+expected: (= value (get new-fm key))
+  actual: (not (= "docs/designs/not-created-yet.md" nil))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:71:9)
+expected: (not= (:write-id old-fm) (:write-id new-fm))
+  actual: (not (not= "1791399902311-0.cck9zpxltoefrnyelj3" "1791399902311-0.cck9zpxltoefrnyelj3"))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:74:9)
+exactly one canonical event per supplied key
+expected: (= 1 (count appended))
+  actual: (not (= 1 0))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:75:9)
+expected: (= "frontmatter" (:type payload))
+  actual: (not (= "frontmatter" nil))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:76:9)
+expected: (= (name key) (:key payload))
+  actual: (not (= "design" nil))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:78:9)
+expected: (= value (:new-value payload))
+  actual: (not (= "docs/designs/not-created-yet.md" nil))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:79:9)
+expected: (= (:uuid old-fm) (:task-id payload))
+  actual: (not (= "3d721c88-012a-4b53-a12f-aeee94920df1" nil))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:80:9)
+expected: (= source (:source payload))
+  actual: (not (= "agent" nil))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:81:9)
+expected: (= (:write-id new-fm) (:write-id payload))
+  actual: (not (= "1791399902311-0.cck9zpxltoefrnyelj3" nil))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/agent_tools_test.cljs:162:11)
+the actual registered tool must accept descriptive metadata
+expected: (nil? error)
+  actual: (not (nil? {:kind :usage, :keys ["design"]}))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/agent_tools_test.cljs:163:11)
+expected: (true? (:ok result))
+  actual: (not (true? nil))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/agent_tools_test.cljs:164:11)
+expected: (= value (get-in result [:frontmatter key]))
+  actual: (not (= "docs/designs/replacement.md" nil))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/agent_tools_test.cljs:165:11)
+expected: (= value (get-in readback [:frontmatter key]))
+  actual: (not (= "docs/designs/replacement.md" nil))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:64:9)
+expected: (= value (get new-fm key))
+  actual: (not (= "docs/designs/replacement.md" nil))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:71:9)
+expected: (not= (:write-id old-fm) (:write-id new-fm))
+  actual: (not (not= "1791399902311-0.cck9zpxltoefrnyelj3" "1791399902311-0.cck9zpxltoefrnyelj3"))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:74:9)
+exactly one canonical event per supplied key
+expected: (= 1 (count appended))
+  actual: (not (= 1 0))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:75:9)
+expected: (= "frontmatter" (:type payload))
+  actual: (not (= "frontmatter" nil))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:76:9)
+expected: (= (name key) (:key payload))
+  actual: (not (= "design" nil))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:78:9)
+expected: (= value (:new-value payload))
+  actual: (not (= "docs/designs/replacement.md" nil))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:79:9)
+expected: (= (:uuid old-fm) (:task-id payload))
+  actual: (not (= "3d721c88-012a-4b53-a12f-aeee94920df1" nil))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:80:9)
+expected: (= source (:source payload))
+  actual: (not (= "agent" nil))
+
+FAIL in (tool-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:81:9)
+expected: (= (:write-id new-fm) (:write-id payload))
+  actual: (not (= "1791399902311-0.cck9zpxltoefrnyelj3" nil))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/agent_tools_test.cljs:229:11)
+actual argv/main path must report successful design mutation
+expected: (= 0 exit-code)
+  actual: (not (= 0 1))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:64:9)
+expected: (= value (get new-fm key))
+  actual: (not (= "docs/designs/not-created-yet.md" nil))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:71:9)
+expected: (not= (:write-id old-fm) (:write-id new-fm))
+  actual: (not (not= "1791399902429-0.nbq6qkctdosjua7ndla" "1791399902429-0.nbq6qkctdosjua7ndla"))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:74:9)
+exactly one canonical event per supplied key
+expected: (= 1 (count appended))
+  actual: (not (= 1 0))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:75:9)
+expected: (= "frontmatter" (:type payload))
+  actual: (not (= "frontmatter" nil))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:76:9)
+expected: (= (name key) (:key payload))
+  actual: (not (= "design" nil))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:78:9)
+expected: (= value (:new-value payload))
+  actual: (not (= "docs/designs/not-created-yet.md" nil))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:79:9)
+expected: (= (:uuid old-fm) (:task-id payload))
+  actual: (not (= "cf60c741-4c91-44a8-8d41-44fb2ca4e556" nil))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:80:9)
+expected: (= source (:source payload))
+  actual: (not (= "cli" nil))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:81:9)
+expected: (= (:write-id new-fm) (:write-id payload))
+  actual: (not (= "1791399902429-0.nbq6qkctdosjua7ndla" nil))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/agent_tools_test.cljs:229:11)
+actual argv/main path must report successful design mutation
+expected: (= 0 exit-code)
+  actual: (not (= 0 1))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:64:9)
+expected: (= value (get new-fm key))
+  actual: (not (= "docs/designs/replacement.md" nil))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:71:9)
+expected: (not= (:write-id old-fm) (:write-id new-fm))
+  actual: (not (not= "1791399902429-0.nbq6qkctdosjua7ndla" "1791399902429-0.nbq6qkctdosjua7ndla"))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:74:9)
+exactly one canonical event per supplied key
+expected: (= 1 (count appended))
+  actual: (not (= 1 0))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:75:9)
+expected: (= "frontmatter" (:type payload))
+  actual: (not (= "frontmatter" nil))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:76:9)
+expected: (= (name key) (:key payload))
+  actual: (not (= "design" nil))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:78:9)
+expected: (= value (:new-value payload))
+  actual: (not (= "docs/designs/replacement.md" nil))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:79:9)
+expected: (= (:uuid old-fm) (:task-id payload))
+  actual: (not (= "cf60c741-4c91-44a8-8d41-44fb2ca4e556" nil))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:80:9)
+expected: (= source (:source payload))
+  actual: (not (= "cli" nil))
+
+FAIL in (cli-sets-and-replaces-design-with-real-ledger-events) (rheos/backend/infra/frontmatter_fixture.cljs:81:9)
+expected: (= (:write-id new-fm) (:write-id payload))
+  actual: (not (= "1791399902429-0.nbq6qkctdosjua7ndla" nil))
+{
+  "ok": true,
+  "uuid": "c342c5c1-2f31-4ac2-b4e5-2ea744cf716d",
+  "frontmatter": {
+    "uuid": "c342c5c1-2f31-4ac2-b4e5-2ea744cf716d",
+    "title": "Changed title",
+    "status": "incoming",
+    "priority": "P3",
+    "created_at": "2026-10-01T00:00:00Z",
+    "description": "Keep this metadata",
+    "labels": "review, design",
+    "write-id": "1791399902442-0.vwz9ov8ntyppn8tzkui"
+  }
+}
+{
+  "ok": true,
+  "uuid": "c342c5c1-2f31-4ac2-b4e5-2ea744cf716d",
+  "frontmatter": {
+    "uuid": "c342c5c1-2f31-4ac2-b4e5-2ea744cf716d",
+    "title": "Changed title",
+    "status": "incoming",
+    "priority": "P1",
+    "created_at": "2026-10-01T00:00:00Z",
+    "description": "Keep this metadata",
+    "labels": "review, design",
+    "write-id": "1791399902445-0.ijgeoft7d58s2ks97ow"
+  }
+}
+
+Testing rheos.backend.infra.cli-test
+
+Testing rheos.backend.infra.config-card-creation-test
+
+Testing rheos.backend.infra.config-test
+
+Testing rheos.backend.infra.github-issue-preflight-test
+
+Testing rheos.backend.infra.github-issues-test
+
+Testing rheos.backend.infra.http-server-test
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/http_server_test.cljs:33:11)
+expected: (= 200 (:status response))
+  actual: (not (= 200 400))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/http_server_test.cljs:34:11)
+expected: (= value (get-in response [:body :frontmatter key]))
+  actual: (not (= "docs/designs/not-created-yet.md" nil))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/http_server_test.cljs:35:11)
+expected: (= (get-in after [:parsed :sections]) (get-in response [:body :sections]))
+  actual: (not (= [{:type "body", :content "# Design-bearing card\n\nKeep **this body** intact."} {:type "comment", :content "Keep this existing comment."}] nil))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/frontmatter_fixture.cljs:64:9)
+expected: (= value (get new-fm key))
+  actual: (not (= "docs/designs/not-created-yet.md" nil))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/frontmatter_fixture.cljs:71:9)
+expected: (not= (:write-id old-fm) (:write-id new-fm))
+  actual: (not (not= "1791399902553-0.jrbxi880hs7z6ozcyc" "1791399902553-0.jrbxi880hs7z6ozcyc"))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/frontmatter_fixture.cljs:74:9)
+exactly one canonical event per supplied key
+expected: (= 1 (count appended))
+  actual: (not (= 1 0))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/frontmatter_fixture.cljs:75:9)
+expected: (= "frontmatter" (:type payload))
+  actual: (not (= "frontmatter" nil))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/frontmatter_fixture.cljs:76:9)
+expected: (= (name key) (:key payload))
+  actual: (not (= "design" nil))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/frontmatter_fixture.cljs:78:9)
+expected: (= value (:new-value payload))
+  actual: (not (= "docs/designs/not-created-yet.md" nil))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/frontmatter_fixture.cljs:79:9)
+expected: (= (:uuid old-fm) (:task-id payload))
+  actual: (not (= "89ccbb55-95fd-42b5-9082-c19d6a344cf3" nil))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/frontmatter_fixture.cljs:80:9)
+expected: (= source (:source payload))
+  actual: (not (= "web" nil))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/frontmatter_fixture.cljs:81:9)
+expected: (= (:write-id new-fm) (:write-id payload))
+  actual: (not (= "1791399902553-0.jrbxi880hs7z6ozcyc" nil))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/http_server_test.cljs:33:11)
+expected: (= 200 (:status response))
+  actual: (not (= 200 400))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/http_server_test.cljs:34:11)
+expected: (= value (get-in response [:body :frontmatter key]))
+  actual: (not (= "docs/designs/replacement.md" nil))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/http_server_test.cljs:35:11)
+expected: (= (get-in after [:parsed :sections]) (get-in response [:body :sections]))
+  actual: (not (= [{:type "body", :content "# Design-bearing card\n\nKeep **this body** intact."} {:type "comment", :content "Keep this existing comment."}] nil))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/frontmatter_fixture.cljs:64:9)
+expected: (= value (get new-fm key))
+  actual: (not (= "docs/designs/replacement.md" nil))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/frontmatter_fixture.cljs:71:9)
+expected: (not= (:write-id old-fm) (:write-id new-fm))
+  actual: (not (not= "1791399902553-0.jrbxi880hs7z6ozcyc" "1791399902553-0.jrbxi880hs7z6ozcyc"))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/frontmatter_fixture.cljs:74:9)
+exactly one canonical event per supplied key
+expected: (= 1 (count appended))
+  actual: (not (= 1 0))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/frontmatter_fixture.cljs:75:9)
+expected: (= "frontmatter" (:type payload))
+  actual: (not (= "frontmatter" nil))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/frontmatter_fixture.cljs:76:9)
+expected: (= (name key) (:key payload))
+  actual: (not (= "design" nil))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/frontmatter_fixture.cljs:78:9)
+expected: (= value (:new-value payload))
+  actual: (not (= "docs/designs/replacement.md" nil))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/frontmatter_fixture.cljs:79:9)
+expected: (= (:uuid old-fm) (:task-id payload))
+  actual: (not (= "89ccbb55-95fd-42b5-9082-c19d6a344cf3" nil))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/frontmatter_fixture.cljs:80:9)
+expected: (= source (:source payload))
+  actual: (not (= "web" nil))
+
+FAIL in (patch-sets-and-replaces-design-through-both-body-shapes) (rheos/backend/infra/frontmatter_fixture.cljs:81:9)
+expected: (= (:write-id new-fm) (:write-id payload))
+  actual: (not (= "1791399902553-0.jrbxi880hs7z6ozcyc" nil))
+
+Testing rheos.backend.infra.store-test
+
+Testing rheos.backend.infra.task-create-conflict-test
+
+Testing rheos.backend.infra.task-create-test
+
+Testing rheos.backend.infra.task-edit-test
+
+Testing rheos.backend.infra.task-store-test
+
+Testing rheos.backend.infra.task-writeback-test
+
+Testing rheos.backend.infra.transition-test
+
+Testing rheos.backend.infra.view-store-test
+
+Testing rheos.backend.infra.watcher-test
+
+Testing rheos.backend.law.frontmatter-test
+
+FAIL in (design-is-descriptive-metadata) (rheos/backend/law/frontmatter_test.cljc:8:9)
+an unverified design path is admitted by the existing key policy
+expected: (true? (frontmatter/mutable-key? :design))
+  actual: (not (true? false))
+
+FAIL in (design-is-descriptive-metadata) (rheos/backend/law/frontmatter_test.cljc:9:9)
+an unverified design path is admitted by the existing key policy
+expected: (empty? (frontmatter/disallowed-keys {:design "docs/designs/not-created-yet.md"}))
+  actual: (not (empty? [:design]))
+
+FAIL in (design-is-descriptive-metadata) (rheos/backend/law/frontmatter_test.cljc:12:9)
+design can be supplied alongside existing descriptive fields
+expected: (empty? (frontmatter/disallowed-keys {:design "docs/designs/replacement.md", :title "Updated", :priority "P1"}))
+  actual: (not (empty? [:design]))
+
+Testing rheos.backend.law.fsm-test
+
+Testing rheos.backend.shape.content-parser-test
+
+Testing rheos.backend.shape.kanban-test
+
+Ran 166 tests containing 1361 assertions.
+73 failures, 0 errors.

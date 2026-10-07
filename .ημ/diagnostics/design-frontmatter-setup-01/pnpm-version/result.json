@@ -1,0 +1,24 @@
+{
+  "at": "2026-10-07T18:47:14.272383+00:00",
+  "status": "complete",
+  "error": null,
+  "elapsed_s": 1.4043386859993916,
+  "exit_code": 0,
+  "primary_reaped": true,
+  "observed_identities": [
+    {
+      "pid": 2224325,
+      "state": "R",
+      "pgid": 2224325,
+      "starttime_ticks": 6633293,
+      "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+    }
+  ],
+  "remaining_group": [],
+  "remaining_observed": [],
+  "membership_unknown": [],
+  "cleanup_errors": [],
+  "total_deadline_exceeded": false,
+  "limit": "Polling can miss brief children. Stat controls membership. OS/I/O stalls cannot be forcibly time-bounded."
+}

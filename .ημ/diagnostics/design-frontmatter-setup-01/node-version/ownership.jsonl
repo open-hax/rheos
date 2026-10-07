@@ -1,0 +1,3 @@
+{"at": "2026-10-07T18:47:12.352831+00:00", "elapsed_s": 0.019587617003708147, "event": "spawn", "pid": 2224265, "expected_pgid": 2224265}
+{"at": "2026-10-07T18:47:12.421474+00:00", "elapsed_s": 0.0882227679976495, "event": "identity", "identity": {"pid": 2224265, "state": "Z", "pgid": 2224265, "starttime_ticks": 6633240, "exe": null, "exe_error": "FileNotFoundError(2, 'No such file or directory')", "cwd": null, "cwd_error": "FileNotFoundError(2, 'No such file or directory')"}}
+{"at": "2026-10-07T18:47:12.792381+00:00", "elapsed_s": 0.4591382600046927, "event": "primary-reaped", "pid": 2224265, "exit_code": 0}

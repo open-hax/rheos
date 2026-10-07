@@ -1,0 +1,566 @@
+{
+  "kind": "unexecuted-test-only-red-preparation",
+  "at": "2026-10-07T18:34:42.450580+00:00",
+  "head": "ef3c4abf1ea75199486f693e9470df3fec88dd49",
+  "branch": "codex/rheos-design-frontmatter",
+  "worktree": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter",
+  "canonical_owner": {
+    "repository": "open-hax/eta-mu",
+    "uuid": "rheos-design-frontmatter-key",
+    "root_reported_state": "in_progress",
+    "root_admission_commit": "bef8f0d9fde11f22cf6dbaabdcb3bc185cc6813d",
+    "card_path": "/home/err/spaces/foresight/.worktrees/eta-rheos-design-metadata-plan/kanban/tasks/rheos-design-frontmatter-key.md",
+    "card_sha256": "dd1ac1ae7f5fa7eed3f056f59e91191224c0d3d417c0f355dcff4bf62effffff",
+    "limit": "Existing card was read as source context; no new canonical read, mutation or board validation was executed by this test-authoring lane."
+  },
+  "accepted_proposal": {
+    "path": "/home/err/spaces/foresight/.ημ/diagnostics/truth-physical-flight/2026-10-07-rheos-design-frontmatter-red-proposal.json",
+    "sha256": "98f68e7769c751c4f10dfca41a1faf4c74d23b3e772225d2cb887c93228dace4"
+  },
+  "tests": [
+    {
+      "path": "test/rheos/backend/law/frontmatter_test.cljc",
+      "bytes": 1820,
+      "sha256": "ad49f258c7c3f3433cc952305ba9b09c40120f8a977c4ee8e32c47d3ccaddd82",
+      "new_deftest_count": 4,
+      "text_only_delimiter_balance": true
+    },
+    {
+      "path": "test/rheos/backend/infra/frontmatter_fixture.cljs",
+      "bytes": 4856,
+      "sha256": "3a3d4b4382e46fba2be8be32582996afc6b8c303a6d9b3a3b403b91a2e8abec7",
+      "new_deftest_count": 0,
+      "text_only_delimiter_balance": true
+    },
+    {
+      "path": "test/rheos/backend/infra/agent_tools_test.cljs",
+      "bytes": 12395,
+      "sha256": "b86b421de2ab59c0a1e30eda283a7f1dad910cdd74e0d888e1aecc507143e385",
+      "new_deftest_count": 6,
+      "text_only_delimiter_balance": true
+    },
+    {
+      "path": "test/rheos/backend/infra/http_server_test.cljs",
+      "bytes": 4097,
+      "sha256": "dc16f919c32a4b9519e81872a38c6cef198e32912529de9a84cdc7b5e90384bd",
+      "new_deftest_count": 3,
+      "text_only_delimiter_balance": true
+    }
+  ],
+  "existing_agent_tests_preserved": {
+    "original_sha256": "124591e19525f5355009146c9bd3f08ceb933e5d9e01866327e146ac3cef13cb",
+    "method": "Remove only the new fixture require and appended frontmatter section; recovered bytes exactly equal HEAD file."
+  },
+  "coverage": [
+    "Existing law namespace loads from unchanged .cljs; proposed .cljc test is selected by current -test$ runner. Three design-admission assertions must fail; existing key/FSM controls remain. No missing-namespace RED is accepted.",
+    "Actual registered tool sets/replaces design then kanban_read_task rereads it. The fixture uses the real writer, parser and EventAdmission ledger, not policy redefinitions.",
+    "Actual cli/main receives process.argv with generic --set and isolated --config. ExitCode/argv/projects are restored in finally; true CLI subprocess or MCP SDK wire transport is not claimed.",
+    "Production HTTP PATCH handler is registered on an isolated Fastify instance using injection, both updates-object and key/value. App is closed; init/listen/watchers are never started.",
+    "Every accepted operation checks exact design string, unrelated parsed metadata and body/comment sections, engine write-id, one event with key/old/new/source/task/write-id and unchanged prior event bytes.",
+    "Protected spellings plus unknown key are tested before/after design in mixed requests; status has its dedicated refusal; public empty/missing-set rejects without any card/ledger byte change. Existing inner-writer empty no-op test remains byte-identical.",
+    "Existing title/priority mutations protect against a fixture that simply never writes. Nonexistent design paths must be accepted as descriptive strings after GREEN.",
+    "Fixture owns a unique temp board/UUID/project, seeds real prior comment event, restores registry, removes only its own ledger-cache entry and pending-write registrations, then removes owned temp files."
+  ],
+  "planned_red": {
+    "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter",
+    "package_script": "shadow-cljs compile test && node dist/test.cjs",
+    "argv": [
+      "/usr/bin/timeout",
+      "--signal=TERM",
+      "--kill-after=10s",
+      "600s",
+      "/usr/bin/env",
+      "-u",
+      "_JAVA_OPTIONS",
+      "-u",
+      "JDK_JAVA_OPTIONS",
+      "JAVA_TOOL_OPTIONS=-Xms256m -Xmx2g",
+      "PATH=/home/err/.volta/tools/image/node/22.20.0/bin:/home/err/.local/bin:/home/err/.rbenv/shims:/home/err/.codex/tmp/arg0/codex-arg0PxD6rs:/home/err/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/home/err/.local/bin:/home/err/.rbenv/shims:/home/err/.local/bin:/home/err/.local/bin:/home/err/.volta/bin:/home/err/devel/.volta/tools/image/node/20.19.4/bin:/home/err/.bun/bin:/home/err/.opencode/bin:/home/err/.fly/bin:/home/err/devel/promethean/.volta/tools/image/node/20.19.4/bin:/home/err/.local/share/pnpm:/home/err/.cargo/bin:/home/err/.local/bin:/home/err/.rbenv/shims:/home/err/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/err/bin:/home/err/bin:/home/err/devel/bin:/home/err/go/bin:/home/err/.volta/tools/image/node/24.14.1/bin:/home/err/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/usr/lib/chatgpt/resources",
+      "/home/err/.volta/bin/pnpm",
+      "test"
+    ],
+    "authorization": "Not authorized to execute yet. Root must establish missing dependencies and release bounded resource slot; pin exact resolved PATH/Node/pnpm/source before actual run. Outer owned process-group supervision/reaping evidence remains required.",
+    "expected_red": "Existing mutable-keys excludes design. Tool must return captured :usage rejection, CLI must exit1, HTTP must return400; intended success/value/event assertions fail, not namespace/setup errors. No actual failure count claimed.",
+    "exit_precision": "Prior canonical receipt documents shadow compile autorun not propagating test failure; the package script explicitly follows with node dist/test.cjs. Capture both phases and final Node status.",
+    "controls": "No new HTTP listening socket, network request, production board, native game or application server during the test. Tests use temporary file I/O and in-process injection after release.",
+    "command_for_root": "timeout --signal=TERM --kill-after=10s 600s env -u _JAVA_OPTIONS -u JDK_JAVA_OPTIONS JAVA_TOOL_OPTIONS=\"-Xms256m -Xmx2g\" PATH=\"/home/err/.volta/tools/image/node/22.20.0/bin:$PATH\" /home/err/.volta/bin/pnpm test",
+    "runtime_limit": "PATH/argv is frozen here as a proposal. Volta pnpm resolution and actual child Node version must be verified at the authorized run; prep does not claim the installed shim currently uses Node22."
+  },
+  "dependency_inventory": {
+    "missing": [
+      "node_modules",
+      "node_modules/.bin/shadow-cljs",
+      "node_modules/fastify",
+      "deps/protocols/src",
+      "deps/chat-ui/src",
+      ".shadow-cljs",
+      "dist"
+    ],
+    "declared_bootstrap": "scripts/bootstrap-source-deps.sh",
+    "protocols_source": "open-hax/eta-mu@0ed56aa74a53a1d1e9c2e55ce95451817a7f3a90 packages/protocols/src",
+    "chat_source": "open-hax/chat-ui@86385532b4f8606946555d0ada8e3fb22f35b4c3 src",
+    "existing_cache_inspected_read_only": "/home/err/spaces/review-repair/rheos-comment-rendering has node_modules and both source directories; their mere presence is not verified source/artifact provenance or installation authorization.",
+    "bootstrap_limit": "Current hosted workflow verifies clone/checkouts and copies before calling bootstrap, whose original cp errors are suppressed. Follow declared immutable inputs; do not claim an unverified warm directory supplies them.",
+    "installation_or_build_performed": false
+  },
+  "protected_head_files": [
+    {
+      "path": ".clj-kondo/config.edn",
+      "bytes": 50,
+      "sha256": "0732eeacd92d09cf0ca5c2508ac844c24256c56087ffa75d39a8e3e0a27d8d5d"
+    },
+    {
+      "path": ".clj-kondo/exports/open-hax/kondo-config/config.edn",
+      "bytes": 5098,
+      "sha256": "81210c4a7d2761967d3c7d2e7bfd3d913553fb0de77ddbebccaaf1c204ad416d"
+    },
+    {
+      "path": ".clj-kondo/exports/open-hax/kondo-config/hooks/layer_boundaries.clj",
+      "bytes": 5078,
+      "sha256": "bce529811ff9869f7f3a37cda5818042bd1334066d6c15c4b6a08acb95919296"
+    },
+    {
+      "path": ".clj-kondo/exports/open-hax/kondo-config/hooks/promise_chain.clj",
+      "bytes": 1392,
+      "sha256": "3a7d9b96ebab9834e531130bc85e49e31f338b0b27372ff6d665318884545671"
+    },
+    {
+      "path": ".github/fixtures/rheos-evidence-caller.test.mjs",
+      "bytes": 3880,
+      "sha256": "f60eb5f6a733c60dbe6eee62d297f0f22bda07425ccc401cf0710da6375f8046"
+    },
+    {
+      "path": ".github/workflows/eta-mu-evidence-review.yml",
+      "bytes": 8483,
+      "sha256": "343cf979411b175d481ecc82fd801334f0e311d7ebfaa265452e1d4400454ac5"
+    },
+    {
+      "path": ".ημ/comment-rendering-verification.md",
+      "bytes": 5151,
+      "sha256": "0525ca2bfb75dc48515097ecd68789d8b9ea6a61fa6f0f2e7a0fe2a2569e9627"
+    },
+    {
+      "path": ".ημ/receipts.edn",
+      "bytes": 24776,
+      "sha256": "9a60252f38d90ae455f373d94d0f8a1617b288747c3009f2b8f37f21388fa38d"
+    },
+    {
+      "path": ".ημ/session-mycology/ledger.md",
+      "bytes": 3413,
+      "sha256": "dfae76c94436cfce2eb08d532540ba99b89a3388b327d479ef0e835fb36d6c1f"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5919,
+      "sha256": "f33c9794c7857b882f3abbf8cd74fb38fdadce80848ba8d894b83b689e68fd60"
+    },
+    {
+      "path": "bb.edn",
+      "bytes": 492,
+      "sha256": "7b25e88eb04ac00ff47c0824148977934289ffa22464b2c61b8dacc04f8eac05"
+    },
+    {
+      "path": "docs/agile/tasks/.events/ledger.edn",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "docs/cli.md",
+      "bytes": 10636,
+      "sha256": "8d12b4c27b32f4b83c05fe7e25590189157d8d3d3478c652fef1bbf7c58e48f7"
+    },
+    {
+      "path": "docs/configuration.md",
+      "bytes": 3146,
+      "sha256": "7a4dd990b3b4476fca181e9280c2fd6a2423b199e9cefd4afbb2f3e957d068fc"
+    },
+    {
+      "path": "ecosystem.config.cjs",
+      "bytes": 5023,
+      "sha256": "fd4abe6bcd4209ef861a83244e81fd17c9be3768992e4b24ebf221bc146e204f"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1372,
+      "sha256": "d090e67573ebb9d05049a38523a85280ecc1a8725209971ad52837feda6c6119"
+    },
+    {
+      "path": "resources/public/css/tokens.css",
+      "bytes": 47693,
+      "sha256": "e92b5b1d37a28a8470a1bda024fc3124b4e23741e2cac38837fc71141a4aeaab"
+    },
+    {
+      "path": "resources/public/index.html",
+      "bytes": 2474,
+      "sha256": "1a0f0643fee71dd9462bcf5e5d707855d164e26e50c34fd7bd538fa3b714a959"
+    },
+    {
+      "path": "resources/public/js/main.js",
+      "bytes": 3285849,
+      "sha256": "4cc5ca79ca89b7b1d15dca5c5c63758dad21568e173585168c4b6ac9a3eece11"
+    },
+    {
+      "path": "resources/public/js/manifest.edn",
+      "bytes": 2467,
+      "sha256": "84432fe0f7aab19a6ad2de1482fad6992a7b4f315173ac761b7eb9e354586ad3"
+    },
+    {
+      "path": "scripts/bootstrap-source-deps.sh",
+      "bytes": 1821,
+      "sha256": "06cf9c5cba68011132cd4cfa411f798adb115a6c1a14ea624d6c912ed80e6ead"
+    },
+    {
+      "path": "scripts/start-prod.sh",
+      "bytes": 140,
+      "sha256": "599441effddecb9495bd5db88db0299a95ee0a5cc1a78bb6a8284fc69c2ba868"
+    },
+    {
+      "path": "scripts/start-server-dev.mjs",
+      "bytes": 3934,
+      "sha256": "a76143a12e695dfb586f26915d59ec7975afcb21e99278a631f9a78cfe4686d0"
+    },
+    {
+      "path": "shadow-cljs.edn",
+      "bytes": 3156,
+      "sha256": "362bfaf9bf1d5ea4ff4be7388ef50a9f1bdf860821de215785c85cb2b8640611"
+    },
+    {
+      "path": "src/preloads/env.cljs",
+      "bytes": 18,
+      "sha256": "fb8f6e5331e831ee31be464c385859ee2deeed892cb69e89262c063a6d098c45"
+    },
+    {
+      "path": "src/rheos/backend/domain/board.cljs",
+      "bytes": 906,
+      "sha256": "12afb77f2e4d4871cc92dfdc05ecb76984b2c08bf923f801e5096c89a603758c"
+    },
+    {
+      "path": "src/rheos/backend/domain/compose.cljs",
+      "bytes": 6064,
+      "sha256": "8d76b5ae91ab2bf4590904675bb82e422c85dd99c747562d85700886e12b719f"
+    },
+    {
+      "path": "src/rheos/backend/domain/events.cljs",
+      "bytes": 7541,
+      "sha256": "5fd19ce700a47ec7bf2645f9086d5feb1bc1f0b2f6345f7f878c3fc393f2edd3"
+    },
+    {
+      "path": "src/rheos/backend/domain/task_create.cljs",
+      "bytes": 9450,
+      "sha256": "d1cfd72c3441ebf51d3c01babbe3bdf4412745cfb94ecdda92f249329697775d"
+    },
+    {
+      "path": "src/rheos/backend/domain/task_edit.cljs",
+      "bytes": 1751,
+      "sha256": "3d51c26657f5df150d67188705db070a9472ad0665b7066bbe5cbfd28789bb86"
+    },
+    {
+      "path": "src/rheos/backend/domain/transition.cljs",
+      "bytes": 1136,
+      "sha256": "3231bb0f9d04ca250d8a8e2ae03e942e391d134d681d56a111171185d851e762"
+    },
+    {
+      "path": "src/rheos/backend/infra/agent_tools.cljs",
+      "bytes": 21528,
+      "sha256": "63cc9e4519aab7450923d7041f424943122e581e2e9cb4c4f9ce8b2fef309f10"
+    },
+    {
+      "path": "src/rheos/backend/infra/chat_proxy.cljs",
+      "bytes": 4500,
+      "sha256": "06a2dd92c5ccc469223d5e407bb76a8e5bfbe956283c13c9bca4f317a69bb6e7"
+    },
+    {
+      "path": "src/rheos/backend/infra/cli.cljs",
+      "bytes": 31782,
+      "sha256": "6ababe29d9b3025a85864c284826bfdae31997e366f7b370bcbcccb2ccf3f31a"
+    },
+    {
+      "path": "src/rheos/backend/infra/config.cljs",
+      "bytes": 10419,
+      "sha256": "32eef60fad9ea07bcda2a5129fc5f0a2c1d3eb006166152241e185ef6c90b673"
+    },
+    {
+      "path": "src/rheos/backend/infra/github_issue_preflight.cljs",
+      "bytes": 1513,
+      "sha256": "59c79a7c599f185838700323c951a72aa4a109e8e1fb5a3f08064294eded970b"
+    },
+    {
+      "path": "src/rheos/backend/infra/github_issues.cljs",
+      "bytes": 12227,
+      "sha256": "19992bac1f6f821fe3cb1e748b83ecdceeb7e14ed10045a8836cf5d780ac4ead"
+    },
+    {
+      "path": "src/rheos/backend/infra/github_sync_cli.cljs",
+      "bytes": 4209,
+      "sha256": "c6420f886c9e44a3e29f4090dd95e872133bc67807d6b10f367569b51bef01f1"
+    },
+    {
+      "path": "src/rheos/backend/infra/http_server.cljs",
+      "bytes": 22236,
+      "sha256": "933f3c16df3896fd6a7687550fdeb08dc9c0a0d5a0aead469eff0f47909571eb"
+    },
+    {
+      "path": "src/rheos/backend/infra/ledger.cljs",
+      "bytes": 765,
+      "sha256": "ab2c02c885144dda0665fb2be1f9bec84098a2d4187447a988e822611e70f622"
+    },
+    {
+      "path": "src/rheos/backend/infra/mcp.cljs",
+      "bytes": 2868,
+      "sha256": "e6b7879b5fd4aaccfea9bc7dca346f9f797dba68fb4e4f7f365ca1fec1c35de8"
+    },
+    {
+      "path": "src/rheos/backend/infra/projects.cljs",
+      "bytes": 881,
+      "sha256": "30f30b44c13266092433d868ea74022bdccfb519ba8de887259b43d22406eeb6"
+    },
+    {
+      "path": "src/rheos/backend/infra/store.cljs",
+      "bytes": 2689,
+      "sha256": "d88139023404b40e9c694cadb168f9a7201ed01009fdd0eb52a1c64d430a8539"
+    },
+    {
+      "path": "src/rheos/backend/infra/task_create.cljs",
+      "bytes": 6353,
+      "sha256": "a815ac16a98853be34fba470a769d1ec1642853f8c13fc1797742f7582abd980"
+    },
+    {
+      "path": "src/rheos/backend/infra/task_edit.cljs",
+      "bytes": 3042,
+      "sha256": "bb89e530664378e212512f212488d627531f77e1f5281a2e231de3d12370213f"
+    },
+    {
+      "path": "src/rheos/backend/infra/task_store.cljs",
+      "bytes": 8190,
+      "sha256": "8983f678c5b8e54552f444373c46b954688e8b25777e806e03e6a85ac36a4f58"
+    },
+    {
+      "path": "src/rheos/backend/infra/task_writeback.cljs",
+      "bytes": 633,
+      "sha256": "a2c015b0e2d6abfe5ce9c2ac1edc04e8a71a0b88aef5da4d892bf10daab548ce"
+    },
+    {
+      "path": "src/rheos/backend/infra/transition.cljs",
+      "bytes": 2485,
+      "sha256": "ec6d8e9aee087d0b525845b9b5fff4d6c975a73d6249d31c9b16f06344655005"
+    },
+    {
+      "path": "src/rheos/backend/infra/view_store.cljs",
+      "bytes": 1103,
+      "sha256": "cc0c371f7bd8778427140b32d21cddac13fea13a4b22676109b2d195d9743249"
+    },
+    {
+      "path": "src/rheos/backend/infra/watcher.cljs",
+      "bytes": 7186,
+      "sha256": "142dd149fb53a8f7650404d734b87fb97c782b35d624c747fb526ffcc05f1503"
+    },
+    {
+      "path": "src/rheos/backend/law/frontmatter.cljs",
+      "bytes": 2271,
+      "sha256": "af08622f7b673f123dbb9d263cc18e6842f85a6a616b3ad839c7bc81768d6b0a"
+    },
+    {
+      "path": "src/rheos/backend/law/fsm.cljs",
+      "bytes": 7007,
+      "sha256": "db3b500a6590e21aaef11e12e6ba6db8c0ba4244b8ca85f22e76f717272effc0"
+    },
+    {
+      "path": "src/rheos/backend/shape/config.cljs",
+      "bytes": 1986,
+      "sha256": "507fbaff23e061b476663b17c1adcc340583361ec25fbd8ba951dfedc31ee2a7"
+    },
+    {
+      "path": "src/rheos/backend/shape/content_parser.cljs",
+      "bytes": 5626,
+      "sha256": "8bc19ab0180575252d703c8409fb391054f9b5bab881facf8f14af42bcc24be5"
+    },
+    {
+      "path": "src/rheos/backend/shape/kanban.cljs",
+      "bytes": 1213,
+      "sha256": "1342a62a8205f9a7133236a9dd2b265df9e4b33fbbfcc0ec818f55f4f03d3b28"
+    },
+    {
+      "path": "src/rheos/ui/domain/board.cljs",
+      "bytes": 9857,
+      "sha256": "7f69162002f4e0bd20ee254028599dac6720ab27f165725ba89b0919fbe25f3c"
+    },
+    {
+      "path": "src/rheos/ui/domain/filter_bar.cljs",
+      "bytes": 4732,
+      "sha256": "047951cf64c496f42c6ad32da194a5a3df0c22205ff194a5b74417bea75208c1"
+    },
+    {
+      "path": "src/rheos/ui/domain/layout.cljs",
+      "bytes": 10051,
+      "sha256": "0f7d8b0940a625d06b8a474bdf3cbcd464bf1dc25a972a2af68bd15a454036f3"
+    },
+    {
+      "path": "src/rheos/ui/domain/orchestrator.cljs",
+      "bytes": 4862,
+      "sha256": "555f3fe9920c2a3951db6fc25f7547c8c25a38b16fbf9a8e4d5fb02387aae28c"
+    },
+    {
+      "path": "src/rheos/ui/domain/sidebar.cljs",
+      "bytes": 17348,
+      "sha256": "9b0c81457b4b90f501284a813ceee91cfac0ce1ca6ed1707cb64d62220a3d464"
+    },
+    {
+      "path": "src/rheos/ui/infra/api.cljs",
+      "bytes": 1402,
+      "sha256": "b586d86036938d6e8198e03849426a71dc510617291419ebc770a4bac33cc68a"
+    },
+    {
+      "path": "src/rheos/ui/infra/chat_session.cljs",
+      "bytes": 3185,
+      "sha256": "7f3e9ac79e1b4d9fcc9e3a5d0749b884beb3ecaa75216f9aa6fdeb9e43eee867"
+    },
+    {
+      "path": "src/rheos/ui/infra/ledger_stream.cljs",
+      "bytes": 1111,
+      "sha256": "d3d1d5a6013336ef3c17bde6c61987dc5262ffd0036ac2a3c3b32adbc2732949"
+    },
+    {
+      "path": "src/rheos/ui/infra/mount.cljs",
+      "bytes": 475,
+      "sha256": "2a53fda3963989dbf93d011d0d09b0ccb715050a051d6bbcf62c93aa900496be"
+    },
+    {
+      "path": "src/rheos/ui/law/url.cljs",
+      "bytes": 1098,
+      "sha256": "7e2d1bc47148dea69c0ded124210739057c7c674b6250ccfe7e46ba050991f16"
+    },
+    {
+      "path": "test/rheos/backend/domain/board_test.cljs",
+      "bytes": 2204,
+      "sha256": "5d29627c437bdeb3a3dac63d44c418ef421fb69e11ba18d7effc2e337d37c385"
+    },
+    {
+      "path": "test/rheos/backend/domain/compose_test.cljs",
+      "bytes": 5595,
+      "sha256": "95051908b2d69ff0fc7f91491280e147a5cb69b7299d5608dbd2c446bdffeac0"
+    },
+    {
+      "path": "test/rheos/backend/domain/events_test.cljs",
+      "bytes": 3490,
+      "sha256": "32f053f374dffbab17a16d380b07fd888f178dc422178cf2658b51e2b81034ee"
+    },
+    {
+      "path": "test/rheos/backend/domain/task_create_test.cljs",
+      "bytes": 5489,
+      "sha256": "b0dfc919437f7e219ae17d7378d09879c056da748235a37dd60838c382f7b7de"
+    },
+    {
+      "path": "test/rheos/backend/domain/transition_test.cljs",
+      "bytes": 430,
+      "sha256": "7bb086c05e5f12ef4a619b9600ec9969372124d5ce54fe544a68a8b7896e44d4"
+    },
+    {
+      "path": "test/rheos/backend/infra/cli_test.cljs",
+      "bytes": 9771,
+      "sha256": "330478d9be4afddddd0efb1d3f3f8353135ff5cf68fdc231658bcb61be4f872b"
+    },
+    {
+      "path": "test/rheos/backend/infra/config_card_creation_test.cljs",
+      "bytes": 7157,
+      "sha256": "7a220a3788b3b84979eb4030edf9bcc293e1bc9f0043e0a783a08001f704e78c"
+    },
+    {
+      "path": "test/rheos/backend/infra/config_test.cljs",
+      "bytes": 5769,
+      "sha256": "4fb739a5ed62aa99571148e95c94fdda4131b0868c3fc62c745cf9b2224a966a"
+    },
+    {
+      "path": "test/rheos/backend/infra/github_issue_preflight_test.cljs",
+      "bytes": 1250,
+      "sha256": "2f85678f209c5930f6e7b923b3ee0c2795202b818a819e0b1359a61f29131b2c"
+    },
+    {
+      "path": "test/rheos/backend/infra/github_issues_test.cljs",
+      "bytes": 3814,
+      "sha256": "dee54ac8005615f459abc0f8668ff8dd1541d2c96165cff17bc6641da5895360"
+    },
+    {
+      "path": "test/rheos/backend/infra/store_test.cljs",
+      "bytes": 2005,
+      "sha256": "4e35bcb13f98dd98e2e82ed49d3f223ba3f68a2c81507a9688345738f2e1a722"
+    },
+    {
+      "path": "test/rheos/backend/infra/task_create_conflict_test.cljs",
+      "bytes": 1567,
+      "sha256": "33b3d8f0321ea9de7c38fb34d490e3d0128887c46758bf833ba30c9db51bee28"
+    },
+    {
+      "path": "test/rheos/backend/infra/task_create_test.cljs",
+      "bytes": 11155,
+      "sha256": "3492692d1b6ee764c1514a2a110ce66a8f4c8bf3849bfa46e14fa82e6ac06a74"
+    },
+    {
+      "path": "test/rheos/backend/infra/task_edit_test.cljs",
+      "bytes": 9355,
+      "sha256": "682aff717534e9a8b20ef7fd3d378405574f22ee18ad11ea1d415d693d0f7c47"
+    },
+    {
+      "path": "test/rheos/backend/infra/task_store_test.cljs",
+      "bytes": 6892,
+      "sha256": "da07894cd9f51b96e5cb7b3a4a6644f809425710534bfd4b4038607f8c7a95f8"
+    },
+    {
+      "path": "test/rheos/backend/infra/task_writeback_test.cljs",
+      "bytes": 1967,
+      "sha256": "88b062fb1b601071b4085fe46508ec49223373813aca521fae28c0fef743e599"
+    },
+    {
+      "path": "test/rheos/backend/infra/transition_test.cljs",
+      "bytes": 6067,
+      "sha256": "9d358cc12c83e015748193f7f257bad3e96b173a6d52b0b305888fc44aac351d"
+    },
+    {
+      "path": "test/rheos/backend/infra/view_store_test.cljs",
+      "bytes": 1013,
+      "sha256": "021dbf6c6fa71e3bbbe6a6385f24fdda131fae6f89a4bfc272abbde7264cb9fe"
+    },
+    {
+      "path": "test/rheos/backend/infra/watcher_test.cljs",
+      "bytes": 14029,
+      "sha256": "ad2b9dba71746971669d4c1553766ee2194ca014c4881c135b5d5f6122288df2"
+    },
+    {
+      "path": "test/rheos/backend/law/fsm_test.cljs",
+      "bytes": 5377,
+      "sha256": "cb2cbd892be527d7fc658da415f185803921b4bf145d099d48c55dc1fdcbe948"
+    },
+    {
+      "path": "test/rheos/backend/shape/comment_fixtures.cljs",
+      "bytes": 2516,
+      "sha256": "8b95079fbe38a1775c83a423ced3f53afe38fd63fc8af078b8560d09ada7678a"
+    },
+    {
+      "path": "test/rheos/backend/shape/content_parser_test.cljs",
+      "bytes": 8984,
+      "sha256": "e446cdef30516048d6a8951b48fcde39dd3de837bab5b2d29e7c40c897a82a6d"
+    },
+    {
+      "path": "test/rheos/backend/shape/kanban_test.cljs",
+      "bytes": 832,
+      "sha256": "98bd66d2dbed8704b47b51ba77019fce6c9a94cbe2658cc8a77c5cf75e5ac5b7"
+    }
+  ],
+  "checks": {
+    "git_diff_check_exit": 0,
+    "text_only_delimiter_balance": true,
+    "clojure_reader_or_compiler_check": false,
+    "lint_run": false,
+    "tests_run": false,
+    "all_other_tracked_files_equal_head": true,
+    "protected_file_count": 88,
+    "production_source_or_config_change": false,
+    "head_unchanged": true,
+    "receipt_history_unchanged": true
+  },
+  "limits": [
+    "No .cljs to .cljc production rename or GREEN key addition.",
+    "No install, build, shadow, JVM, server, network, native, test execution, commit/push or board operation.",
+    "Static delimiter balance is not a Clojure reader/type/compile/test pass.",
+    "Four test files are frozen for source review; this preparation artifact is evidence only. RED and receipt checkpoint await actual authorized execution."
+  ]
+}

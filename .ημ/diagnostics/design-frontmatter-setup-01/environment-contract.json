@@ -1,0 +1,13 @@
+{
+  "node": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+  "node_sha256": "b1cbec894e45a5814b6ab756e1e14f8a76516273197e67e0412b57c1e10d0d9f",
+  "pnpm_js": "/home/err/.volta/tools/image/packages/pnpm/lib/node_modules/pnpm/bin/pnpm.cjs",
+  "pnpm_sha256": "b276da51dc8ca5b0d3ee3371695b50fc8b3244b281b091c63a3f082a88dadeb9",
+  "removed_option_keys": [
+    "JAVA_OPTS",
+    "NODE_OPTIONS"
+  ],
+  "ignore_scripts": true,
+  "lockfile": false,
+  "no_jvm_build_test_classpath_command": true
+}

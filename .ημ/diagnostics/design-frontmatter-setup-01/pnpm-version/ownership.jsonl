@@ -1,0 +1,3 @@
+{"at": "2026-10-07T18:47:12.879090+00:00", "elapsed_s": 0.011071504995925352, "event": "spawn", "pid": 2224325, "expected_pgid": 2224325}
+{"at": "2026-10-07T18:47:13.118576+00:00", "elapsed_s": 0.2505584629980149, "event": "identity", "identity": {"pid": 2224325, "state": "R", "pgid": 2224325, "starttime_ticks": 6633293, "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node", "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"}}
+{"at": "2026-10-07T18:47:14.224920+00:00", "elapsed_s": 1.3569045089971041, "event": "primary-reaped", "pid": 2224325, "exit_code": 0}
