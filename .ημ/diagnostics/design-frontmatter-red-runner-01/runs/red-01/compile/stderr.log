@@ -1,0 +1,30 @@
+shadow-cljs - config: /home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/shadow-cljs.edn
+Picked up JAVA_TOOL_OPTIONS: -Xms256m -Xmx2g -XX:ActiveProcessorCount=2
+Retrieving thheller/shadow-cljs/3.5.5/shadow-cljs-3.5.5.pom from https://repo.clojars.org/
+Retrieving thheller/shadow-cljs/3.5.5/shadow-cljs-3.5.5-aot.jar from https://repo.clojars.org/
+Picked up JAVA_TOOL_OPTIONS: -Xms256m -Xmx2g -XX:ActiveProcessorCount=2
+no "source-map-support" (run "npm install source-map-support --save-dev" to get it)
+rheos: transition rejected: No transition from 'review' to 'in_review'
+rheos: frontmatter keys not allowed: design
+rheos: frontmatter keys not allowed: design
+rheos: missing --set <key>=<value> — try `rheos help frontmatter`
+rheos: frontmatter keys not allowed: design, uuid
+rheos: frontmatter keys not allowed: uuid, design
+rheos: frontmatter keys not allowed: design, write-id
+rheos: frontmatter keys not allowed: write-id, design
+rheos: frontmatter keys not allowed: design, write_id
+rheos: frontmatter keys not allowed: write_id, design
+rheos: frontmatter keys not allowed: design, source-path
+rheos: frontmatter keys not allowed: source-path, design
+rheos: frontmatter keys not allowed: design, sourcePath
+rheos: frontmatter keys not allowed: sourcePath, design
+rheos: frontmatter keys not allowed: design, source
+rheos: frontmatter keys not allowed: source, design
+rheos: frontmatter keys not allowed: design, created-at
+rheos: frontmatter keys not allowed: created-at, design
+rheos: frontmatter keys not allowed: design, created_at
+rheos: frontmatter keys not allowed: created_at, design
+rheos: frontmatter keys not allowed: design, unknown-field
+rheos: frontmatter keys not allowed: unknown-field, design
+rheos: status is FSM-governed — use `rheos move <uuid> --to <status>`
+rheos: status is FSM-governed — use `rheos move <uuid> --to <status>`

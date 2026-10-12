@@ -1,0 +1,8 @@
+PLAN.md
+PREPARATION-FILES.txt
+PROVENANCE.json
+SHA256SUMS
+STATIC-CHECKS.json
+preparation-hashes.json
+source-pins.json
+supervisor.py

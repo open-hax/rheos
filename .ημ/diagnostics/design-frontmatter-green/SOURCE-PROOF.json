@@ -1,0 +1,50 @@
+{
+  "at": "2026-10-07T19:11:30.502803+00:00",
+  "RED_head": "171c4f22ebb25db4af40ee3e51f6d4a32e373467",
+  "production_paths": {
+    "src/rheos/backend/law/frontmatter.cljc": "144b529ba97735106fcd2f89b8fd7de8b8188eb5412ca3afd98fce9159d5d479",
+    "src/rheos/backend/infra/agent_tools.cljs": "e01d748d8f08dd066048f301b6a80fdd025d2479ad13a83a5078213e855035d4",
+    "src/rheos/backend/infra/cli.cljs": "78764c8267d7870e541cc5a105e7d77b36993d6227fe4d8604d1a0bc6e0c8536",
+    "docs/cli.md": "f9532f4fb474ab65e4b5e644a58729f0dda646c3be8f71c057f90ddc9b617ded"
+  },
+  "test_paths": {
+    "test/rheos/backend/law/frontmatter_test.cljc": "ad49f258c7c3f3433cc952305ba9b09c40120f8a977c4ee8e32c47d3ccaddd82",
+    "test/rheos/backend/infra/frontmatter_fixture.cljs": "3a3d4b4382e46fba2be8be32582996afc6b8c303a6d9b3a3b403b91a2e8abec7",
+    "test/rheos/backend/infra/agent_tools_test.cljs": "b86b421de2ab59c0a1e30eda283a7f1dad910cdd74e0d888e1aecc507143e385",
+    "test/rheos/backend/infra/http_server_test.cljs": "dc16f919c32a4b9519e81872a38c6cef198e32912529de9a84cdc7b5e90384bd"
+  },
+  "removed": "src/rheos/backend/law/frontmatter.cljs",
+  "scope": "Portable unchanged law renamed.cljc with only:designadded; three existing CLI/tool/docs discovery lists updated. No adapter/writer/serializer/boardstate changes.",
+  "observed_checks": [
+    {
+      "argv": [
+        "clj-kondo",
+        "--lint",
+        "src",
+        "test"
+      ],
+      "exit": 0,
+      "errors": 0,
+      "warnings": 0,
+      "info_count": 8,
+      "tool_chunk": "b4635c",
+      "limit": "Existing architecture informational messages retained in tool output; not claimed absent."
+    },
+    {
+      "argv": [
+        "bb",
+        "-cp",
+        "src:test",
+        "-e",
+        "require and run rheos.backend.law.frontmatter-test; exit nonzero for failures/errors"
+      ],
+      "exit": 0,
+      "tests": 4,
+      "assertions": 36,
+      "failures": 0,
+      "errors": 0,
+      "tool_chunk": "87087a"
+    }
+  ],
+  "not_executed": "Compiled GREEN suite, LSP diagnostics, all four release targets. No GREEN commit/push or operational activation."
+}

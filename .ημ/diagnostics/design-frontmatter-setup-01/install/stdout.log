@@ -1,0 +1,34 @@
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Progress: resolved 13, reused 8, downloaded 2, added 0
+Progress: resolved 37, reused 32, downloaded 4, added 0
+Progress: resolved 139, reused 132, downloaded 5, added 0
+Progress: resolved 204, reused 197, downloaded 6, added 0
+ WARN  1 deprecated subdependencies found: glob@11.1.0
+Progress: resolved 243, reused 207, downloaded 11, added 0
+Packages: +220
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 243, reused 207, downloaded 12, added 219
+Progress: resolved 243, reused 207, downloaded 13, added 220, done
+
+dependencies:
++ @fastify/cors 11.3.0
++ @fastify/static 8.3.0 (10.1.5 is available)
++ @modelcontextprotocol/sdk 1.32.1
++ chokidar 4.0.3 (5.0.0 is available)
++ fastify 5.12.5
+
+devDependencies:
++ @open-hax/protocols 0.1.0
++ @open-hax/uxx-helix 0.1.0
++ @vitejs/plugin-react 6.1.2
++ dompurify 3.4.16
++ helix 0.3.1
++ marked 18.1.0
++ process 0.11.10
++ react 19.3.0
++ react-dom 19.3.0
++ scheduler 0.23.2 (0.28.0 is available)
++ shadow-cljs 3.5.5
++ ws 8.22.0
+
+Done in 8.6s using pnpm v10.15.0

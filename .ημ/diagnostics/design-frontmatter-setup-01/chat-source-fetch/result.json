@@ -1,0 +1,40 @@
+{
+  "at": "2026-10-07T18:47:10.911013+00:00",
+  "status": "complete",
+  "error": null,
+  "elapsed_s": 1.3301203470036853,
+  "exit_code": 0,
+  "primary_reaped": true,
+  "observed_identities": [
+    {
+      "pid": 2223963,
+      "state": "S",
+      "pgid": 2223963,
+      "starttime_ticks": 6632964,
+      "exe": "/usr/bin/git",
+      "cwd": "/tmp/rheos-design-source-fwlg0t2z/chat-ui"
+    },
+    {
+      "pid": 2223981,
+      "state": "S",
+      "pgid": 2223963,
+      "starttime_ticks": 6632967,
+      "exe": "/usr/lib/git-core/git",
+      "cwd": "/tmp/rheos-design-source-fwlg0t2z/chat-ui"
+    },
+    {
+      "pid": 2223982,
+      "state": "S",
+      "pgid": 2223963,
+      "starttime_ticks": 6632968,
+      "exe": "/usr/lib/git-core/git-remote-http",
+      "cwd": "/tmp/rheos-design-source-fwlg0t2z/chat-ui"
+    }
+  ],
+  "remaining_group": [],
+  "remaining_observed": [],
+  "membership_unknown": [],
+  "cleanup_errors": [],
+  "total_deadline_exceeded": false,
+  "limit": "Polling can miss brief children. Stat controls membership. OS/I/O stalls cannot be forcibly time-bounded."
+}

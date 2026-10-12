@@ -1,0 +1,191 @@
+{
+  "started_utc": "2026-10-07T19:04:28.210884+00:00",
+  "ended_utc": "2026-10-07T19:05:03.549939+00:00",
+  "elapsed_s": 35.339089946006425,
+  "work_s": 280.0,
+  "total_s": 300.0,
+  "total_deadline_exceeded": false,
+  "error": null,
+  "classification": "assertion-failures-root-review-required",
+  "stages": [
+    {
+      "name": "compile",
+      "exit_code": 0,
+      "error": null,
+      "elapsed_s": 32.78115150600206,
+      "primary_identity": {
+        "pid": 2317972,
+        "state": "R",
+        "pgid": 2317972,
+        "starttime_ticks": 6736882,
+        "metadata_errors": {},
+        "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+        "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+      },
+      "primary_reaped": true,
+      "observed_identities": [
+        {
+          "pid": 2317972,
+          "state": "R",
+          "pgid": 2317972,
+          "starttime_ticks": 6736882,
+          "metadata_errors": {},
+          "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+          "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+        },
+        {
+          "pid": 2317972,
+          "state": "S",
+          "pgid": 2317972,
+          "starttime_ticks": 6736882,
+          "metadata_errors": {},
+          "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+          "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+        },
+        {
+          "pid": 2318009,
+          "state": "S",
+          "pgid": 2317972,
+          "starttime_ticks": 6736889,
+          "metadata_errors": {},
+          "exe": "/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+          "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+        },
+        {
+          "pid": 2318009,
+          "state": "Z",
+          "pgid": 2317972,
+          "starttime_ticks": 6736889,
+          "metadata_errors": {
+            "exe": {
+              "type": "FileNotFoundError",
+              "message": "[Errno 2] No such file or directory: '/proc/2318009/exe'"
+            },
+            "cwd": {
+              "type": "FileNotFoundError",
+              "message": "[Errno 2] No such file or directory: '/proc/2318009/cwd'"
+            }
+          },
+          "exe": null,
+          "cwd": null
+        },
+        {
+          "pid": 2318508,
+          "state": "S",
+          "pgid": 2317972,
+          "starttime_ticks": 6737256,
+          "metadata_errors": {},
+          "exe": "/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+          "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+        },
+        {
+          "pid": 2318508,
+          "state": "Z",
+          "pgid": 2317972,
+          "starttime_ticks": 6737256,
+          "metadata_errors": {
+            "exe": {
+              "type": "FileNotFoundError",
+              "message": "[Errno 2] No such file or directory: '/proc/2318508/exe'"
+            },
+            "cwd": {
+              "type": "FileNotFoundError",
+              "message": "[Errno 2] No such file or directory: '/proc/2318508/cwd'"
+            }
+          },
+          "exe": null,
+          "cwd": null
+        }
+      ],
+      "remaining_group": [],
+      "remaining_observed": [],
+      "membership_unknown": [],
+      "cleanup_errors": [],
+      "cleanup_signals": [],
+      "within_total_deadline": true,
+      "artifacts": {
+        "stdout.log": "053bcb1ee69366b88a3ac459d2b88e351d236f671e9bbb4f5dfdacfc459c032e",
+        "stderr.log": "014f795e0cc82005a825e15a43aeb0c26aec25f0ca594258b9e8d8bc694b4224",
+        "command.json": "fbaa2464ad1baf20f1ade8bac0e2ee8307ae1f5964d524dad02f5573522389d3",
+        "ownership.jsonl": "77a464dce2c5c01ec01cb11ea7c5e2dc315435067cad8574563b3b67c3f9ad93",
+        "primary-identity.json": "12add7ca6f2d6f9074ecc0b620a0db62c0fa65f985e925fb6b399dbe8b642dad"
+      },
+      "closed": true
+    },
+    {
+      "name": "explicit-node-test",
+      "exit_code": 1,
+      "error": null,
+      "elapsed_s": 2.0035512510075932,
+      "primary_identity": {
+        "pid": 2322170,
+        "state": "R",
+        "pgid": 2322170,
+        "starttime_ticks": 6740145,
+        "metadata_errors": {},
+        "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+        "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+      },
+      "primary_reaped": true,
+      "observed_identities": [
+        {
+          "pid": 2322170,
+          "state": "R",
+          "pgid": 2322170,
+          "starttime_ticks": 6740145,
+          "metadata_errors": {},
+          "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+          "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+        },
+        {
+          "pid": 2322170,
+          "state": "S",
+          "pgid": 2322170,
+          "starttime_ticks": 6740145,
+          "metadata_errors": {},
+          "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+          "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+        },
+        {
+          "pid": 2322170,
+          "state": "R",
+          "pgid": 2322170,
+          "starttime_ticks": 6740145,
+          "metadata_errors": {},
+          "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+          "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+        }
+      ],
+      "remaining_group": [],
+      "remaining_observed": [],
+      "membership_unknown": [],
+      "cleanup_errors": [],
+      "cleanup_signals": [],
+      "within_total_deadline": true,
+      "artifacts": {
+        "stdout.log": "72b9b177c1d205efd0a9accfdc2526a806ee9ed61d30e512e6742df9e9750456",
+        "stderr.log": "2f66e8bff890ad6350bd8eeb9dc6347f9a99756e86e8665e9a80a0077263f71b",
+        "command.json": "2a404f3ba4f9e730fbc5828dc01f5aece011f248eb6611ab7aef5608427d13df",
+        "ownership.jsonl": "bdc540df27528c2500e4ba4211718566f9d9b387e23ab313cff105134166c957",
+        "primary-identity.json": "39a9a54b664d6c8f057c8f8bf740c440c0e312744c9c76cee59563c95c85b761"
+      },
+      "closed": true
+    }
+  ],
+  "source_changed": [],
+  "source_file_sets_changed": [],
+  "preparation_changed": [],
+  "verification_errors": [],
+  "boot_id": "b04f7fb6-ea65-4b47-8866-73e24a6887f6",
+  "test_bundle": {
+    "path": "dist/test.cjs",
+    "sha256": "13b0ea30f31cfb1003ff4ba3b80ea5dac992d668e5e974bc0fec335dd1805b0c",
+    "bytes": 54662
+  },
+  "limits": [
+    "Assertion failures need root review against intended design tests; this wrapper cannot grant meaningful RED.",
+    "Shadow autorun may itself run tests; explicit Node output and exit are captured separately.",
+    "Polling may miss brief children. OS/filesystem stalls can delay enforcement or prevent final persistence."
+  ],
+  "execution_closed": true
+}

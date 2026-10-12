@@ -1,0 +1,96 @@
+{
+  "at": "2026-10-07T18:56:13.519250+00:00",
+  "tier": "source-inspection-and-unexecuted-preparation",
+  "adapted_from": {
+    "path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/.ημ/diagnostics/design-frontmatter-setup-01/setup.py",
+    "sha256": "678b89ec3b8bfe6ce78c3c3363c3d66cb7b755c136722f190227fbf4199bb55d",
+    "relationship": "Uses accepted setup membership/optional identity/durable ownership pattern; newly adapted sequential compile+explicit Node staging, shared deadlines and classification. Not byte-equivalent to setup."
+  },
+  "instructions": [
+    {
+      "path": "/home/err/AGENTS.md",
+      "sha256": "493d4ce3174b268b28d8fda9af72f1e7de7f5aafcc8ddc055db9b4e0267850d4"
+    },
+    {
+      "path": "/home/err/spaces/AGENTS.md",
+      "sha256": "c15c09d7b19e65058132c33e63b12952ecfa17216c09d4cc201121ce9b1839c6"
+    },
+    {
+      "path": "/home/err/spaces/foresight/AGENTS.md",
+      "sha256": "f7326deaf01810ed73b6c6d777387599b7669feb596faa019a0c297f1fcf81d7"
+    }
+  ],
+  "source_dependencies": [
+    {
+      "commit": "0ed56aa74a53a1d1e9c2e55ce95451817a7f3a90",
+      "tree": "packages/protocols/src",
+      "tree_object": "ec09d428b29619124bd69274f0e87e47241e347f",
+      "target": "deps/protocols/src"
+    },
+    {
+      "commit": "86385532b4f8606946555d0ada8e3fb22f35b4c3",
+      "tree": "src",
+      "tree_object": "98cc3884d44b6fe1586015a85a87bf2ef4edf3db",
+      "target": "deps/chat-ui/src"
+    }
+  ],
+  "installed_shadow": "3.5.5",
+  "cache_observation": {
+    "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/.shadow-cljs": {
+      "exists": false
+    },
+    "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/dist": {
+      "exists": false
+    },
+    "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/target": {
+      "exists": false
+    },
+    "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/.cpcache": {
+      "exists": false
+    },
+    "/home/err/.m2/repository/thheller/shadow-cljs/3.5.5": {
+      "exists": false
+    },
+    "/home/err/.shadow-cljs/config.edn": {
+      "exists": false
+    },
+    "/home/err/.m2/repository/lilactown/helix/0.2.2/helix-0.2.2.jar": {
+      "exists": true,
+      "bytes": 34089,
+      "sha256": "eaa06aaeb252a86ee5bfa6eae016400753c2c5425e33ad1b94e7e80a6107a0c2"
+    },
+    "/home/err/.m2/repository/metosin/malli/0.16.4/malli-0.16.4.jar": {
+      "exists": true,
+      "bytes": 94145,
+      "sha256": "f76900a6bdbe138aefd2b9110be245b7ef299c067b89732207f8ab788aa9a77e"
+    }
+  },
+  "budget_rationale": "Maximum authorized 300 seconds: 280 work shared by compile/autotest/explicit Node, 20 cleanup. Missing matching shadow Maven artifact and no checkout compiler cache mean dependency resolution and cold compile are unmeasured. Existing Node/source install and cached Helix/Malli remove some setup, but do not establish a completion bound. Timeout is failed execution, not RED or permission to retry.",
+  "source_references": [
+    {
+      "path": "package.json",
+      "lines": [
+        22,
+        22
+      ],
+      "claim": "test script compiles test then executes Node bundle; exact lines also retained in original file pin"
+    },
+    {
+      "path": "shadow-cljs.edn",
+      "claim": "Existing node-test target, dist/test.cjs, all -test namespaces, autorun true retained."
+    },
+    {
+      "path": "node_modules/shadow-cljs/cli/dist.js",
+      "lines": [
+        509,
+        559
+      ],
+      "claim": "force-spawn option bypasses running-server path; regular compile uses spawned child. kp reads XDG/LOCALAPPDATA then home config."
+    }
+  ],
+  "no_execution": [
+    "No supervisor import or invocation",
+    "No Node/JVM/classpath/compile/build/test command",
+    "No native service/input or board/Git mutation"
+  ]
+}

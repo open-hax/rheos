@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "bash",
+    "--noprofile",
+    "--norc",
+    "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/scripts/bootstrap-source-deps.sh"
+  ],
+  "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter",
+  "at": "2026-10-07T18:47:11.446532+00:00",
+  "work_s": 10,
+  "total_s": 20,
+  "lifecycle_scripts": false
+}

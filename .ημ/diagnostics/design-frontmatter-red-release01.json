@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-07T19:04:27.977008+00:00",
+  "argv": [
+    "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+    "/home/err/spaces/review-repair/rheos-comment-rendering/dist/cli.cjs",
+    "comment",
+    "rheos-design-frontmatter-key",
+    "--text",
+    "Root releases one actual Rheos design-field RED compile+explicitNode attempt red-01 in isolatedef3c4ab.13newtests frozen;188pins/fourfilesets verified. Runner2eca5d96c621fd63c5246f63a6776bae9af79b12e3b2d538b525c6c464191280;manifest4573f88a. One shared280swork300total2GiB2CPU, sanitizedJVMenv, force-spawn existingtesttarget then explicitNode exit; coldShadow3.5.5cache means completionconditional. Compile/timeouts/errors are not meaningfulRED. Native closed with238PIDsabsent; subsequentclockRED closed5.778s16/9715F0E/PID2306106absent. This owns sole runtime lane; no auto retry/extension/sourceimplementation/merge.",
+    "--config",
+    "openhax.kanban.edn"
+  ],
+  "cwd": "/home/err/spaces/foresight/.worktrees/eta-rheos-design-metadata-plan",
+  "exit": 0,
+  "stdout": "{\n  \"ok\": true,\n  \"uuid\": \"rheos-design-frontmatter-key\",\n  \"comment\": \"Root releases one actual Rheos design-field RED compile+explicitNode attempt red-01 in isolatedef3c4ab.13newtests frozen;188pins/fourfilesets verified. Runner2eca5d96c621fd63c5246f63a6776bae9af79b12e3b2d538b525c6c464191280;manifest4573f88a. One shared280swork300total2GiB2CPU, sanitizedJVMenv, force-spawn existingtesttarget then explicitNode exit; coldShadow3.5.5cache means completionconditional. Compile/timeouts/errors are not meaningfulRED. Native closed with238PIDsabsent; subsequentclockRED closed5.778s16/9715F0E/PID2306106absent. This owns sole runtime lane; no auto retry/extension/sourceimplementation/merge.\"\n}\n",
+  "stderr": "",
+  "source_pins": 188,
+  "root_review": "Full supervisor/PLAN reviewed; actual compile+explicitNode distinction and shared280/300deadline/groupclosure verified by source inspection. Cold execution unqualified.",
+  "clock_closure": "3ef3ca02cf9d41dcce343239e74251ef56486b0ed2a4c636b6a3b2f16adc33e9"
+}

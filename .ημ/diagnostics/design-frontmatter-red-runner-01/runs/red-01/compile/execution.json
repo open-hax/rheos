@@ -1,0 +1,104 @@
+{
+  "name": "compile",
+  "exit_code": 0,
+  "error": null,
+  "elapsed_s": 32.78115150600206,
+  "primary_identity": {
+    "pid": 2317972,
+    "state": "R",
+    "pgid": 2317972,
+    "starttime_ticks": 6736882,
+    "metadata_errors": {},
+    "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+    "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+  },
+  "primary_reaped": true,
+  "observed_identities": [
+    {
+      "pid": 2317972,
+      "state": "R",
+      "pgid": 2317972,
+      "starttime_ticks": 6736882,
+      "metadata_errors": {},
+      "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+    },
+    {
+      "pid": 2317972,
+      "state": "S",
+      "pgid": 2317972,
+      "starttime_ticks": 6736882,
+      "metadata_errors": {},
+      "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+    },
+    {
+      "pid": 2318009,
+      "state": "S",
+      "pgid": 2317972,
+      "starttime_ticks": 6736889,
+      "metadata_errors": {},
+      "exe": "/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+    },
+    {
+      "pid": 2318009,
+      "state": "Z",
+      "pgid": 2317972,
+      "starttime_ticks": 6736889,
+      "metadata_errors": {
+        "exe": {
+          "type": "FileNotFoundError",
+          "message": "[Errno 2] No such file or directory: '/proc/2318009/exe'"
+        },
+        "cwd": {
+          "type": "FileNotFoundError",
+          "message": "[Errno 2] No such file or directory: '/proc/2318009/cwd'"
+        }
+      },
+      "exe": null,
+      "cwd": null
+    },
+    {
+      "pid": 2318508,
+      "state": "S",
+      "pgid": 2317972,
+      "starttime_ticks": 6737256,
+      "metadata_errors": {},
+      "exe": "/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+      "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+    },
+    {
+      "pid": 2318508,
+      "state": "Z",
+      "pgid": 2317972,
+      "starttime_ticks": 6737256,
+      "metadata_errors": {
+        "exe": {
+          "type": "FileNotFoundError",
+          "message": "[Errno 2] No such file or directory: '/proc/2318508/exe'"
+        },
+        "cwd": {
+          "type": "FileNotFoundError",
+          "message": "[Errno 2] No such file or directory: '/proc/2318508/cwd'"
+        }
+      },
+      "exe": null,
+      "cwd": null
+    }
+  ],
+  "remaining_group": [],
+  "remaining_observed": [],
+  "membership_unknown": [],
+  "cleanup_errors": [],
+  "cleanup_signals": [],
+  "within_total_deadline": true,
+  "artifacts": {
+    "stdout.log": "053bcb1ee69366b88a3ac459d2b88e351d236f671e9bbb4f5dfdacfc459c032e",
+    "stderr.log": "014f795e0cc82005a825e15a43aeb0c26aec25f0ca594258b9e8d8bc694b4224",
+    "command.json": "fbaa2464ad1baf20f1ade8bac0e2ee8307ae1f5964d524dad02f5573522389d3",
+    "ownership.jsonl": "77a464dce2c5c01ec01cb11ea7c5e2dc315435067cad8574563b3b67c3f9ad93",
+    "primary-identity.json": "12add7ca6f2d6f9074ecc0b620a0db62c0fa65f985e925fb6b399dbe8b642dad"
+  },
+  "closed": true
+}

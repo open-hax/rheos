@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+    "/home/err/.volta/tools/image/packages/pnpm/lib/node_modules/pnpm/bin/pnpm.cjs",
+    "install",
+    "--ignore-scripts",
+    "--lockfile=false"
+  ],
+  "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter",
+  "at": "2026-10-07T18:47:14.278771+00:00",
+  "work_s": 110.0,
+  "total_s": 120.0,
+  "lifecycle_scripts": false
+}

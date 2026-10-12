@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+    "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/dist/test.cjs"
+  ],
+  "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter",
+  "at": "2026-10-07T19:05:01.217938+00:00",
+  "boot_id": "b04f7fb6-ea65-4b47-8866-73e24a6887f6",
+  "shared_work_remaining_s": 246.9928949689929,
+  "shared_total_remaining_s": 266.99289360399416
+}

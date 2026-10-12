@@ -1,0 +1,163 @@
+{
+  "context": "己",
+  "confidence": 0.99,
+  "at": "2026-10-07T19:50:01.002272+00:00",
+  "reviewer": "sculpt_plan_review",
+  "verdict": "PASS_LOCAL_PUBLICATION_PACKAGE",
+  "findings": [],
+  "scope": "Independent lossless publication/evidence audit; no hosted approval or operational activation credit.",
+  "pins": {
+    "package_manifest": "0a21b0b0d48e20b7af39e0c3e308354fa59b488c629451728025e78983210271",
+    "map": "a29137c15511f766f258fe2fa440b97b62f4854b49431985fa8dbe369cf7735c",
+    "archive": "b6e4d2505d3629b6408723115c86da1bb06c8b6cd0ce0170ecf5f8a04fef334f",
+    "staging": "0c41abc69457404e742419fb1084b80a0b0be6c772ea5a42e2280bf2ee8fb953",
+    "root_closure": "faf2a602c52d2d9f9c71e7fcfb3724ca694ba8a7c0953a3180feee91cefd7c8a"
+  },
+  "round_trip": {
+    "all_exact_byte_comparisons": true,
+    "packed_records": 107,
+    "decoded_bytes": 416090,
+    "encoded_bytes": 455566,
+    "empty_files": [
+      ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/compiler-warning-rejected/stdout.log",
+      ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/correct-pass/stderr.log",
+      ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/missing-artifact-rejected/stderr.log",
+      ".ημ/diagnostics/design-frontmatter-green-runner-01/guard-qualification/raw-heredoc-rejected/stdout.log",
+      ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/caller-fixture/stderr.log",
+      ".ημ/diagnostics/design-frontmatter-green-runner-01/runs/green-01/completed-outputs/stderr.log"
+    ],
+    "direct_originals": 3,
+    "binary_reference_exceptions": 1,
+    "all_classified_originals": 111,
+    "independent_raw_inventory_matches": true,
+    "CR_ANSI_UTF8_preserved": true
+  },
+  "paths": {
+    "package_files": 9,
+    "manifest_entries": 16,
+    "explicit_staging_paths": 21,
+    "RED_paths": 73,
+    "cumulative_no_rename_paths": 91,
+    "source_or_tests_packed": false,
+    "all_cumulative_tests_direct": true,
+    "manifest_coverage_exceptions": [
+      ".ημ/diagnostics/design-frontmatter-green-canonical-closure.json",
+      ".ημ/diagnostics/design-frontmatter-green-publication/SHA256SUMS",
+      ".ημ/receipts.edn",
+      ".ημ/session-mycology/ledger.md",
+      "src/rheos/backend/law/frontmatter.cljs"
+    ],
+    "exceptions_explained": "Own manifest, intentional old law deletion, and three explicitly root-owned live companions. All other current publication paths covered.",
+    "method": "Set-union verified independently from author-pinned RED inventory and current explicit list; no Git call."
+  },
+  "history": {
+    "unchanged_paths": 70,
+    "unchanged_diagnostic_paths": 67,
+    "root_ledger_appends": [
+      {
+        "path": ".ημ/receipts.edn",
+        "prefix_bytes": 25402,
+        "prefix_sha256": "6300353fcdefc192f27aba09e5fd89d83d48a742f7d2e0ef1c9d413b967bdcc1",
+        "current_sha256": "192834c1a770db79125842c5f7457859901b02f24748bd24d92627b4edb14e24"
+      },
+      {
+        "path": ".ημ/session-mycology/ledger.md",
+        "prefix_bytes": 3965,
+        "prefix_sha256": "4a7c503853fcbb5364d472bfd975bc8bcf6294a84ab4459cbf2ae0f8c514aa73",
+        "current_sha256": "563d55c4905dea49b190c76b572e115386bcb7bcb0f4cf8a9c0d35170d1ed0eb"
+      }
+    ],
+    "only_old_test_change": {
+      "path": "test/rheos/backend/infra/http_server_test.cljs",
+      "proof": "Removing the exact single ^js patch! app hint reproduces recorded RED bytes/hash."
+    },
+    "raw_RED_73_failures_and_original_compiler_warning_retained": true,
+    "record_origin_limit": "Author generated the 73 historical path/byte/hash records through read-only Git commands. Reviewer compared every current file or exact allowed inverse/prefix with those records, without independently querying Git objects."
+  },
+  "warm_cache": {
+    "archive": {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/warm-prior.tar.gz",
+      "bytes": 7430065,
+      "sha256": "0666ef9b0d37a97c8e58f909e422f3bee0710752942a6bb9f6e6235888c8f1dc"
+    },
+    "manifest": {
+      "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/warm-before.json",
+      "bytes": 141683,
+      "sha256": "a99070af9175868956c11e75a1b1356f72767ec131d093f12e45e3b89babf6f5"
+    },
+    "manifest_archive_record": 106,
+    "members_checked": 480,
+    "expanded_bytes": 50315678,
+    "missing_or_mismatched": [],
+    "extraction_or_execution": false,
+    "published_binary": false,
+    "limit": "Exact local archive checked; not a claim of hosted cache reconstruction."
+  },
+  "GREEN": {
+    "execution_files_checked": 50,
+    "generated_artifacts_checked": 5,
+    "stages_closed": 7,
+    "elapsed_seconds": 102.47682475400507,
+    "compile_autorun_and_explicit_node_each": {
+      "tests": 166,
+      "assertions": 1361,
+      "failures": 0,
+      "errors": 0
+    },
+    "release_targets": [
+      "server",
+      "cli",
+      "github-sync",
+      "app"
+    ],
+    "compiler_warnings": 0,
+    "LSP_info_diagnostics": 67,
+    "source_pins_exact_now": 222,
+    "source_pins_append_only": 2,
+    "preparation_pins": 53,
+    "preparation_manifest_rows": 54,
+    "recorded_owned_PID_union": [
+      2477168,
+      2477180,
+      2477216,
+      2477237,
+      2477244,
+      2477291,
+      2477347,
+      2477474,
+      2477492,
+      2477493,
+      2477672,
+      2478410,
+      2478442,
+      2479550,
+      2479751,
+      2479758,
+      2486222,
+      2486223
+    ],
+    "process_limit": "All stage records clean and union equals root absence census; no fresh process probe."
+  },
+  "retained_provenance": [
+    "Direct historical RED logs retain73 design failures and original HTTP compiler infer warning.",
+    "Packed compiler-hint repair retains before/after hashes and its earlier unexecuted status.",
+    "Packed malformed CI heredoc, failing fake run, corrected guard and all positive/negative guard outcomes remain exact.",
+    "Packed pnpm unresolved NPM_TOKEN variable-name advisory, optional source-map-support notice and expected negative-test CLI refusals remain exact.",
+    "Packed LSP stderr retains missing-cache ERROR and config-copy WARN labels/progress; configured source diagnostics are67 info, no warning/error.",
+    "Earlier source/preparation statements are historical; successor closure identifies actual completed GREEN.",
+    "Packaging records the expected two post-run ledger differences and exact preserved prefixes."
+  ],
+  "review_check_correction": "First independent script used a guessed HTTP helper signature for inverse checking and stopped before writing an artifact. Reading the actual patch! declaration and reversing its exact single ^js hint verified recorded RED bytes. This was reviewer checker correction, not a package or project failure.",
+  "operations": [
+    "Read complete publication script, map, plan, result, proofs and lists.",
+    "Used independent file/hash/JSON/tar inspection, not author package.py (which invokes Git).",
+    "No Git/index/source/board/JVM/native/process/service/remote operation.",
+    "Only this new sibling review JSON written."
+  ],
+  "limits": [
+    "Reviewer authored the earlier finite runner and source review; this verdict is independent of publication authorship, not a new independent review of runner implementation.",
+    "Root owns final staged patch/hash/path count, hosted policy and publication.",
+    "Count91 excludes this new review artifact; including it requires explicit root accounting."
+  ],
+  "next_action": "Root may check and stage the exact publication list, accounting separately for this review; no runtime or activation implied."
+}

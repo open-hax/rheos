@@ -1,0 +1,48 @@
+{
+  "at": "2026-10-07T18:47:23.637681+00:00",
+  "status": "complete",
+  "error": null,
+  "elapsed_s": 9.35891199800244,
+  "exit_code": 0,
+  "primary_reaped": true,
+  "observed_identities": [
+    {
+      "pid": 2224475,
+      "state": "R",
+      "pgid": 2224475,
+      "starttime_ticks": 6633434,
+      "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+      "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+    },
+    {
+      "pid": 2224587,
+      "state": "S",
+      "pgid": 2224475,
+      "starttime_ticks": 6633612,
+      "exe": "/usr/bin/git",
+      "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+    },
+    {
+      "pid": 2224588,
+      "state": "S",
+      "pgid": 2224475,
+      "starttime_ticks": 6633619,
+      "exe": "/usr/lib/git-core/git",
+      "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+    },
+    {
+      "pid": 2224589,
+      "state": "R",
+      "pgid": 2224475,
+      "starttime_ticks": 6633620,
+      "exe": "/usr/lib/git-core/git-remote-http",
+      "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter"
+    }
+  ],
+  "remaining_group": [],
+  "remaining_observed": [],
+  "membership_unknown": [],
+  "cleanup_errors": [],
+  "total_deadline_exceeded": false,
+  "limit": "Polling can miss brief children. Stat controls membership. OS/I/O stalls cannot be forcibly time-bounded."
+}

@@ -12,6 +12,7 @@
             [cljs.test :refer [deftest testing is]]
             [rheos.backend.infra.agent-tools :as agent-tools]
             [rheos.backend.infra.cli :as cli]
+            [rheos.backend.infra.frontmatter-fixture :as frontmatter-fixture]
             [rheos.backend.infra.projects :as projects]))
 
 (defn- tmp-dir []
@@ -139,3 +140,115 @@
   (testing "the published mapping the tests above depend on"
     (is (= 3 (:refused cli/exit-codes)))
     (is (pos? (:refused cli/exit-codes)))))
+
+;; Real frontmatter tool/CLI writes share the existing policy and ledger path.
+(defn- ^:async frontmatter-outcome! [{:keys [task project]} updates]
+  (try
+    {:result (await (agent-tools/dispatch
+                     "kanban_update_frontmatter"
+                     {:uuid (:uuid task) :project (:id project) :updates updates}))}
+    (catch :default e
+      {:error (ex-data e) :message (ex-message e)})))
+
+(defn- ^:async exercise-tool-mutations! [board changes]
+  (doseq [[key value] changes]
+    (let [before (await (frontmatter-fixture/snapshot board))
+          {:keys [result error]} (await (frontmatter-outcome! board {key value}))
+          readback (await (agent-tools/dispatch
+                           "kanban_read_task"
+                           {:uuid (get-in board [:task :uuid])
+                            :project (get-in board [:project :id])}))
+          after (await (frontmatter-fixture/snapshot board))]
+      (is (nil? error) "the actual registered tool must accept descriptive metadata")
+      (is (true? (:ok result)))
+      (is (= value (get-in result [:frontmatter key])))
+      (is (= value (get-in readback [:frontmatter key])))
+      (is (= (:sections readback) (get-in after [:parsed :sections])))
+      (frontmatter-fixture/assert-mutation! before after key value "agent"))))
+
+(deftest ^:async tool-sets-and-replaces-design-with-real-ledger-events
+  (await (frontmatter-fixture/with-board!
+           #(exercise-tool-mutations!
+              % [[:design "docs/designs/not-created-yet.md"]
+                 [:design "docs/designs/replacement.md"]]))))
+
+(deftest ^:async tool-retains-existing-descriptive-field-behavior
+  (await (frontmatter-fixture/with-board!
+           #(exercise-tool-mutations! % [[:title "Changed title"] [:priority "P1"]]))))
+
+(defn- ^:async exercise-tool-refusals! [board]
+  (doseq [key frontmatter-fixture/protected-keys
+          updates (frontmatter-fixture/mixed-updates key)]
+    (let [before (await (frontmatter-fixture/snapshot board))
+          {:keys [result error]} (await (frontmatter-outcome! board updates))
+          after (await (frontmatter-fixture/snapshot board))]
+      (is (nil? result))
+      (is (= :usage (:kind error)))
+      (is (some #{(name key)} (:keys error)))
+      (frontmatter-fixture/assert-unchanged! before after)))
+  (doseq [updates (frontmatter-fixture/mixed-updates :status)]
+    (let [before (await (frontmatter-fixture/snapshot board))
+          {:keys [error message]} (await (frontmatter-outcome! board updates))
+          after (await (frontmatter-fixture/snapshot board))]
+      (is (= :usage (:kind error)))
+      (is (= "status" (:key error)))
+      (is (re-find #"FSM-governed" (str message)))
+      (frontmatter-fixture/assert-unchanged! before after)))
+  (let [before (await (frontmatter-fixture/snapshot board))
+        {:keys [error message]} (await (frontmatter-outcome! board {}))
+        after (await (frontmatter-fixture/snapshot board))]
+    (is (= :usage (:kind error)))
+    (is (= "no frontmatter updates given" message))
+    (frontmatter-fixture/assert-unchanged! before after)))
+
+(deftest ^:async tool-refuses-entire-mixed-or-empty-update
+  (await (frontmatter-fixture/with-board! exercise-tool-refusals!)))
+
+(defn- ^:async frontmatter-cli! [{:keys [task config-path]} pairs]
+  (let [saved-argv (.-argv js/process)
+        saved-exit (.-exitCode js/process)
+        saved-projects {:projects (projects/all) :default-project-id (projects/default-id)}]
+    (try
+      (set! (.-exitCode js/process) 0)
+      (set! (.-argv js/process)
+            (clj->js (concat ["node" "rheos" "frontmatter" (:uuid task)]
+                            (mapcat (fn [[key value]] ["--set" (str (name key) "=" value)]) pairs)
+                            ["--config" config-path])))
+      (await (cli/main))
+      (.-exitCode js/process)
+      (finally
+        (set! (.-argv js/process) saved-argv)
+        (set! (.-exitCode js/process) saved-exit)
+        (projects/set-projects! saved-projects)))))
+
+(defn- ^:async exercise-cli-mutations! [board changes]
+  (doseq [[key value] changes]
+    (let [before (await (frontmatter-fixture/snapshot board))
+          exit-code (await (frontmatter-cli! board [[key value]]))
+          after (await (frontmatter-fixture/snapshot board))]
+      (is (= 0 exit-code) "actual argv/main path must report successful design mutation")
+      (frontmatter-fixture/assert-mutation! before after key value "cli"))))
+
+(deftest ^:async cli-sets-and-replaces-design-with-real-ledger-events
+  (await (frontmatter-fixture/with-board!
+           #(exercise-cli-mutations!
+              % [[:design "docs/designs/not-created-yet.md"]
+                 [:design "docs/designs/replacement.md"]]))))
+
+(deftest ^:async cli-retains-existing-descriptive-field-behavior
+  (await (frontmatter-fixture/with-board!
+           #(exercise-cli-mutations! % [[:title "Changed title"] [:priority "P1"]]))))
+
+(defn- ^:async exercise-cli-refusals! [board]
+  (doseq [pairs (concat [[]]
+                       (for [key (conj frontmatter-fixture/protected-keys :status)
+                             updates (frontmatter-fixture/mixed-updates key)]
+                         (vec updates)))]
+    (let [before (await (frontmatter-fixture/snapshot board))
+          exit-code (await (frontmatter-cli! board pairs))
+          after (await (frontmatter-fixture/snapshot board))]
+      (is (= (:usage cli/exit-codes) exit-code))
+      (frontmatter-fixture/assert-unchanged! before after))))
+
+(deftest ^:async cli-refuses-entire-mixed-update-and-missing-set
+  (await (frontmatter-fixture/with-board! exercise-cli-refusals!)))

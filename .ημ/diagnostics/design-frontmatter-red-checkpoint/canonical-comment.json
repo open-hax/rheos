@@ -1,0 +1,16 @@
+{
+  "at": "2026-10-07T19:08:07.516875+00:00",
+  "argv": [
+    "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+    "/home/err/spaces/review-repair/rheos-comment-rendering/dist/cli.cjs",
+    "comment",
+    "rheos-design-frontmatter-key",
+    "--text",
+    "Observed Rheos design-field RED at ef3c4ab: actual compile exit0 and explicitNode exit1 both report166tests1361assertions73failures0errors. All73failures are newdesignpolicy/realtool/CLI/HTTP acceptance assertions; existingrefusalcontrols pass.35.339s total;all4observedPIDsabsent and188pinsunchanged. Root closuref639dafa8bc2ac87e56e9e2ddba30513100b421a1dda91ab92b9433b33ed7bad. RED is qualified; portablelaw/key/discoverability GREEN may proceed, no consumeractivation/merge.",
+    "--config",
+    "openhax.kanban.edn"
+  ],
+  "exit": 0,
+  "stdout": "{\n  \"ok\": true,\n  \"uuid\": \"rheos-design-frontmatter-key\",\n  \"comment\": \"Observed Rheos design-field RED at ef3c4ab: actual compile exit0 and explicitNode exit1 both report166tests1361assertions73failures0errors. All73failures are newdesignpolicy/realtool/CLI/HTTP acceptance assertions; existingrefusalcontrols pass.35.339s total;all4observedPIDsabsent and188pinsunchanged. Root closuref639dafa8bc2ac87e56e9e2ddba30513100b421a1dda91ab92b9433b33ed7bad. RED is qualified; portablelaw/key/discoverability GREEN may proceed, no consumeractivation/merge.\"\n}\n",
+  "stderr": ""
+}

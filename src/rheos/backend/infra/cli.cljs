@@ -185,7 +185,7 @@
 
    {:verb "frontmatter" :group "lifecycle" :mutates? true
     :args "<uuid> --set <key>=<value>"
-    :summary "Update descriptive frontmatter (title, priority, labels, points, category, description, estimate, assignee)."
+    :summary "Update descriptive frontmatter (title, priority, labels, points, category, description, estimate, assignee, design)."
     :flags [["--set <key>=<value>" "repeatable; one ledger event per changed key"]]
     :example "rheos frontmatter my-card --set points=3 --set priority=P1"
     :notes "`--set status=…` is refused: status is FSM-governed, use `move`. Identity and provenance keys (uuid, created_at, write-id, source-path) are never writable."}

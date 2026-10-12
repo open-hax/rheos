@@ -1,0 +1,22 @@
+{
+  "archive": {
+    "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/warm-prior.tar.gz",
+    "bytes": 7430065,
+    "sha256": "0666ef9b0d37a97c8e58f909e422f3bee0710752942a6bb9f6e6235888c8f1dc"
+  },
+  "publish_binary": false,
+  "retained_locally": true,
+  "manifest": {
+    "path": ".ημ/diagnostics/design-frontmatter-green-runner-01/warm-before.json",
+    "bytes": 141683,
+    "sha256": "a99070af9175868956c11e75a1b1356f72767ec131d093f12e45e3b89babf6f5"
+  },
+  "manifest_archive_record": 106,
+  "read_only_tar_verification": {
+    "members": 480,
+    "expanded_bytes": 50315678,
+    "all_member_hashes_match_manifest": true,
+    "no_extraction": true
+  },
+  "limit": "Reference proves identity and local archival verification. The generated binary itself is deliberately not in the product review; this is not a fresh hosted cache reconstruction claim."
+}

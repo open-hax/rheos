@@ -1,0 +1,10 @@
+{
+  "pid": 2317972,
+  "state": "R",
+  "pgid": 2317972,
+  "starttime_ticks": 6736882,
+  "metadata_errors": {},
+  "exe": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+  "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter",
+  "boot_id": "b04f7fb6-ea65-4b47-8866-73e24a6887f6"
+}

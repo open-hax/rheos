@@ -1,0 +1,186 @@
+{
+  "at": "2026-10-07T19:17:46.793498+00:00",
+  "reviewer": "/root/sculpt_plan_review",
+  "context": "己",
+  "confidence": 0.99,
+  "verdict": "PASS narrow GREEN production source; full qualification HOLD on observed compiler warning and unrun gates",
+  "scope": "Independent source-only review. No tests/JVM/build/native/Git/board/remote action. Baseline171c4f22 reported by root; prior exact bytes established via frozen RED pin envelopes, without Git invocation.",
+  "source_proof": {
+    "path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/.ημ/diagnostics/design-frontmatter-green/SOURCE-PROOF.json",
+    "sha256": "c5eae16c4dfd858b744aa0dc357d2684fb5ccc7c9fd10f2aaca449dfc362dc29",
+    "bytes": 2109
+  },
+  "source_delta": [
+    {
+      "path": "src/rheos/backend/law/frontmatter.cljc",
+      "line": 22,
+      "new_fragment": ":assignee :design}",
+      "old_fragment": ":assignee}",
+      "baseline_path": "src/rheos/backend/law/frontmatter.cljs",
+      "baseline_sha256": "af08622f7b673f123dbb9d263cc18e6842f85a6a616b3ad839c7bc81768d6b0a",
+      "current_sha256": "144b529ba97735106fcd2f89b8fd7de8b8188eb5412ca3afd98fce9159d5d479",
+      "whole_file_exact_after_only_this_reverse_edit": true
+    },
+    {
+      "path": "src/rheos/backend/infra/agent_tools.cljs",
+      "line": 312,
+      "new_fragment": "assignee, design).",
+      "old_fragment": "assignee).",
+      "baseline_path": "src/rheos/backend/infra/agent_tools.cljs",
+      "baseline_sha256": "63cc9e4519aab7450923d7041f424943122e581e2e9cb4c4f9ce8b2fef309f10",
+      "current_sha256": "e01d748d8f08dd066048f301b6a80fdd025d2479ad13a83a5078213e855035d4",
+      "whole_file_exact_after_only_this_reverse_edit": true
+    },
+    {
+      "path": "src/rheos/backend/infra/cli.cljs",
+      "line": 188,
+      "new_fragment": "assignee, design).",
+      "old_fragment": "assignee).",
+      "baseline_path": "src/rheos/backend/infra/cli.cljs",
+      "baseline_sha256": "6ababe29d9b3025a85864c284826bfdae31997e366f7b370bcbcccb2ccf3f31a",
+      "current_sha256": "78764c8267d7870e541cc5a105e7d77b36993d6227fe4d8604d1a0bc6e0c8536",
+      "whole_file_exact_after_only_this_reverse_edit": true
+    },
+    {
+      "path": "docs/cli.md",
+      "line": 154,
+      "new_fragment": "`assignee`, `design`.",
+      "old_fragment": "`assignee`.",
+      "baseline_path": "docs/cli.md",
+      "baseline_sha256": "8d12b4c27b32f4b83c05fe7e25590189157d8d3d3478c652fef1bbf7c58e48f7",
+      "current_sha256": "f9532f4fb474ab65e4b5e644a58729f0dda646c3be8f71c057f90ddc9b617ded",
+      "whole_file_exact_after_only_this_reverse_edit": true
+    }
+  ],
+  "full_pinned_input_scan": {
+    "count": 188,
+    "unchanged": 182,
+    "changed": [
+      "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/.ημ/receipts.edn",
+      "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/.ημ/session-mycology/ledger.md",
+      "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/docs/cli.md",
+      "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/src/rheos/backend/infra/agent_tools.cljs",
+      "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/src/rheos/backend/infra/cli.cljs",
+      "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/src/rheos/backend/law/frontmatter.cljs"
+    ],
+    "root_checkpoint_appends": [
+      {
+        "path": ".ημ/receipts.edn",
+        "prefix_bytes": 24776,
+        "prefix_sha256": "9a60252f38d90ae455f373d94d0f8a1617b288747c3009f2b8f37f21388fa38d",
+        "appended_bytes": 626,
+        "meaning": "Root RED checkpoint receipt/reflection; not GREEN source widening"
+      },
+      {
+        "path": ".ημ/session-mycology/ledger.md",
+        "prefix_bytes": 3413,
+        "prefix_sha256": "dfae76c94436cfce2eb08d532540ba99b89a3388b327d479ef0e835fb36d6c1f",
+        "appended_bytes": 552,
+        "meaning": "Root RED checkpoint receipt/reflection; not GREEN source widening"
+      }
+    ],
+    "src_file_set": "Only frontmatter.cljs replaced by frontmatter.cljc",
+    "test_and_two_dependency_source_file_sets": "Unchanged exactly"
+  },
+  "test_pins_unchanged": {
+    "test/rheos/backend/law/frontmatter_test.cljc": "ad49f258c7c3f3433cc952305ba9b09c40120f8a977c4ee8e32c47d3ccaddd82",
+    "test/rheos/backend/infra/frontmatter_fixture.cljs": "3a3d4b4382e46fba2be8be32582996afc6b8c303a6d9b3a3b403b91a2e8abec7",
+    "test/rheos/backend/infra/agent_tools_test.cljs": "b86b421de2ab59c0a1e30eda283a7f1dad910cdd74e0d888e1aecc507143e385",
+    "test/rheos/backend/infra/http_server_test.cljs": "dc16f919c32a4b9519e81872a38c6cef198e32912529de9a84cdc7b5e90384bd"
+  },
+  "findings": [
+    {
+      "id": "RHEOS-DESIGN-GREEN-WARNING-1",
+      "priority": "P2",
+      "status": "Blocks zero-warning qualification; not a defect in the four reviewed GREEN source edits",
+      "path": "test/rheos/backend/infra/http_server_test.cljs",
+      "line": 20,
+      "evidence": {
+        "compile_stdout": {
+          "path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/.ημ/diagnostics/design-frontmatter-red-runner-01/runs/red-01/compile/stdout.log",
+          "sha256": "053bcb1ee69366b88a3ac459d2b88e351d236f671e9bbb4f5dfdacfc459c032e",
+          "bytes": 19845
+        },
+        "lines": [
+          398,
+          408
+        ],
+        "reported": "[:test] Build completed. (142 files,141 compiled,1 warnings); :infer-warning cannot infer target type in (. app inject ...)",
+        "workflow": ".github/workflows/eta-mu-evidence-review.yml completed_outputs explicitly rejects nonzero compiler warnings or WARNING text"
+      },
+      "suggested_narrow_fix": "Annotate the app argument used by actual Fastify .inject as ^js, preserving test assertions and real handler/writer/ledger path. Root must approve/re-pin this test-only metadata correction and rerun actual qualification; do not suppress warnings or weaken output validation."
+    }
+  ],
+  "assessment": [
+    {
+      "area": "Portable shared law",
+      "evidence": "frontmatter.cljc:1-55",
+      "result": "Same namespace/API and clojure.string-only host-neutral data/functions; sole semantic change adds :design to mutable-keys. No JS interop/reader fork, stale .cljs duplicate or new validator."
+    },
+    {
+      "area": "Tool/CLI/HTTP admission",
+      "evidence": "agent_tools.cljs:186-210,cli.cljs:540-557,http_server.cljs:145-180",
+      "result": "All existing normalizations and key-policy checks stay before writer dispatch. :status remains separately rejected; protected/unknown keys remain outside the closed set; mixed updates reject as a unit before write. CLI generic --set now admits design via same registered capability; MCP delegates to it."
+    },
+    {
+      "area": "Values and persistence",
+      "evidence": "domain/task_edit.cljs:10-29,infra/task_edit.cljs:17-45,shape/content_parser.cljs:5-34,69-109",
+      "result": "No new path-existence check, scalar policy, serializer or ledger change. Design metadata uses existing supported value representation; success preserves parsed supported body/comments/other fields under existing normalization, not arbitrary YAML bytes. Refusals preserve all bytes. Per-supplied-key events and write-id remain unchanged; no claim of transactional disk/ledger atomicity or same-value no-op."
+    },
+    {
+      "area": "Discoverability",
+      "evidence": "agent_tools.cljs:312,cli.cljs:188,docs/cli.md:154",
+      "result": "Each only adds design to its existing allowed-key list; whole-file inverse edit matches RED bytes."
+    },
+    {
+      "area": "Meaningful tests",
+      "evidence": "frontmatter_test.cljc;frontmatter_fixture.cljs;agent_tools_test.cljs:145-273;http_server_test.cljs:1-95",
+      "result": "Frozen tests cover actual dispatch/CLI argv and Fastify injection, source-only unverified design paths, creation/replacement, canonical reread/events and all-or-nothing refusal of mixed fields in both orders. Fixture uses real writer/parser/EventAdmission and owned temp cleanup. Actual RED73 assertion failures have0errors across166tests1361assertions; behavior bodies ran."
+    }
+  ],
+  "observed_execution_evidence": {
+    "root_red_closure": {
+      "path": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/.ημ/diagnostics/design-frontmatter-red-runner-01/CLOSURE.json",
+      "sha256": "f639dafa8bc2ac87e56e9e2ddba30513100b421a1dda91ab92b9433b33ed7bad",
+      "bytes": 1148
+    },
+    "red_raw_compile_and_node_summaries": "Both166tests/1361assertions/73failures/0errors; explicit Node exit1 establishes RED despite compile exit0. Compile warning separately preserved.",
+    "source_proof_reports": "BB portable law4tests36assertions0F0E; kondo0errors0warnings plus8informational messages. Read root evidence; no rerun by reviewer.",
+    "not_yet_qualified": [
+      "Compiled GREEN suite and explicit Node",
+      "Zero compiler warnings",
+      "LSP diagnostics with classpath process ownership",
+      "Four release targets and completed-output/artifact gates",
+      "Hosted review, publication or operational activation"
+    ]
+  },
+  "policy_pins": [
+    {
+      "path": "/home/err/AGENTS.md",
+      "sha256": "493d4ce3174b268b28d8fda9af72f1e7de7f5aafcc8ddc055db9b4e0267850d4",
+      "bytes": 12321
+    },
+    {
+      "path": "/home/err/spaces/AGENTS.md",
+      "sha256": "c15c09d7b19e65058132c33e63b12952ecfa17216c09d4cc201121ce9b1839c6",
+      "bytes": 2763
+    },
+    {
+      "path": "/home/err/spaces/foresight/AGENTS.md",
+      "sha256": "f7326deaf01810ed73b6c6d777387599b7669feb596faa019a0c297f1fcf81d7",
+      "bytes": 9774
+    },
+    {
+      "path": "/home/err/.agents/skills/pr-flow/SKILL.md",
+      "sha256": "efe5e0818d673b8aab6f962a711ba80c10b7a1877b24b0e986217601b6042472",
+      "bytes": 27169
+    },
+    {
+      "path": "/home/err/.agents/skills/pr-red-green/SKILL.md",
+      "sha256": "906d5f072b748900698fa2fdc91e9c5d225427534f86ef732768cbae0562ca1d",
+      "bytes": 2500
+    }
+  ],
+  "instructions": "No standalone or applicable nested AGENTS/PROCESS exists; root/global apply. Missing README-linked AGENTS does not grant new authority. Existing stale README commands remain out of scope.",
+  "next": "Root can make the narrow type-hint repair and preserve this finding before separately reviewing/releasing one finite full GREEN gate runner. This local source PASS supplies no hosted review credit."
+}

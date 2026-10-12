@@ -1,0 +1,30 @@
+{
+  "at": "2026-10-07T19:06:47.998252+00:00",
+  "verdict": "Observed meaningful RED: design remains disallowed at shared law and real tool/CLI/HTTP boundaries.",
+  "execution_sha256": "8c79c6019d65dc33b49d402efd4a610050bb4d4a107ee76cb9794aac70305bda",
+  "summary": {
+    "tests": 166,
+    "assertions": 1361,
+    "failures": 73,
+    "errors": 0
+  },
+  "compile_exit": 0,
+  "explicit_node_exit": 1,
+  "wrapper_exit": 1,
+  "elapsed_s": 35.339089946006425,
+  "source_pins_verified": 188,
+  "failure_test_counts": {
+    "cli-sets-and-replaces-design-with-real-ledger-events": 20,
+    "design-is-descriptive-metadata": 3,
+    "patch-sets-and-replaces-design-through-both-body-shapes": 24,
+    "tool-sets-and-replaces-design-with-real-ledger-events": 26
+  },
+  "all_recorded_pids_absent": [
+    2317972,
+    2318009,
+    2318508,
+    2322170
+  ],
+  "processes_reaped": true,
+  "limits": "Full suite runs in compile autorun and explicit Node; counted as one qualification attempt. No GREEN or operational use. Existing stderr/source-map-support advisory preserved. Root inspected all73failure locations; all arise from four new design-admission tests."
+}

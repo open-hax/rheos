@@ -1,0 +1,131 @@
+{
+  "at": "2026-10-07T18:44:14.679393+00:00",
+  "reviewer": "runtime_scout",
+  "verdict": "PASS source-only preparation review; no substantive blocker found",
+  "blockers": [],
+  "scope": "Frozen four-file RED source/API/fixture review only. No test, reader, compiler, linter, install, JVM, native connection, board operation, Git mutation or hosted review action.",
+  "head_read_only_verified": "ef3c4abf1ea75199486f693e9470df3fec88dd49",
+  "preparation": {
+    "path": ".ημ/diagnostics/design-frontmatter-red/preparation.json",
+    "sha256": "33321bf95347bd522712ec8c016d0c5aa872c50e517a0da3328e89dab2e8b59c"
+  },
+  "accepted_proposal": {
+    "path": "/home/err/spaces/foresight/.ημ/diagnostics/truth-physical-flight/2026-10-07-rheos-design-frontmatter-red-proposal.json",
+    "sha256": "98f68e7769c751c4f10dfca41a1faf4c74d23b3e772225d2cb887c93228dace4"
+  },
+  "test_pins": [
+    {
+      "path": "test/rheos/backend/law/frontmatter_test.cljc",
+      "bytes": 1820,
+      "sha256": "ad49f258c7c3f3433cc952305ba9b09c40120f8a977c4ee8e32c47d3ccaddd82",
+      "new_deftest_count": 4,
+      "text_only_delimiter_balance": true
+    },
+    {
+      "path": "test/rheos/backend/infra/frontmatter_fixture.cljs",
+      "bytes": 4856,
+      "sha256": "3a3d4b4382e46fba2be8be32582996afc6b8c303a6d9b3a3b403b91a2e8abec7",
+      "new_deftest_count": 0,
+      "text_only_delimiter_balance": true
+    },
+    {
+      "path": "test/rheos/backend/infra/agent_tools_test.cljs",
+      "bytes": 12395,
+      "sha256": "b86b421de2ab59c0a1e30eda283a7f1dad910cdd74e0d888e1aecc507143e385",
+      "new_deftest_count": 6,
+      "text_only_delimiter_balance": true
+    },
+    {
+      "path": "test/rheos/backend/infra/http_server_test.cljs",
+      "bytes": 4097,
+      "sha256": "dc16f919c32a4b9519e81872a38c6cef198e32912529de9a84cdc7b5e90384bd",
+      "new_deftest_count": 3,
+      "text_only_delimiter_balance": true
+    }
+  ],
+  "protected_head_files_verified": 88,
+  "preserved_existing_agent_tests": {
+    "recovered_sha256": "124591e19525f5355009146c9bd3f08ceb933e5d9e01866327e146ac3cef13cb",
+    "bytes": 6702,
+    "method": "Remove exactly the new fixture require and appended frontmatter test section; remaining bytes equal the preparation-pinned original."
+  },
+  "instruction_boundary": {
+    "read": [
+      "/home/err/AGENTS.md",
+      "/home/err/spaces/AGENTS.md",
+      "/home/err/spaces/foresight/AGENTS.md"
+    ],
+    "standalone_or_nested_AGENTS_PROCESS": "No AGENTS.md or PROCESS.md exists at the standalone worktree root; no nested AGENTS in src/test/.ημ. README points to an absent AGENTS and stale monorepo commands. Actual package.json and shadow-cljs.edn were used for command/namespace reasoning.",
+    "board_authority": "Parent-provided root admission remains authority. This reviewer did not reread or mutate canonical board state.",
+    "receipts": "Parent owns canonical receipts; this separate audit is the sole reviewer write."
+  },
+  "coverage": [
+    {
+      "id": "portable-key-law",
+      "test_count": 4,
+      "tests": "frontmatter_test.cljc:1-35",
+      "source": "law/frontmatter.cljs:19-55",
+      "assessment": "Current .cljs namespace and API names exist. CLJS branch of .cljc test requires the existing namespace; three positive design-key assertions identify the intended current defect rather than missing API. Existing keys, protected spellings, unknown key, dedicated status handling and empty-map neutrality are distinct controls. The unchanged -test$ selector includes the namespace. CLJ-host loading is deferred until the proposed .cljc production move."
+    },
+    {
+      "id": "registered-tool-cli",
+      "test_count": 6,
+      "tests": "agent_tools_test.cljs:144-254",
+      "source": "infra/agent_tools.cljs:145-158,186-210; infra/cli.cljs:393-402,540-557,651-692",
+      "assessment": "Actual dispatch and cli/main are used. CLI argv/source stamping/usage exit match current signatures. Failures are captured into outcome data; real policy, writer, parser, readback and ledger remain active. Setting/replacing design, existing title/priority success, mixed protected/unknown keys in both orderings, status refusal and public empty/missing-set controls are meaningful."
+    },
+    {
+      "id": "http-handler",
+      "test_count": 3,
+      "tests": "http_server_test.cljs:11-89",
+      "source": "infra/http_server.cljs:145-181",
+      "assessment": "Exported handler, route params, project query, body shapes and response access match production. Fastify injection is awaited and app.close is awaited in finally. Both updates and key/value success shapes are tested. Section types are strings in the production parser, so parsed-section equality survives JSON encoding; no spurious keyword/string oracle mismatch was found. No listen/init/watchers or SDK wire-transport claim."
+    },
+    {
+      "id": "real-fixture-events",
+      "test_count": 0,
+      "tests": "frontmatter_fixture.cljs:18-94",
+      "source": "infra/task_edit.cljs:17-58; domain/task_edit.cljs:10-37; domain/events.cljs:73-79,95-104,166-176; infra/watcher.cljs:79-85",
+      "assessment": "Unique temp directory, UUID/project/config; real seed comment ensures a ledger prefix and existing comment. Snapshot uses real parser and ledger query. Success checks exact design value, unrelated parsed frontmatter/body/comments, fresh write-id, one per-key event and exact event metadata/prefix. Refusal checks entire card, ledger and event sequence. Cleanup restores project registry and removes only fixture ledger/pending-write entries and owned temp directory."
+    },
+    {
+      "id": "existing-empty-writer",
+      "tests": "test/rheos/backend/infra/task_edit_test.cljs:85-106",
+      "assessment": "Existing inner writer empty-map no-op test is byte-identical. New public empty refusals do not incorrectly redefine that inner contract."
+    }
+  ],
+  "new_tests_total": 13,
+  "substantive_missing_cases": "No additional mandatory case identified for the scoped key admission and portable namespace move. New tests exercise real adapter effects and preserve refusal atomicity rather than merely checking the key set.",
+  "source_pins": {
+    "src/rheos/backend/law/frontmatter.cljs": "af08622f7b673f123dbb9d263cc18e6842f85a6a616b3ad839c7bc81768d6b0a",
+    "src/rheos/backend/infra/agent_tools.cljs": "63cc9e4519aab7450923d7041f424943122e581e2e9cb4c4f9ce8b2fef309f10",
+    "src/rheos/backend/infra/cli.cljs": "6ababe29d9b3025a85864c284826bfdae31997e366f7b370bcbcccb2ccf3f31a",
+    "src/rheos/backend/infra/http_server.cljs": "933f3c16df3896fd6a7687550fdeb08dc9c0a0d5a0aead469eff0f47909571eb",
+    "src/rheos/backend/infra/task_edit.cljs": "bb89e530664378e212512f212488d627531f77e1f5281a2e231de3d12370213f",
+    "src/rheos/backend/domain/task_edit.cljs": "3d51c26657f5df150d67188705db070a9472ad0665b7066bbe5cbfd28789bb86",
+    "src/rheos/backend/domain/events.cljs": "5fd19ce700a47ec7bf2645f9086d5feb1bc1f0b2f6345f7f878c3fc393f2edd3",
+    "src/rheos/backend/infra/ledger.cljs": "ab2c02c885144dda0665fb2be1f9bec84098a2d4187447a988e822611e70f622",
+    "src/rheos/backend/infra/projects.cljs": "30f30b44c13266092433d868ea74022bdccfb519ba8de887259b43d22406eeb6",
+    "src/rheos/backend/infra/watcher.cljs": "142dd149fb53a8f7650404d734b87fb97c782b35d624c747fb526ffcc05f1503",
+    "src/rheos/backend/infra/config.cljs": "32eef60fad9ea07bcda2a5129fc5f0a2c1d3eb006166152241e185ef6c90b673",
+    "src/rheos/backend/shape/content_parser.cljs": "8bc19ab0180575252d703c8409fb391054f9b5bab881facf8f14af42bcc24be5",
+    "test/rheos/backend/infra/task_edit_test.cljs": "682aff717534e9a8b20ef7fd3d378405574f22ee18ad11ea1d415d693d0f7c47",
+    "package.json": "d090e67573ebb9d05049a38523a85280ecc1a8725209971ad52837feda6c6119",
+    "shadow-cljs.edn": "362bfaf9bf1d5ea4ff4be7388ef50a9f1bdf860821de215785c85cb2b8640611",
+    "README.md": "f33c9794c7857b882f3abbf8cd74fb38fdadce80848ba8d894b83b689e68fd60"
+  },
+  "execution_prerequisites_and_limits": [
+    "All declared missing dependency/build paths remain absent. Root must establish pinned protocols/chat-ui and package dependencies before interpreting compile/run results; missing dependency or compile errors are not meaningful RED.",
+    "The prepared pnpm test script deliberately includes node dist/test.cjs after shadow compilation/autorun. Only actual execution can establish async/compiler compatibility and nonzero test failure propagation.",
+    "The planned timeout argv is a proposal, not a fully qualified owned-process supervisor. Root must finalize environment/Node identity, process-group/reaping and exact absolute bounds before release. Inherited JAVA_OPTS is not cleared by the proposal itself; include it in that environment review along with the already listed JVM option variables.",
+    "MCP coverage is the registered capability/dispatch path, not an SDK transport test. HTTP coverage is the production handler mounted for injection, not server startup.",
+    "Success guarantees supported parsed data/body/comment preservation and append-only event prefix; arbitrary YAML byte-preserving rewrites are not claimed. No path-existence restriction is introduced.",
+    "No actual RED assertion count, compile success, portable-host execution or runtime PASS is claimed. Expected design admission failures remain predictions."
+  ],
+  "supporting_cached_dependency_read": {
+    "path": "/home/err/spaces/review-repair/rheos-comment-rendering/deps/protocols/src/open_hax/records/edn/event_admission.cljs",
+    "sha256": "f7c7ae3b377144f414b82af10297cefaa87752eee924928a85a1557be58465b8",
+    "limit": "Read only to inspect append/query mechanics, not promoted to verified installation provenance for this empty worktree."
+  },
+  "next": "Root can prepare the pinned dependency/runtime environment and release one bounded actual RED run; stop for compiler/fixture errors rather than counting them as expected design-key failures."
+}

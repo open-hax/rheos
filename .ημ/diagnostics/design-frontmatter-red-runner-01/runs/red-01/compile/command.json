@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+    "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter/node_modules/shadow-cljs/cli/runner.js",
+    "--force-spawn",
+    "compile",
+    "test"
+  ],
+  "cwd": "/home/err/spaces/foresight/.worktrees/rheos-design-frontmatter",
+  "at": "2026-10-07T19:04:28.420501+00:00",
+  "boot_id": "b04f7fb6-ea65-4b47-8866-73e24a6887f6",
+  "shared_work_remaining_s": 279.79033039699425,
+  "shared_total_remaining_s": 299.79032853999524
+}

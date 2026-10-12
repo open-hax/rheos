@@ -1,0 +1,25 @@
+{
+  "removed_inherited_keys": [
+    "JAVA_OPTS",
+    "JVM_OPTS",
+    "NODE_OPTIONS"
+  ],
+  "all_removed_candidates": [
+    "JAVA_OPTS",
+    "JAVA_TOOL_OPTIONS",
+    "JDK_JAVA_OPTIONS",
+    "_JAVA_OPTIONS",
+    "CLJ_JVM_OPTS",
+    "JVM_OPTS",
+    "NODE_OPTIONS",
+    "NODE_PATH",
+    "XDG_CONFIG_HOME",
+    "LOCALAPPDATA"
+  ],
+  "new_JAVA_TOOL_OPTIONS": "-Xms256m -Xmx2g -XX:ActiveProcessorCount=2",
+  "node": "/home/err/.volta/tools/image/node/22.20.0/bin/node",
+  "java": "/usr/lib/jvm/java-21-openjdk-amd64/bin/java",
+  "force_spawn": true,
+  "user_config_absent": true,
+  "boot_id": "b04f7fb6-ea65-4b47-8866-73e24a6887f6"
+}

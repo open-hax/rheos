@@ -1,0 +1,26 @@
+{
+  "at": "2026-10-07T18:47:12.862003+00:00",
+  "status": "complete",
+  "error": null,
+  "elapsed_s": 0.5287299920018995,
+  "exit_code": 0,
+  "primary_reaped": true,
+  "observed_identities": [
+    {
+      "pid": 2224265,
+      "state": "Z",
+      "pgid": 2224265,
+      "starttime_ticks": 6633240,
+      "exe": null,
+      "exe_error": "FileNotFoundError(2, 'No such file or directory')",
+      "cwd": null,
+      "cwd_error": "FileNotFoundError(2, 'No such file or directory')"
+    }
+  ],
+  "remaining_group": [],
+  "remaining_observed": [],
+  "membership_unknown": [],
+  "cleanup_errors": [],
+  "total_deadline_exceeded": false,
+  "limit": "Polling can miss brief children. Stat controls membership. OS/I/O stalls cannot be forcibly time-bounded."
+}
