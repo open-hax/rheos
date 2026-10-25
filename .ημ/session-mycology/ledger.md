@@ -104,3 +104,12 @@
   spore: none
   receipt-refs: e544568a11bce1058804c98c5eeb3845e89d747cb229ed7a345aaa71c0488923
   note: "Bound changes to the exact runtime pin and required accountability; preserve prior bytes, incoming state and branch policy. Native service proof does not qualify a later member head."
+
+
+## 2026-10-25T09:13:44.268576Z — Antigravity member code-review repair
+
+Friction2/5; reuse4/5; no spore. Shared admission defects needed a renderer fix
+and bounded propagation, while local documentation needed repository-specific
+corrections. Preserve earlier receipt bytes and independent ownership. Native
+qualification and default adoption remain pending. Receipt: .ημ/receipts.edn newest
+record, origin antigravity-caller-review-repairs.
