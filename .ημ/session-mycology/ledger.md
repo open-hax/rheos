@@ -64,3 +64,8 @@
   spore: none
   receipt-refs: design-frontmatter-green-root-closure01.json
   note: Preserve actual RED compiler warning, fix host boundary with one type hint, and qualify extracted CI shell block with outer quoting correctly removed. Full real adapters and source/bundle/cleanup evidence establish local qualification; hosted review and operational adoption remain distinct. No new spore.
+
+## MiMo consumer retirement 2026-11-17
+- Scoped pin-only migration to merged eta-mu#388. Gate/auth bytes preserved.
+- Friction: source inventory can drift; compare fresh default, not cached caller content.
+- Local actionlint and exact-delta checks passed; hosted verification pending. No spore promoted.

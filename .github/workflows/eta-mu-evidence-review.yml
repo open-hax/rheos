@@ -14,7 +14,7 @@ jobs:
     name: Evidence-first review (eta-mu)
     # Parent-selected merged Eta/Muse pair; caller remains local/unpublished.
     # New-head native caller CI/review qualification remains parent-owned.
-    uses: open-hax/eta-mu/.github/workflows/opencode-code-review.yml@694a2602709d130b2a60045a25537f1b4476ec1f
+    uses: open-hax/eta-mu/.github/workflows/opencode-code-review.yml@40058f43f47e9f793210803f185159cd81999986
     # Delegate only the existing secrets this reviewer consumes.
     secrets:
       ETA_MU_APP_ID: ${{ secrets.ETA_MU_APP_ID }}
